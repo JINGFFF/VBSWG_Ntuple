@@ -12,8 +12,7 @@ config.JobType.allowUndistributedCMSSW = True
 
 config.section_("Data")
 ##config.Data.outputPrimaryDataset = 'VBS_WGAMMA_94X'
-config.Data.inputDataset = '/WGJJToLNuGJJ_EWK_aQGC-FS-FM_TuneCUETP8M1_13TeV-madgraph-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3-v1/MINIAODSIM
-'
+config.Data.inputDataset = '/WGJJToLNuGJJ_EWK_aQGC-FS-FM_TuneCP5_13TeV-madgraph-pythia8/RunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15-v2/MINIAODSIM'
 config.Data.inputDBS = 'global'
 config.Data.splitting = 'FileBased'
 config.Data.unitsPerJob = 2

@@ -8,14 +8,6 @@ git cms-init
 
 git cms-merge-topic cms-egamma:EgammaPostRecoTools
 
-git-cms-addpkg RecoEgamma/PhotonIdentification
-
 git cms-addpkg RecoMET/METFilters
 
-git clone -b 94X_weights_DYJets_inc_v2 git@github.com:cms-jet/PUjetID.git PUJetIDweights/ git-cms-addpkg RecoJets/JetProducers
-
-cp PUJetIDweights/weights/pileupJetId_94X_Eta* $CMSSW_BASE/src/RecoJets/JetProducers/data/
-
-git cms-merge-topic singh-ramanpreet:PUID_102_15_v2
-
-git clone -b 17_loose https://github.com/JINGFFF/VBSWG_Ntuple.git VAJets
+git clone -b 18_tight https://github.com/JINGFFF/VBSWG_Ntuple.git VAJets

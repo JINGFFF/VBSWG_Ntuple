@@ -8,7 +8,7 @@ fakeMuIdLabel  = "fake"
 goodMuons = cms.EDProducer("PATMuonIdSelector",
     src = cms.InputTag( "slimmedMuons" ),
     vertex = cms.InputTag("offlineSlimmedPrimaryVertices"),
-    idLabel = cms.string(fakeMuIdLabel)
+    idLabel = cms.string(tightMuIdLabel)
 )   
 
 looseMuons = cms.EDProducer("PATMuonIdSelector",

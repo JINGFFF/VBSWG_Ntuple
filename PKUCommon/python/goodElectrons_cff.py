@@ -9,7 +9,7 @@ fakeEleIdLabel = "fake"
 goodElectrons = cms.EDProducer("PATElectronIdSelector",
     src = cms.InputTag( "slimmedElectrons" ),
     vertex = cms.InputTag("offlineSlimmedPrimaryVertices"),
-    idLabel = cms.string(fakeEleIdLabel),
+    idLabel = cms.string(tightEleIdLabel),
     rho = cms.InputTag("fixedGridRhoFastjetAll"),
     effAreasConfigFile = cms.FileInPath("RecoEgamma/ElectronIdentification/data/Fall17/effAreaElectrons_cone03_pfNeuHadronsAndPhotons_94X.txt")
 )
