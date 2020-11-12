@@ -1,0 +1,865 @@
+DEBUG 2020-07-05 15:39:49.042 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:39:49.043 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:39:49.065 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:39:49.065 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:39:49.066 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:39:49.068 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisDY_v1.py
+DEBUG 2020-07-05 15:39:49.068 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:39:49.077 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:39:49.078 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_DY_v1_2' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:39:49.078 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_DY_v1_2' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:39:49.083 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-05 15:39:49.523 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:39:49.523 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:39:49.540 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:39:49.541 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:39:49.541 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:39:49.542 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisDY_v2.py
+DEBUG 2020-07-05 15:39:49.542 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:39:49.546 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:39:49.547 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_DY_v2' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:39:49.547 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_DY_v2' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:39:49.549 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-05 15:39:49.927 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:39:49.927 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:39:49.947 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:39:49.948 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:39:49.948 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:39:49.949 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisLNuAJJ_EWK.py
+DEBUG 2020-07-05 15:39:49.949 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:39:49.955 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:39:49.955 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_WGJJ_v1_2' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:39:49.955 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_WGJJ_v1_2' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:39:49.958 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-05 15:39:50.348 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:39:50.348 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:39:50.363 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:39:50.363 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:39:50.364 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:39:50.365 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisST_s.py
+DEBUG 2020-07-05 15:39:50.365 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:39:50.369 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:39:50.369 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_ST_s_v1_2' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:39:50.369 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_ST_s_v1_2' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:39:50.372 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-05 15:39:50.741 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:39:50.741 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:39:50.757 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:39:50.758 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:39:50.758 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:39:50.759 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisST_t.py
+DEBUG 2020-07-05 15:39:50.759 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:39:50.763 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:39:50.764 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_ST_t_v1_2' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:39:50.764 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_ST_t_v1_2' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:39:50.768 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-05 15:39:51.150 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:39:51.150 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:39:51.165 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:39:51.165 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:39:51.166 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:39:51.167 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisST_tW_antitop.py
+DEBUG 2020-07-05 15:39:51.167 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:39:51.171 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:39:51.172 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_ST_tW_antitop_v1_2' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:39:51.172 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_ST_tW_antitop_v1_2' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:39:51.174 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-05 15:39:51.573 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:39:51.573 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:39:51.589 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:39:51.590 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:39:51.590 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:39:51.591 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisST_tW_top.py
+DEBUG 2020-07-05 15:39:51.591 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:39:51.595 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:39:51.595 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_ST_tW_top_v1_2' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:39:51.595 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_ST_tW_top_v1_2' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:39:51.598 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-05 15:39:51.966 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:39:51.967 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:39:51.980 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:39:51.980 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:39:51.980 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:39:51.981 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisST_tbar.py
+DEBUG 2020-07-05 15:39:51.981 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:39:51.985 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:39:51.985 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_ST_tbar_v1_2' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:39:51.985 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_ST_tbar_v1_2' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:39:51.988 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-05 15:39:52.369 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:39:52.369 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:39:52.387 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:39:52.388 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:39:52.388 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:39:52.389 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisTTGJets_v1.py
+DEBUG 2020-07-05 15:39:52.389 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:39:52.394 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:39:52.395 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_TTGJ_v1_2' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:39:52.395 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_TTGJ_v1_2' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:39:52.397 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-05 15:39:52.829 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:39:52.830 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:39:52.849 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:39:52.849 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:39:52.849 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:39:52.850 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisTTGJets_v2.py
+DEBUG 2020-07-05 15:39:52.850 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:39:52.856 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:39:52.856 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_TTGJ_v2' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:39:52.856 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_TTGJ_v2' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:39:52.860 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-05 15:39:53.194 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:39:53.195 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:39:53.210 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:39:53.211 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:39:53.211 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:39:53.212 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisTTGJets_v3.py
+DEBUG 2020-07-05 15:39:53.212 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:39:53.215 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:39:53.215 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_TTGJ_v3' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:39:53.215 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_TTGJ_v3' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:39:53.218 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-05 15:39:53.603 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:39:53.603 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:39:53.616 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:39:53.616 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:39:53.617 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:39:53.617 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisTTGJets_v4.py
+DEBUG 2020-07-05 15:39:53.617 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:39:53.621 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:39:53.621 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_TTGJ_v4' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:39:53.621 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_TTGJ_v4' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:39:53.623 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-05 15:39:53.961 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:39:53.962 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:39:53.977 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:39:53.977 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:39:53.977 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:39:53.978 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisTTGJets_v5.py
+DEBUG 2020-07-05 15:39:53.978 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:39:53.983 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:39:53.983 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_TTGJ_v5' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:39:53.983 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_TTGJ_v5' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:39:53.986 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-05 15:39:54.413 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:39:54.413 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:39:54.429 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:39:54.429 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:39:54.430 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:39:54.430 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisWGToLNuG.py
+DEBUG 2020-07-05 15:39:54.431 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:39:54.437 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:39:54.437 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_WGJets_v1_2' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:39:54.437 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_WGJets_v1_2' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:39:54.441 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-05 15:39:54.861 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:39:54.862 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:39:54.879 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:39:54.879 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:39:54.880 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:39:54.880 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisWJets_v1.py
+DEBUG 2020-07-05 15:39:54.881 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:39:54.885 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:39:54.885 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_WJets_0j_v1_2' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:39:54.885 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_WJets_0j_v1_2' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:39:54.888 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-05 15:39:55.326 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:39:55.326 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:39:55.351 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:39:55.352 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:39:55.352 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:39:55.353 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisWJets_v2.py
+DEBUG 2020-07-05 15:39:55.353 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:39:55.358 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:39:55.358 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_WJets_1j_v1_2' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:39:55.358 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_WJets_1j_v1_2' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:39:55.362 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-05 15:39:55.769 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:39:55.769 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:39:55.785 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:39:55.785 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:39:55.786 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:39:55.787 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisWJets_v3.py
+DEBUG 2020-07-05 15:39:55.787 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:39:55.791 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:39:55.792 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_WJets_1j_v2' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:39:55.792 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_WJets_1j_v2' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:39:55.795 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-05 15:39:56.171 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:39:56.171 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:39:56.187 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:39:56.187 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:39:56.187 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:39:56.188 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisWJets_v4.py
+DEBUG 2020-07-05 15:39:56.188 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:39:56.192 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:39:56.192 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_WJets_2j_v1_2' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:39:56.192 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_WJets_2j_v1_2' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:39:56.194 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-05 15:39:56.550 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:39:56.551 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:39:56.567 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:39:56.568 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:39:56.568 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:39:56.569 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisWJets_v5.py
+DEBUG 2020-07-05 15:39:56.569 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:39:56.597 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:39:56.598 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_WJets_2j_v2' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:39:56.598 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_WJets_2j_v2' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:39:56.605 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-05 15:39:56.974 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:39:56.974 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:39:56.989 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:39:56.989 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:39:56.989 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:39:56.990 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisWW.py
+DEBUG 2020-07-05 15:39:56.990 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:39:56.995 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:39:56.996 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_WW_v1_2' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:39:56.996 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_WW_v1_2' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:39:56.998 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-05 15:39:57.379 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:39:57.380 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:39:57.393 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:39:57.394 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:39:57.394 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:39:57.395 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisWZ.py
+DEBUG 2020-07-05 15:39:57.395 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:39:57.400 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:39:57.400 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_WZ_v1_2' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:39:57.400 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_WZ_v1_2' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:39:57.402 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-05 15:39:57.753 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:39:57.754 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:39:57.768 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:39:57.769 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:39:57.769 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:39:57.770 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisZA.py
+DEBUG 2020-07-05 15:39:57.770 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:39:57.775 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:39:57.775 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_ZG_v1_2' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:39:57.775 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_ZG_v1_2' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:39:57.779 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-05 15:39:58.187 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:39:58.188 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:39:58.204 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:39:58.205 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:39:58.206 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:39:58.207 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisZZ.py
+DEBUG 2020-07-05 15:39:58.207 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:39:58.212 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:39:58.212 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_ZZ_v1_2' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:39:58.212 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_ZZ_v1_2' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:39:58.214 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-05 15:39:58.593 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:39:58.594 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:39:58.616 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:39:58.616 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:39:58.616 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:39:58.617 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/SingleMu/crab3_analysis_smuB.py
+DEBUG 2020-07-05 15:39:58.617 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:39:58.622 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:39:58.622 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_smuB_v1_2' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:39:58.622 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_smuB_v1_2' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:39:58.625 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-05 15:39:59.020 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:39:59.020 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:39:59.035 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:39:59.035 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:39:59.035 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:39:59.036 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/SingleMu/crab3_analysis_smuC.py
+DEBUG 2020-07-05 15:39:59.036 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:39:59.043 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:39:59.043 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_smuC_v1_2' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:39:59.043 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_smuC_v1_2' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:39:59.045 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-05 15:39:59.375 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:39:59.375 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:39:59.389 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:39:59.389 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:39:59.390 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:39:59.390 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/SingleMu/crab3_analysis_smuD.py
+DEBUG 2020-07-05 15:39:59.391 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:39:59.394 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:39:59.394 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_smuD_v1_2' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:39:59.394 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_smuD_v1_2' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:39:59.397 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-05 15:39:59.761 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:39:59.762 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:39:59.779 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:39:59.779 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:39:59.780 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:39:59.781 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/SingleMu/crab3_analysis_smuE.py
+DEBUG 2020-07-05 15:39:59.781 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:39:59.785 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:39:59.786 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_smuE_v1_2' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:39:59.786 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_smuE_v1_2' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:39:59.788 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-05 15:40:00.141 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:40:00.141 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:40:00.156 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:40:00.156 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:40:00.156 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:40:00.157 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/SingleMu/crab3_analysis_smuF.py
+DEBUG 2020-07-05 15:40:00.157 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:40:00.163 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:40:00.163 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_smuF_v1_2' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:40:00.163 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_smuF_v1_2' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:40:00.165 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-05 15:40:00.512 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:40:00.512 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:40:00.526 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:40:00.527 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:40:00.527 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:40:00.528 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/SingleEle/crab3_analysis_seleB.py
+DEBUG 2020-07-05 15:40:00.528 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:40:00.532 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:40:00.532 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_seleB_v1_2' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:40:00.532 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_seleB_v1_2' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:40:00.535 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-05 15:40:00.903 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:40:00.903 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:40:00.946 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:40:00.946 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:40:00.947 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:40:00.948 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/SingleEle/crab3_analysis_seleC.py
+DEBUG 2020-07-05 15:40:00.948 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:40:00.952 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:40:00.952 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_seleC_v1_2' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:40:00.952 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_seleC_v1_2' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:40:00.955 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-05 15:40:01.351 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:40:01.351 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:40:01.370 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:40:01.370 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:40:01.370 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:40:01.371 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/SingleEle/crab3_analysis_seleD.py
+DEBUG 2020-07-05 15:40:01.371 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:40:01.375 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:40:01.376 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_seleD_v1_2' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:40:01.376 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_seleD_v1_2' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:40:01.379 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-05 15:40:01.949 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:40:01.949 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:40:01.964 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:40:01.964 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:40:01.965 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:40:01.965 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/SingleEle/crab3_analysis_seleE.py
+DEBUG 2020-07-05 15:40:01.965 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:40:01.970 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:40:01.971 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_seleE_v1_2' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:40:01.971 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_seleE_v1_2' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:40:01.973 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-05 15:40:02.306 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-07-05 15:40:02.306 UTC: 	 Running on: Linux lxplus732.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-05 15:40:02.320 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-05 15:40:02.321 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-05 15:40:02.321 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-07-05 15:40:02.322 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/SingleEle/crab3_analysis_seleF.py
+DEBUG 2020-07-05 15:40:02.322 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-07-05 15:40:02.325 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-07-05 15:40:02.325 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_seleF_v1_2' already exists 
+Please change the requestName in the config file
+ERROR 2020-07-05 15:40:02.325 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/ClientUtilities.py", line 407, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_fullrun2_2017_seleF_v1_2' already exists 
+Please change the requestName in the config file
+INFO 2020-07-05 15:40:02.328 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-07-11 04:03:00.048 UTC: 	 CRAB Client version: v3.200531
+DEBUG 2020-07-11 04:03:00.048 UTC: 	 Running on: Linux lxplus782.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-07-11 04:03:00.070 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-07-11 04:03:00.070 UTC: 	 Executing command: 'submit'
+DEBUG 2020-07-11 04:03:00.071 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-07-11 04:03:00.097 UTC: 	 CRAB configuration file CrabJobsSrc/MC/crab3_analysisTT. not found.
+ERROR 2020-07-11 04:03:00.097 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/lib/CRABClient/Commands/SubCommand.py", line 319, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file CrabJobsSrc/MC/crab3_analysisTT. not found.
+INFO 2020-07-11 04:03:00.133 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-12 01:58:11.723 UTC: 	 CRAB Client version: v3.200719
+DEBUG 2020-08-12 01:58:11.723 UTC: 	 Running on: Linux lxplus7106.cern.ch 3.10.0-1127.13.1.el7.x86_64 #1 SMP Tue Jun 23 15:46:38 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-12 01:58:11.739 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-08-12 01:58:11.739 UTC: 	 Executing command: 'status'
+DEBUG 2020-08-12 01:58:11.740 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-12 01:58:11.763 UTC: 	 Error: crab_fullrun2_2017_version5_loose_DY_v2 is not a valid CRAB project directory.
+ERROR 2020-08-12 01:58:11.763 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200719.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200719.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200719.00/lib/CRABClient/Commands/status.py", line 41, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200719.00/lib/CRABClient/Commands/SubCommand.py", line 278, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200719.00/lib/CRABClient/Commands/SubCommand.py", line 631, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_fullrun2_2017_version5_loose_DY_v2 is not a valid CRAB project directory.
+INFO 2020-08-12 01:58:11.797 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/17/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
