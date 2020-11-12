@@ -23,5 +23,5 @@ config.Data.publication = False
 config.Data.outputDatasetTag = 'fullrun2_2017_version5_smuB_v1'
 
 config.section_("Site")
-config.Site.storageSite = 'T2_CH_CERNBOX'
-#config.Site.storageSite = 'T2_CN_Beijing'
+config.Site.storageSite = 'T3_CH_CERNBOX'
+#config.Site.storageSite = 'T3_CH_CERNBOX'

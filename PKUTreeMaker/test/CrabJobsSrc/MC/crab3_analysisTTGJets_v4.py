@@ -22,4 +22,4 @@ config.Data.publication = False
 config.Data.outputDatasetTag = 'fullrun2_2017_version5_TTGJ_v4'
 
 config.section_("Site")
-config.Site.storageSite = 'T2_CN_Beijing'
+config.Site.storageSite = 'T3_CH_CERNBOX'

@@ -22,4 +22,4 @@ config.Data.publication = False
 config.Data.outputDatasetTag = 'fullrun2_2017_version5_WGJets_v1_2'
 
 config.section_("Site")
-config.Site.storageSite = 'T2_CN_Beijing'
+config.Site.storageSite = 'T3_CH_CERNBOX'

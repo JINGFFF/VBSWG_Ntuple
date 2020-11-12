@@ -339,7 +339,7 @@ process.source.fileNames = [
 #"/store/mc/RunIISummer16MiniAODv3/WGToLNuG_01J_5f_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/MINIAODSIM/PUMoriond17_102X_mc2017_realistic_v8-v1/70000/FADCF3F9-6247-E911-A86D-EC0D9A80980A.root"
 ]
 
-process.maxEvents.input =-1  #-1
+process.maxEvents.input = 1000  #-1
 process.load("FWCore.MessageLogger.MessageLogger_cfi")
 process.MessageLogger.cerr.FwkReport.reportEvery = 10
 process.MessageLogger.cerr.FwkReport.limit = 99999999

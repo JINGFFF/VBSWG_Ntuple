@@ -22,4 +22,4 @@ config.Data.publication = False
 config.Data.outputDatasetTag = 'LNuAJJ_Interference'
 
 config.section_("Site")
-config.Site.storageSite = 'T2_CN_Beijing'
+config.Site.storageSite = 'T3_CH_CERNBOX'
