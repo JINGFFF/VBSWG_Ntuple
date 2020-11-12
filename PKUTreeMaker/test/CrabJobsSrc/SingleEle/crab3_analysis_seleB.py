@@ -1,7 +1,7 @@
 from WMCore.Configuration import Configuration
 config = Configuration()
 config.section_("General")
-config.General.requestName   = 'full_run2_2018_version2_seleB_v1'
+config.General.requestName   = 'full_run2_2018_loose_version2_seleB_v1'
 config.General.transferLogs = True
 
 config.section_("JobType")
@@ -20,7 +20,7 @@ config.Data.splitting = 'LumiBased'
 config.Data.unitsPerJob = 40
 config.Data.lumiMask = 'Cert_314472-325175_13TeV_PromptReco_Collisions18_JSON.txt'
 config.Data.publication = False
-config.Data.outputDatasetTag = 'full_run2_2018_version2_seleB_v1'
+config.Data.outputDatasetTag = 'full_run2_2018_loose_version2_seleB_v1'
 
 config.section_("Site")
 config.Site.storageSite = 'T3_CH_CERNBOX'
