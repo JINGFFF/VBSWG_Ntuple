@@ -1,80 +1,1318 @@
-DEBUG 2020-07-06 01:23:28.131 UTC: 	 CRAB Client version: 3.3.2005
-DEBUG 2020-07-06 01:23:28.131 UTC: 	 Running on: Linux lxplus775.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
-DEBUG 2020-07-06 01:23:28.145 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
-DEBUG 2020-07-06 01:23:28.145 UTC: 	 Executing command: 'status'
-DEBUG 2020-07-06 01:23:28.145 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
-ERROR 2020-07-06 01:23:28.146 UTC: 	 Error: crab_full_run2_2018_WG1Jets_version1 is not a valid CRAB project directory.
-ERROR 2020-07-06 01:23:28.146 UTC: 	 Caught ClientException exception
+DEBUG 2020-04-25 04:24:54.081 UTC: 	 Running on: Linux lxplus7129.cern.ch 3.10.0-1062.18.1.el7.x86_64 #1 SMP Tue Mar 17 23:49:17 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-04-25 04:24:54.092 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-04-25 04:24:54.092 UTC: 	 Executing command: 'submit'
+DEBUG 2020-04-25 04:24:54.092 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+DEBUG 2020-04-25 04:24:54.098 UTC: 	 Checking credentials
+DEBUG 2020-04-25 04:24:54.098 UTC: 	 Found proxy file /tmp/x509up_u118063
+DEBUG 2020-04-25 04:24:54.098 UTC: 	 Getting proxy life time left
+DEBUG 2020-04-25 04:24:54.602 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u118063 -timeleft
+ output : 85998
+
+ error: 
+ retcode : 0
+DEBUG 2020-04-25 04:24:55.207 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u118063 -actimeleft
+ output : 85997
+
+ error: 
+ retcode : 0
+DEBUG 2020-04-25 04:24:55.208 UTC: 	 Proxy lifetime 85998 secs is different from voms extension lifetime 85997 secs for proxy: /tmp/x509up_u118063
+DEBUG 2020-04-25 04:24:55.208 UTC: 	 Proxy valid for 23:53:17 hours
+INFO 2020-04-25 04:24:55.209 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/SingleMu/crab3_analysis_smuB_v1.py
+DEBUG 2020-04-25 04:24:55.209 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-04-25 04:24:55.210 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-04-25 04:24:55.211 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_full_run2_smuB_v1' already exists 
+Please change the requestName in the config file
+ERROR 2020-04-25 04:24:55.211 UTC: 	 Caught exception
 Traceback (most recent call last):
-  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 160, in <module>
     client()
-  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 145, in __call__
     self.cmd = sub_cmd(self.logger, args[1:])
-  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/status.py", line 41, in __init__
-    SubCommand.__init__(self, logger, cmdargs)
-  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 278, in __init__
-    SubCommand.validateOptions(self)
-  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 619, in validateOptions
-    raise ConfigurationException(msg)
-ConfigurationException: [91mError[0m: crab_full_run2_2018_WG1Jets_version1 is not a valid CRAB project directory.
-INFO 2020-07-06 01:23:28.149 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/18/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
-DEBUG 2020-07-06 01:23:28.434 UTC: 	 CRAB Client version: 3.3.2005
-DEBUG 2020-07-06 01:23:28.434 UTC: 	 Running on: Linux lxplus775.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
-DEBUG 2020-07-06 01:23:28.447 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
-DEBUG 2020-07-06 01:23:28.447 UTC: 	 Executing command: 'status'
-DEBUG 2020-07-06 01:23:28.447 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
-ERROR 2020-07-06 01:23:28.448 UTC: 	 Error: crab_full_run2_2018_WG2Jets_version1 is not a valid CRAB project directory.
-ERROR 2020-07-06 01:23:28.448 UTC: 	 Caught ClientException exception
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 324, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 418, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_full_run2_smuB_v1' already exists 
+Please change the requestName in the config file
+DEBUG 2020-04-25 04:24:55.449 UTC: 	 Running on: Linux lxplus7129.cern.ch 3.10.0-1062.18.1.el7.x86_64 #1 SMP Tue Mar 17 23:49:17 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-04-25 04:24:55.460 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-04-25 04:24:55.461 UTC: 	 Executing command: 'submit'
+DEBUG 2020-04-25 04:24:55.461 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+DEBUG 2020-04-25 04:24:55.466 UTC: 	 Checking credentials
+DEBUG 2020-04-25 04:24:55.466 UTC: 	 Found proxy file /tmp/x509up_u118063
+DEBUG 2020-04-25 04:24:55.467 UTC: 	 Getting proxy life time left
+DEBUG 2020-04-25 04:24:55.970 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u118063 -timeleft
+ output : 85997
+
+ error: 
+ retcode : 0
+DEBUG 2020-04-25 04:24:56.475 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u118063 -actimeleft
+ output : 85996
+
+ error: 
+ retcode : 0
+DEBUG 2020-04-25 04:24:56.475 UTC: 	 Proxy lifetime 85997 secs is different from voms extension lifetime 85996 secs for proxy: /tmp/x509up_u118063
+DEBUG 2020-04-25 04:24:56.475 UTC: 	 Proxy valid for 23:53:16 hours
+INFO 2020-04-25 04:24:56.475 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/SingleMu/crab3_analysis_smuB_v2.py
+DEBUG 2020-04-25 04:24:56.475 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-04-25 04:24:56.476 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-04-25 04:24:56.476 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_full_run2_smuB_v2' already exists 
+Please change the requestName in the config file
+ERROR 2020-04-25 04:24:56.476 UTC: 	 Caught exception
 Traceback (most recent call last):
-  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 160, in <module>
     client()
-  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 145, in __call__
     self.cmd = sub_cmd(self.logger, args[1:])
-  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/status.py", line 41, in __init__
-    SubCommand.__init__(self, logger, cmdargs)
-  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 278, in __init__
-    SubCommand.validateOptions(self)
-  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 619, in validateOptions
-    raise ConfigurationException(msg)
-ConfigurationException: [91mError[0m: crab_full_run2_2018_WG2Jets_version1 is not a valid CRAB project directory.
-INFO 2020-07-06 01:23:28.450 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/18/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
-DEBUG 2020-07-06 13:28:26.850 UTC: 	 CRAB Client version: 3.3.2005
-DEBUG 2020-07-06 13:28:26.851 UTC: 	 Running on: Linux lxplus701.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
-DEBUG 2020-07-06 13:28:26.864 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
-DEBUG 2020-07-06 13:28:26.864 UTC: 	 Executing command: 'status'
-DEBUG 2020-07-06 13:28:26.864 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
-ERROR 2020-07-06 13:28:26.865 UTC: 	 Error: crab_full_run2_2018_WG1Jets_version1 is not a valid CRAB project directory.
-ERROR 2020-07-06 13:28:26.865 UTC: 	 Caught ClientException exception
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 324, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 418, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_full_run2_smuB_v2' already exists 
+Please change the requestName in the config file
+DEBUG 2020-04-25 04:24:56.684 UTC: 	 Running on: Linux lxplus7129.cern.ch 3.10.0-1062.18.1.el7.x86_64 #1 SMP Tue Mar 17 23:49:17 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-04-25 04:24:56.695 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-04-25 04:24:56.696 UTC: 	 Executing command: 'submit'
+DEBUG 2020-04-25 04:24:56.696 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+DEBUG 2020-04-25 04:24:56.701 UTC: 	 Checking credentials
+DEBUG 2020-04-25 04:24:56.701 UTC: 	 Found proxy file /tmp/x509up_u118063
+DEBUG 2020-04-25 04:24:56.701 UTC: 	 Getting proxy life time left
+DEBUG 2020-04-25 04:24:57.205 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u118063 -timeleft
+ output : 85995
+
+ error: 
+ retcode : 0
+DEBUG 2020-04-25 04:24:57.712 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u118063 -actimeleft
+ output : 85995
+
+ error: 
+ retcode : 0
+DEBUG 2020-04-25 04:24:57.712 UTC: 	 Proxy valid for 23:53:15 hours
+INFO 2020-04-25 04:24:57.712 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/SingleMu/crab3_analysis_smuC_v1.py
+DEBUG 2020-04-25 04:24:57.712 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-04-25 04:24:57.713 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-04-25 04:24:57.714 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_full_run2_smuC_v1' already exists 
+Please change the requestName in the config file
+ERROR 2020-04-25 04:24:57.714 UTC: 	 Caught exception
 Traceback (most recent call last):
-  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 160, in <module>
     client()
-  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 145, in __call__
     self.cmd = sub_cmd(self.logger, args[1:])
-  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/status.py", line 41, in __init__
-    SubCommand.__init__(self, logger, cmdargs)
-  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 278, in __init__
-    SubCommand.validateOptions(self)
-  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 619, in validateOptions
-    raise ConfigurationException(msg)
-ConfigurationException: [91mError[0m: crab_full_run2_2018_WG1Jets_version1 is not a valid CRAB project directory.
-INFO 2020-07-06 13:28:26.869 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/18/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
-DEBUG 2020-07-06 13:28:27.220 UTC: 	 CRAB Client version: 3.3.2005
-DEBUG 2020-07-06 13:28:27.221 UTC: 	 Running on: Linux lxplus701.cern.ch 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
-DEBUG 2020-07-06 13:28:27.237 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
-DEBUG 2020-07-06 13:28:27.237 UTC: 	 Executing command: 'status'
-DEBUG 2020-07-06 13:28:27.237 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
-ERROR 2020-07-06 13:28:27.238 UTC: 	 Error: crab_full_run2_2018_WG2Jets_version1 is not a valid CRAB project directory.
-ERROR 2020-07-06 13:28:27.238 UTC: 	 Caught ClientException exception
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 324, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 418, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_full_run2_smuC_v1' already exists 
+Please change the requestName in the config file
+DEBUG 2020-04-25 04:24:57.942 UTC: 	 Running on: Linux lxplus7129.cern.ch 3.10.0-1062.18.1.el7.x86_64 #1 SMP Tue Mar 17 23:49:17 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-04-25 04:24:57.953 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-04-25 04:24:57.953 UTC: 	 Executing command: 'submit'
+DEBUG 2020-04-25 04:24:57.953 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+DEBUG 2020-04-25 04:24:57.959 UTC: 	 Checking credentials
+DEBUG 2020-04-25 04:24:57.959 UTC: 	 Found proxy file /tmp/x509up_u118063
+DEBUG 2020-04-25 04:24:57.959 UTC: 	 Getting proxy life time left
+DEBUG 2020-04-25 04:24:58.563 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u118063 -timeleft
+ output : 85994
+
+ error: 
+ retcode : 0
+DEBUG 2020-04-25 04:24:59.068 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u118063 -actimeleft
+ output : 85993
+
+ error: 
+ retcode : 0
+DEBUG 2020-04-25 04:24:59.068 UTC: 	 Proxy lifetime 85994 secs is different from voms extension lifetime 85993 secs for proxy: /tmp/x509up_u118063
+DEBUG 2020-04-25 04:24:59.068 UTC: 	 Proxy valid for 23:53:13 hours
+INFO 2020-04-25 04:24:59.069 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/SingleMu/crab3_analysis_smuD_v1.py
+DEBUG 2020-04-25 04:24:59.069 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-04-25 04:24:59.070 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-04-25 04:24:59.070 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_full_run2_smuD_v1' already exists 
+Please change the requestName in the config file
+ERROR 2020-04-25 04:24:59.070 UTC: 	 Caught exception
 Traceback (most recent call last):
-  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 165, in <module>
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 160, in <module>
     client()
-  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/bin/crab", line 150, in __call__
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 145, in __call__
     self.cmd = sub_cmd(self.logger, args[1:])
-  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/status.py", line 41, in __init__
-    SubCommand.__init__(self, logger, cmdargs)
-  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 278, in __init__
-    SubCommand.validateOptions(self)
-  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.2005.01/lib/CRABClient/Commands/SubCommand.py", line 619, in validateOptions
-    raise ConfigurationException(msg)
-ConfigurationException: [91mError[0m: crab_full_run2_2018_WG2Jets_version1 is not a valid CRAB project directory.
-INFO 2020-07-06 13:28:27.240 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/18/tight/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 324, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 418, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_full_run2_smuD_v1' already exists 
+Please change the requestName in the config file
+DEBUG 2020-04-25 04:49:19.545 UTC: 	 Running on: Linux lxplus7129.cern.ch 3.10.0-1062.18.1.el7.x86_64 #1 SMP Tue Mar 17 23:49:17 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-04-25 04:49:19.556 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-04-25 04:49:19.556 UTC: 	 Executing command: 'submit'
+DEBUG 2020-04-25 04:49:19.556 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+DEBUG 2020-04-25 04:49:19.561 UTC: 	 Checking credentials
+DEBUG 2020-04-25 04:49:19.562 UTC: 	 Found proxy file /tmp/x509up_u118063
+DEBUG 2020-04-25 04:49:19.562 UTC: 	 Getting proxy life time left
+DEBUG 2020-04-25 04:49:20.065 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u118063 -timeleft
+ output : 84532
+
+ error: 
+ retcode : 0
+DEBUG 2020-04-25 04:49:20.569 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u118063 -actimeleft
+ output : 84532
+
+ error: 
+ retcode : 0
+DEBUG 2020-04-25 04:49:20.570 UTC: 	 Proxy valid for 23:28:52 hours
+INFO 2020-04-25 04:49:20.570 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisTTGJets_v1.py
+DEBUG 2020-04-25 04:49:20.570 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-04-25 04:49:20.571 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-04-25 04:49:20.571 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_full_run2_TTGJets_v1' already exists 
+Please change the requestName in the config file
+ERROR 2020-04-25 04:49:20.571 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 324, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 418, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_full_run2_TTGJets_v1' already exists 
+Please change the requestName in the config file
+DEBUG 2020-04-25 04:49:20.780 UTC: 	 Running on: Linux lxplus7129.cern.ch 3.10.0-1062.18.1.el7.x86_64 #1 SMP Tue Mar 17 23:49:17 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-04-25 04:49:20.790 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-04-25 04:49:20.791 UTC: 	 Executing command: 'submit'
+DEBUG 2020-04-25 04:49:20.791 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+DEBUG 2020-04-25 04:49:20.796 UTC: 	 Checking credentials
+DEBUG 2020-04-25 04:49:20.796 UTC: 	 Found proxy file /tmp/x509up_u118063
+DEBUG 2020-04-25 04:49:20.796 UTC: 	 Getting proxy life time left
+DEBUG 2020-04-25 04:49:21.300 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u118063 -timeleft
+ output : 84531
+
+ error: 
+ retcode : 0
+DEBUG 2020-04-25 04:49:21.804 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u118063 -actimeleft
+ output : 84531
+
+ error: 
+ retcode : 0
+DEBUG 2020-04-25 04:49:21.804 UTC: 	 Proxy valid for 23:28:51 hours
+INFO 2020-04-25 04:49:21.804 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisTT_v1.py
+DEBUG 2020-04-25 04:49:21.805 UTC: 	 Loading CRAB configuration file.
+ERROR 2020-04-25 04:49:21.806 UTC: 	 Error while loading CRAB configuration:
+EOL while scanning string literal (crab3_analysisTT_v1.py, line 15)
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2020-04-25 04:49:21.806 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 320, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 88, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Error while loading CRAB configuration:
+EOL while scanning string literal (crab3_analysisTT_v1.py, line 15)
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2020-04-25 04:49:22.017 UTC: 	 Running on: Linux lxplus7129.cern.ch 3.10.0-1062.18.1.el7.x86_64 #1 SMP Tue Mar 17 23:49:17 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-04-25 04:49:22.028 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-04-25 04:49:22.028 UTC: 	 Executing command: 'submit'
+DEBUG 2020-04-25 04:49:22.029 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+DEBUG 2020-04-25 04:49:22.034 UTC: 	 Checking credentials
+DEBUG 2020-04-25 04:49:22.034 UTC: 	 Found proxy file /tmp/x509up_u118063
+DEBUG 2020-04-25 04:49:22.034 UTC: 	 Getting proxy life time left
+DEBUG 2020-04-25 04:49:22.537 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u118063 -timeleft
+ output : 84530
+
+ error: 
+ retcode : 0
+DEBUG 2020-04-25 04:49:23.042 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u118063 -actimeleft
+ output : 84530
+
+ error: 
+ retcode : 0
+DEBUG 2020-04-25 04:49:23.042 UTC: 	 Proxy valid for 23:28:50 hours
+INFO 2020-04-25 04:49:23.042 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisTT_v1.py
+DEBUG 2020-04-25 04:49:23.042 UTC: 	 Loading CRAB configuration file.
+ERROR 2020-04-25 04:49:23.043 UTC: 	 Error while loading CRAB configuration:
+EOL while scanning string literal (crab3_analysisTT_v1.py, line 15)
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2020-04-25 04:49:23.044 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 320, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 88, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Error while loading CRAB configuration:
+EOL while scanning string literal (crab3_analysisTT_v1.py, line 15)
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2020-04-25 05:28:27.120 UTC: 	 Running on: Linux lxplus7129.cern.ch 3.10.0-1062.18.1.el7.x86_64 #1 SMP Tue Mar 17 23:49:17 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-04-25 05:28:27.131 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-04-25 05:28:27.131 UTC: 	 Executing command: 'submit'
+DEBUG 2020-04-25 05:28:27.132 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+DEBUG 2020-04-25 05:28:27.137 UTC: 	 Checking credentials
+DEBUG 2020-04-25 05:28:27.137 UTC: 	 Found proxy file /tmp/x509up_u118063
+DEBUG 2020-04-25 05:28:27.137 UTC: 	 Getting proxy life time left
+DEBUG 2020-04-25 05:28:27.640 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u118063 -timeleft
+ output : 82185
+
+ error: 
+ retcode : 0
+DEBUG 2020-04-25 05:28:28.145 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u118063 -actimeleft
+ output : 82184
+
+ error: 
+ retcode : 0
+DEBUG 2020-04-25 05:28:28.145 UTC: 	 Proxy lifetime 82185 secs is different from voms extension lifetime 82184 secs for proxy: /tmp/x509up_u118063
+DEBUG 2020-04-25 05:28:28.145 UTC: 	 Proxy valid for 22:49:44 hours
+INFO 2020-04-25 05:28:28.146 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisTTGJets_v1.py
+DEBUG 2020-04-25 05:28:28.146 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-04-25 05:28:28.147 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-04-25 05:28:28.147 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_full_run2_TTGJets_v1' already exists 
+Please change the requestName in the config file
+ERROR 2020-04-25 05:28:28.147 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 324, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 418, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_full_run2_TTGJets_v1' already exists 
+Please change the requestName in the config file
+DEBUG 2020-04-25 05:28:28.357 UTC: 	 Running on: Linux lxplus7129.cern.ch 3.10.0-1062.18.1.el7.x86_64 #1 SMP Tue Mar 17 23:49:17 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-04-25 05:28:28.367 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-04-25 05:28:28.368 UTC: 	 Executing command: 'submit'
+DEBUG 2020-04-25 05:28:28.368 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+DEBUG 2020-04-25 05:28:28.373 UTC: 	 Checking credentials
+DEBUG 2020-04-25 05:28:28.373 UTC: 	 Found proxy file /tmp/x509up_u118063
+DEBUG 2020-04-25 05:28:28.373 UTC: 	 Getting proxy life time left
+DEBUG 2020-04-25 05:28:28.877 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u118063 -timeleft
+ output : 82184
+
+ error: 
+ retcode : 0
+DEBUG 2020-04-25 05:28:29.381 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u118063 -actimeleft
+ output : 82183
+
+ error: 
+ retcode : 0
+DEBUG 2020-04-25 05:28:29.382 UTC: 	 Proxy lifetime 82184 secs is different from voms extension lifetime 82183 secs for proxy: /tmp/x509up_u118063
+DEBUG 2020-04-25 05:28:29.382 UTC: 	 Proxy valid for 22:49:43 hours
+INFO 2020-04-25 05:28:29.382 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisTT_v1.py
+DEBUG 2020-04-25 05:28:29.382 UTC: 	 Loading CRAB configuration file.
+ERROR 2020-04-25 05:28:29.384 UTC: 	 Error while loading CRAB configuration:
+EOL while scanning string literal (crab3_analysisTT_v1.py, line 15)
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2020-04-25 05:28:29.384 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 320, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 88, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Error while loading CRAB configuration:
+EOL while scanning string literal (crab3_analysisTT_v1.py, line 15)
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2020-04-25 05:28:29.600 UTC: 	 Running on: Linux lxplus7129.cern.ch 3.10.0-1062.18.1.el7.x86_64 #1 SMP Tue Mar 17 23:49:17 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-04-25 05:28:29.611 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-04-25 05:28:29.612 UTC: 	 Executing command: 'submit'
+DEBUG 2020-04-25 05:28:29.612 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+DEBUG 2020-04-25 05:28:29.617 UTC: 	 Checking credentials
+DEBUG 2020-04-25 05:28:29.617 UTC: 	 Found proxy file /tmp/x509up_u118063
+DEBUG 2020-04-25 05:28:29.617 UTC: 	 Getting proxy life time left
+DEBUG 2020-04-25 05:28:30.221 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u118063 -timeleft
+ output : 82182
+
+ error: 
+ retcode : 0
+DEBUG 2020-04-25 05:28:30.726 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u118063 -actimeleft
+ output : 82182
+
+ error: 
+ retcode : 0
+DEBUG 2020-04-25 05:28:30.726 UTC: 	 Proxy valid for 22:49:42 hours
+INFO 2020-04-25 05:28:30.726 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisTT_v1.py
+DEBUG 2020-04-25 05:28:30.726 UTC: 	 Loading CRAB configuration file.
+ERROR 2020-04-25 05:28:30.727 UTC: 	 Error while loading CRAB configuration:
+EOL while scanning string literal (crab3_analysisTT_v1.py, line 15)
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2020-04-25 05:28:30.728 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 320, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 88, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Error while loading CRAB configuration:
+EOL while scanning string literal (crab3_analysisTT_v1.py, line 15)
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2020-05-04 13:47:26.649 UTC: 	 Running on: Linux lxplus7128.cern.ch 3.10.0-1062.18.1.el7.x86_64 #1 SMP Tue Mar 17 23:49:17 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-05-04 13:47:26.662 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-05-04 13:47:26.663 UTC: 	 Executing command: 'submit'
+DEBUG 2020-05-04 13:47:26.663 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+DEBUG 2020-05-04 13:47:26.670 UTC: 	 Checking credentials
+DEBUG 2020-05-04 13:47:26.670 UTC: 	 Found proxy file /tmp/x509up_u118063
+DEBUG 2020-05-04 13:47:26.670 UTC: 	 Getting proxy life time left
+DEBUG 2020-05-04 13:47:27.274 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u118063 -timeleft
+ output : 690599
+
+ error: 
+ retcode : 0
+DEBUG 2020-05-04 13:47:27.879 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u118063 -actimeleft
+ output : 690599
+
+ error: 
+ retcode : 0
+DEBUG 2020-05-04 13:47:27.880 UTC: 	 Proxy valid for 191:49:59 hours
+INFO 2020-05-04 13:47:27.880 UTC: 	 Will use CRAB configuration file CrabJobsSrc/MC/crab3_analysisWGToLNuG_v2.py
+DEBUG 2020-05-04 13:47:27.880 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-05-04 13:47:27.883 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-05-04 13:47:27.883 UTC: 	 Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_full_run2_WGToLNuG_v2' already exists 
+Please change the requestName in the config file
+ERROR 2020-05-04 13:47:27.883 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 324, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 418, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab_full_run2_WGToLNuG_v2' already exists 
+Please change the requestName in the config file
+DEBUG 2020-05-31 13:59:43.816 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-05-31 13:59:43.816 UTC: 	 Running on: Linux lxplus786.cern.ch 3.10.0-1127.el7.x86_64 #1 SMP Tue Mar 31 23:36:51 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-05-31 13:59:43.831 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-05-31 13:59:43.832 UTC: 	 Executing command: 'submit'
+DEBUG 2020-05-31 13:59:43.832 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-05-31 13:59:43.862 UTC: 	 CRAB configuration file ./CrabJobsSrc/SingleMu/crab3_analysis_seleB_v1.py not found.
+ERROR 2020-05-31 13:59:43.863 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/lib/CRABClient/Commands/SubCommand.py", line 319, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/SingleMu/crab3_analysis_seleB_v1.py not found.
+INFO 2020-05-31 13:59:43.881 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-05-31 13:59:44.253 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-05-31 13:59:44.253 UTC: 	 Running on: Linux lxplus786.cern.ch 3.10.0-1127.el7.x86_64 #1 SMP Tue Mar 31 23:36:51 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-05-31 13:59:44.266 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-05-31 13:59:44.266 UTC: 	 Executing command: 'submit'
+DEBUG 2020-05-31 13:59:44.266 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-05-31 13:59:44.267 UTC: 	 CRAB configuration file ./CrabJobsSrc/SingleMu/crab3_analysis_seleB_v2.py not found.
+ERROR 2020-05-31 13:59:44.267 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/lib/CRABClient/Commands/SubCommand.py", line 319, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/SingleMu/crab3_analysis_seleB_v2.py not found.
+INFO 2020-05-31 13:59:44.269 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-05-31 13:59:44.588 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-05-31 13:59:44.588 UTC: 	 Running on: Linux lxplus786.cern.ch 3.10.0-1127.el7.x86_64 #1 SMP Tue Mar 31 23:36:51 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-05-31 13:59:44.602 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-05-31 13:59:44.602 UTC: 	 Executing command: 'submit'
+DEBUG 2020-05-31 13:59:44.602 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-05-31 13:59:44.603 UTC: 	 CRAB configuration file ./CrabJobsSrc/SingleMu/crab3_analysis_seleC_v1.py not found.
+ERROR 2020-05-31 13:59:44.603 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/lib/CRABClient/Commands/SubCommand.py", line 319, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/SingleMu/crab3_analysis_seleC_v1.py not found.
+INFO 2020-05-31 13:59:44.605 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-05-31 13:59:44.928 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-05-31 13:59:44.929 UTC: 	 Running on: Linux lxplus786.cern.ch 3.10.0-1127.el7.x86_64 #1 SMP Tue Mar 31 23:36:51 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-05-31 13:59:44.943 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-05-31 13:59:44.943 UTC: 	 Executing command: 'submit'
+DEBUG 2020-05-31 13:59:44.944 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-05-31 13:59:44.945 UTC: 	 CRAB configuration file ./CrabJobsSrc/SingleMu/crab3_analysis_seleD_v1.py not found.
+ERROR 2020-05-31 13:59:44.945 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/lib/CRABClient/Commands/SubCommand.py", line 319, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/SingleMu/crab3_analysis_seleD_v1.py not found.
+INFO 2020-05-31 13:59:44.947 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-05-31 13:59:45.272 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-05-31 13:59:45.273 UTC: 	 Running on: Linux lxplus786.cern.ch 3.10.0-1127.el7.x86_64 #1 SMP Tue Mar 31 23:36:51 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-05-31 13:59:45.287 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-05-31 13:59:45.287 UTC: 	 Executing command: 'submit'
+DEBUG 2020-05-31 13:59:45.287 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-05-31 13:59:45.288 UTC: 	 CRAB configuration file ./CrabJobsSrc/SingleMu/crab3_analysis_seleE_v1.py not found.
+ERROR 2020-05-31 13:59:45.288 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/lib/CRABClient/Commands/SubCommand.py", line 319, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/SingleMu/crab3_analysis_seleE_v1.py not found.
+INFO 2020-05-31 13:59:45.290 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-05-31 13:59:45.615 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-05-31 13:59:45.615 UTC: 	 Running on: Linux lxplus786.cern.ch 3.10.0-1127.el7.x86_64 #1 SMP Tue Mar 31 23:36:51 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-05-31 13:59:45.629 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-05-31 13:59:45.629 UTC: 	 Executing command: 'submit'
+DEBUG 2020-05-31 13:59:45.630 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-05-31 13:59:45.630 UTC: 	 CRAB configuration file ./CrabJobsSrc/SingleMu/crab3_analysis_seleF_v1.py not found.
+ERROR 2020-05-31 13:59:45.631 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/lib/CRABClient/Commands/SubCommand.py", line 319, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/SingleMu/crab3_analysis_seleF_v1.py not found.
+INFO 2020-05-31 13:59:45.632 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-05-31 13:59:45.961 UTC: 	 CRAB Client version: 3.3.2005
+DEBUG 2020-05-31 13:59:45.961 UTC: 	 Running on: Linux lxplus786.cern.ch 3.10.0-1127.el7.x86_64 #1 SMP Tue Mar 31 23:36:51 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-05-31 13:59:45.975 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-05-31 13:59:45.975 UTC: 	 Executing command: 'submit'
+DEBUG 2020-05-31 13:59:45.975 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-05-31 13:59:45.976 UTC: 	 CRAB configuration file ./CrabJobsSrc/SingleMu/crab3_analysis_seleG_v1.py not found.
+ERROR 2020-05-31 13:59:45.976 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/lib/CRABClient/Commands/SubCommand.py", line 319, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/3.3.2005-bcolbf2/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/SingleMu/crab3_analysis_seleG_v1.py not found.
+INFO 2020-05-31 13:59:45.978 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-25 09:35:42.336 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-25 09:35:42.336 UTC: 	 Running on: Linux lxplus7110.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-25 09:35:42.336 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-25 09:35:42.338 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-25 09:35:42.364 UTC: 	 CRAB configuration file ./CrabJobsSrc/MC/3_analysisDY_v1.py not found.
+ERROR 2020-08-25 09:35:42.364 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/MC/3_analysisDY_v1.py not found.
+INFO 2020-08-25 09:35:42.399 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-25 09:35:42.741 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-25 09:35:42.742 UTC: 	 Running on: Linux lxplus7110.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-25 09:35:42.742 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-25 09:35:42.742 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-25 09:35:42.743 UTC: 	 CRAB configuration file ./CrabJobsSrc/MC/3_analysisDY_v2.py not found.
+ERROR 2020-08-25 09:35:42.743 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/MC/3_analysisDY_v2.py not found.
+INFO 2020-08-25 09:35:42.745 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-25 09:35:43.067 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-25 09:35:43.067 UTC: 	 Running on: Linux lxplus7110.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-25 09:35:43.067 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-25 09:35:43.067 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-25 09:35:43.068 UTC: 	 CRAB configuration file ./CrabJobsSrc/MC/3_analysisLNuAJJ_EWK_v1.py not found.
+ERROR 2020-08-25 09:35:43.068 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/MC/3_analysisLNuAJJ_EWK_v1.py not found.
+INFO 2020-08-25 09:35:43.070 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-25 09:35:43.396 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-25 09:35:43.396 UTC: 	 Running on: Linux lxplus7110.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-25 09:35:43.396 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-25 09:35:43.396 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-25 09:35:43.397 UTC: 	 CRAB configuration file ./CrabJobsSrc/MC/3_analysisLNuAJJ_EWK_v2.py not found.
+ERROR 2020-08-25 09:35:43.397 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/MC/3_analysisLNuAJJ_EWK_v2.py not found.
+INFO 2020-08-25 09:35:43.399 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-25 09:35:43.710 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-25 09:35:43.710 UTC: 	 Running on: Linux lxplus7110.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-25 09:35:43.710 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-25 09:35:43.711 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-25 09:35:43.711 UTC: 	 CRAB configuration file ./CrabJobsSrc/MC/3_analysisST_s.py not found.
+ERROR 2020-08-25 09:35:43.711 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/MC/3_analysisST_s.py not found.
+INFO 2020-08-25 09:35:43.713 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-25 09:35:44.017 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-25 09:35:44.017 UTC: 	 Running on: Linux lxplus7110.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-25 09:35:44.017 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-25 09:35:44.018 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-25 09:35:44.018 UTC: 	 CRAB configuration file ./CrabJobsSrc/MC/3_analysisST_t.py not found.
+ERROR 2020-08-25 09:35:44.018 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/MC/3_analysisST_t.py not found.
+INFO 2020-08-25 09:35:44.020 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-25 09:35:44.324 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-25 09:35:44.324 UTC: 	 Running on: Linux lxplus7110.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-25 09:35:44.324 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-25 09:35:44.324 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-25 09:35:44.325 UTC: 	 CRAB configuration file ./CrabJobsSrc/MC/3_analysisST_tW_antitop.py not found.
+ERROR 2020-08-25 09:35:44.325 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/MC/3_analysisST_tW_antitop.py not found.
+INFO 2020-08-25 09:35:44.327 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-25 09:35:44.643 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-25 09:35:44.644 UTC: 	 Running on: Linux lxplus7110.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-25 09:35:44.644 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-25 09:35:44.644 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-25 09:35:44.644 UTC: 	 CRAB configuration file ./CrabJobsSrc/MC/3_analysisST_tW_top.py not found.
+ERROR 2020-08-25 09:35:44.645 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/MC/3_analysisST_tW_top.py not found.
+INFO 2020-08-25 09:35:44.646 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-25 09:35:44.947 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-25 09:35:44.948 UTC: 	 Running on: Linux lxplus7110.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-25 09:35:44.948 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-25 09:35:44.948 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-25 09:35:44.949 UTC: 	 CRAB configuration file ./CrabJobsSrc/MC/3_analysisST_tbar.py not found.
+ERROR 2020-08-25 09:35:44.949 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/MC/3_analysisST_tbar.py not found.
+INFO 2020-08-25 09:35:44.950 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-25 09:35:45.260 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-25 09:35:45.261 UTC: 	 Running on: Linux lxplus7110.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-25 09:35:45.261 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-25 09:35:45.261 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-25 09:35:45.261 UTC: 	 CRAB configuration file ./CrabJobsSrc/MC/3_analysisTTGJets_v1.py not found.
+ERROR 2020-08-25 09:35:45.262 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/MC/3_analysisTTGJets_v1.py not found.
+INFO 2020-08-25 09:35:45.263 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-25 09:35:45.577 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-25 09:35:45.578 UTC: 	 Running on: Linux lxplus7110.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-25 09:35:45.578 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-25 09:35:45.578 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-25 09:35:45.579 UTC: 	 CRAB configuration file ./CrabJobsSrc/MC/3_analysisTTGJets_v2.py not found.
+ERROR 2020-08-25 09:35:45.579 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/MC/3_analysisTTGJets_v2.py not found.
+INFO 2020-08-25 09:35:45.580 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-25 09:35:45.918 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-25 09:35:45.918 UTC: 	 Running on: Linux lxplus7110.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-25 09:35:45.918 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-25 09:35:45.918 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-25 09:35:45.919 UTC: 	 CRAB configuration file ./CrabJobsSrc/MC/3_analysisTT_v1.py not found.
+ERROR 2020-08-25 09:35:45.919 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/MC/3_analysisTT_v1.py not found.
+INFO 2020-08-25 09:35:45.921 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-25 09:35:46.265 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-25 09:35:46.266 UTC: 	 Running on: Linux lxplus7110.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-25 09:35:46.266 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-25 09:35:46.266 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-25 09:35:46.267 UTC: 	 CRAB configuration file ./CrabJobsSrc/MC/3_analysisTT_v2.py not found.
+ERROR 2020-08-25 09:35:46.267 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/MC/3_analysisTT_v2.py not found.
+INFO 2020-08-25 09:35:46.270 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-25 09:35:46.613 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-25 09:35:46.613 UTC: 	 Running on: Linux lxplus7110.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-25 09:35:46.613 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-25 09:35:46.613 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-25 09:35:46.614 UTC: 	 CRAB configuration file ./CrabJobsSrc/MC/3_analysisWGToLNuG.py not found.
+ERROR 2020-08-25 09:35:46.614 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/MC/3_analysisWGToLNuG.py not found.
+INFO 2020-08-25 09:35:46.616 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-25 09:35:46.923 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-25 09:35:46.924 UTC: 	 Running on: Linux lxplus7110.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-25 09:35:46.924 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-25 09:35:46.924 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-25 09:35:46.924 UTC: 	 CRAB configuration file ./CrabJobsSrc/MC/3_analysisWGToLNuG_v2.py not found.
+ERROR 2020-08-25 09:35:46.925 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/MC/3_analysisWGToLNuG_v2.py not found.
+INFO 2020-08-25 09:35:46.926 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-25 09:35:47.232 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-25 09:35:47.232 UTC: 	 Running on: Linux lxplus7110.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-25 09:35:47.233 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-25 09:35:47.233 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-25 09:35:47.233 UTC: 	 CRAB configuration file ./CrabJobsSrc/MC/3_analysisWJets_v1.py not found.
+ERROR 2020-08-25 09:35:47.233 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/MC/3_analysisWJets_v1.py not found.
+INFO 2020-08-25 09:35:47.235 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-25 09:35:47.557 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-25 09:35:47.557 UTC: 	 Running on: Linux lxplus7110.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-25 09:35:47.557 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-25 09:35:47.558 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-25 09:35:47.558 UTC: 	 CRAB configuration file ./CrabJobsSrc/MC/3_analysisWJets_v2.py not found.
+ERROR 2020-08-25 09:35:47.558 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/MC/3_analysisWJets_v2.py not found.
+INFO 2020-08-25 09:35:47.560 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-25 09:35:47.873 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-25 09:35:47.873 UTC: 	 Running on: Linux lxplus7110.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-25 09:35:47.873 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-25 09:35:47.873 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-25 09:35:47.874 UTC: 	 CRAB configuration file ./CrabJobsSrc/MC/3_analysisWW_v1.py not found.
+ERROR 2020-08-25 09:35:47.874 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/MC/3_analysisWW_v1.py not found.
+INFO 2020-08-25 09:35:47.876 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-25 09:35:48.201 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-25 09:35:48.201 UTC: 	 Running on: Linux lxplus7110.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-25 09:35:48.201 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-25 09:35:48.202 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-25 09:35:48.202 UTC: 	 CRAB configuration file ./CrabJobsSrc/MC/3_analysisWW_v2.py not found.
+ERROR 2020-08-25 09:35:48.202 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/MC/3_analysisWW_v2.py not found.
+INFO 2020-08-25 09:35:48.204 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-25 09:35:48.553 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-25 09:35:48.553 UTC: 	 Running on: Linux lxplus7110.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-25 09:35:48.553 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-25 09:35:48.554 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-25 09:35:48.554 UTC: 	 CRAB configuration file ./CrabJobsSrc/MC/3_analysisWZ_v1.py not found.
+ERROR 2020-08-25 09:35:48.554 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/MC/3_analysisWZ_v1.py not found.
+INFO 2020-08-25 09:35:48.560 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-25 09:35:48.878 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-25 09:35:48.878 UTC: 	 Running on: Linux lxplus7110.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-25 09:35:48.878 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-25 09:35:48.879 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-25 09:35:48.879 UTC: 	 CRAB configuration file ./CrabJobsSrc/MC/3_analysisWZ_v2.py not found.
+ERROR 2020-08-25 09:35:48.879 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/MC/3_analysisWZ_v2.py not found.
+INFO 2020-08-25 09:35:48.881 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-25 09:35:49.191 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-25 09:35:49.191 UTC: 	 Running on: Linux lxplus7110.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-25 09:35:49.191 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-25 09:35:49.192 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-25 09:35:49.192 UTC: 	 CRAB configuration file ./CrabJobsSrc/MC/3_analysisZA.py not found.
+ERROR 2020-08-25 09:35:49.192 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/MC/3_analysisZA.py not found.
+INFO 2020-08-25 09:35:49.194 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-25 09:35:49.507 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-25 09:35:49.507 UTC: 	 Running on: Linux lxplus7110.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-25 09:35:49.507 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-25 09:35:49.507 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-25 09:35:49.508 UTC: 	 CRAB configuration file ./CrabJobsSrc/MC/3_analysisZZ_v1.py not found.
+ERROR 2020-08-25 09:35:49.508 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/MC/3_analysisZZ_v1.py not found.
+INFO 2020-08-25 09:35:49.510 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-25 09:35:49.829 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-25 09:35:49.829 UTC: 	 Running on: Linux lxplus7110.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-25 09:35:49.829 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-25 09:35:49.830 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-25 09:35:49.830 UTC: 	 CRAB configuration file ./CrabJobsSrc/MC/3_analysisZZ_v2.py not found.
+ERROR 2020-08-25 09:35:49.830 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/MC/3_analysisZZ_v2.py not found.
+INFO 2020-08-25 09:35:49.832 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-25 09:37:19.544 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-25 09:37:19.545 UTC: 	 Running on: Linux lxplus7110.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-25 09:37:19.545 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-25 09:37:19.545 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-25 09:37:19.545 UTC: 	 CRAB configuration file ./CrabJobsSrc/SinglEle/crab3_analysis_seleB_v1.py not found.
+ERROR 2020-08-25 09:37:19.546 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/SinglEle/crab3_analysis_seleB_v1.py not found.
+INFO 2020-08-25 09:37:19.547 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-25 09:37:19.867 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-25 09:37:19.867 UTC: 	 Running on: Linux lxplus7110.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-25 09:37:19.867 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-25 09:37:19.867 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-25 09:37:19.868 UTC: 	 CRAB configuration file ./CrabJobsSrc/SinglEle/crab3_analysis_seleB_v2.py not found.
+ERROR 2020-08-25 09:37:19.868 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/SinglEle/crab3_analysis_seleB_v2.py not found.
+INFO 2020-08-25 09:37:19.870 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-25 09:37:20.192 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-25 09:37:20.192 UTC: 	 Running on: Linux lxplus7110.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-25 09:37:20.192 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-25 09:37:20.192 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-25 09:37:20.193 UTC: 	 CRAB configuration file ./CrabJobsSrc/SinglEle/crab3_analysis_seleC_v1.py not found.
+ERROR 2020-08-25 09:37:20.193 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/SinglEle/crab3_analysis_seleC_v1.py not found.
+INFO 2020-08-25 09:37:20.194 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-25 09:37:20.521 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-25 09:37:20.522 UTC: 	 Running on: Linux lxplus7110.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-25 09:37:20.522 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-25 09:37:20.522 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-25 09:37:20.523 UTC: 	 CRAB configuration file ./CrabJobsSrc/SinglEle/crab3_analysis_seleD_v1.py not found.
+ERROR 2020-08-25 09:37:20.523 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/SinglEle/crab3_analysis_seleD_v1.py not found.
+INFO 2020-08-25 09:37:20.525 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-25 09:37:20.842 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-25 09:37:20.842 UTC: 	 Running on: Linux lxplus7110.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-25 09:37:20.842 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-25 09:37:20.842 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-25 09:37:20.843 UTC: 	 CRAB configuration file ./CrabJobsSrc/SinglEle/crab3_analysis_seleE_v1.py not found.
+ERROR 2020-08-25 09:37:20.843 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/SinglEle/crab3_analysis_seleE_v1.py not found.
+INFO 2020-08-25 09:37:20.844 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-25 09:37:21.145 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-25 09:37:21.145 UTC: 	 Running on: Linux lxplus7110.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-25 09:37:21.145 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-25 09:37:21.145 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-25 09:37:21.146 UTC: 	 CRAB configuration file ./CrabJobsSrc/SinglEle/crab3_analysis_seleF_v1.py not found.
+ERROR 2020-08-25 09:37:21.146 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/SinglEle/crab3_analysis_seleF_v1.py not found.
+INFO 2020-08-25 09:37:21.148 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-25 09:37:21.456 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-25 09:37:21.456 UTC: 	 Running on: Linux lxplus7110.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-25 09:37:21.456 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-25 09:37:21.457 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-25 09:37:21.457 UTC: 	 CRAB configuration file ./CrabJobsSrc/SinglEle/crab3_analysis_seleG_v1.py not found.
+ERROR 2020-08-25 09:37:21.457 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/SinglEle/crab3_analysis_seleG_v1.py not found.
+INFO 2020-08-25 09:37:21.459 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-25 09:37:21.771 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-25 09:37:21.771 UTC: 	 Running on: Linux lxplus7110.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-25 09:37:21.771 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-25 09:37:21.772 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+ERROR 2020-08-25 09:37:21.772 UTC: 	 CRAB configuration file ./CrabJobsSrc/SinglEle/crab3_analysis_seleH_v1.py not found.
+ERROR 2020-08-25 09:37:21.772 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 50, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file ./CrabJobsSrc/SinglEle/crab3_analysis_seleH_v1.py not found.
+INFO 2020-08-25 09:37:21.774 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-26 14:16:14.881 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-26 14:16:14.882 UTC: 	 Running on: Linux lxplus706.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-26 14:16:14.882 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-26 14:16:14.882 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-08-26 14:16:14.883 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisTT_v1.py
+DEBUG 2020-08-26 14:16:14.883 UTC: 	 Loading CRAB configuration file.
+ERROR 2020-08-26 14:16:14.900 UTC: 	 Error while loading CRAB configuration:
+EOL while scanning string literal (crab3_analysisTT_v1.py, line 17)
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2020-08-26 14:16:14.900 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 88, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Error while loading CRAB configuration:
+EOL while scanning string literal (crab3_analysisTT_v1.py, line 17)
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2020-08-26 14:16:15.118 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-26 14:16:15.491 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-26 14:16:15.492 UTC: 	 Running on: Linux lxplus706.cern.ch 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-26 14:16:15.492 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-26 14:16:15.492 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-08-26 14:16:15.493 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisTT_v2.py
+DEBUG 2020-08-26 14:16:15.493 UTC: 	 Loading CRAB configuration file.
+ERROR 2020-08-26 14:16:15.496 UTC: 	 Error while loading CRAB configuration:
+EOL while scanning string literal (crab3_analysisTT_v2.py, line 17)
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2020-08-26 14:16:15.496 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 88, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Error while loading CRAB configuration:
+EOL while scanning string literal (crab3_analysisTT_v2.py, line 17)
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2020-08-26 14:16:15.498 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-29 14:23:56.056 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-29 14:23:56.056 UTC: 	 Running on: Linux lxplus759.cern.ch 3.10.0-1127.13.1.el7.x86_64 #1 SMP Tue Jun 23 15:46:38 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-29 14:23:56.056 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-29 14:23:56.056 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-08-29 14:23:56.057 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisTT_v1.py
+DEBUG 2020-08-29 14:23:56.057 UTC: 	 Loading CRAB configuration file.
+ERROR 2020-08-29 14:23:56.058 UTC: 	 Error while loading CRAB configuration:
+EOL while scanning string literal (crab3_analysisTT_v1.py, line 17)
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2020-08-29 14:23:56.059 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 88, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Error while loading CRAB configuration:
+EOL while scanning string literal (crab3_analysisTT_v1.py, line 17)
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2020-08-29 14:23:56.087 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-08-29 14:23:56.464 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-08-29 14:23:56.465 UTC: 	 Running on: Linux lxplus759.cern.ch 3.10.0-1127.13.1.el7.x86_64 #1 SMP Tue Jun 23 15:46:38 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-08-29 14:23:56.465 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-29 14:23:56.465 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-08-29 14:23:56.466 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisTT_v2.py
+DEBUG 2020-08-29 14:23:56.466 UTC: 	 Loading CRAB configuration file.
+ERROR 2020-08-29 14:23:56.467 UTC: 	 Error while loading CRAB configuration:
+EOL while scanning string literal (crab3_analysisTT_v2.py, line 17)
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2020-08-29 14:23:56.467 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 88, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Error while loading CRAB configuration:
+EOL while scanning string literal (crab3_analysisTT_v2.py, line 17)
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2020-08-29 14:23:56.469 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log

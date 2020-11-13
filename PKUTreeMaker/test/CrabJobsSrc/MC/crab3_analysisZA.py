@@ -1,11 +1,13 @@
 from WMCore.Configuration import Configuration
 config = Configuration()
 config.section_("General")
-config.General.requestName   = 'ZA'
+config.General.requestName   = 'full_run2_2016_version7_ZA'
 config.General.transferLogs = True
 
 config.section_("JobType")
 config.JobType.pluginName  = 'Analysis'
+config.JobType.maxMemoryMB = 3000
+
 config.JobType.inputFiles = ['Summer16_07Aug2017_V11_MC_L1FastJet_AK4PFchs.txt','Summer16_07Aug2017_V11_MC_L2Relative_AK4PFchs.txt','Summer16_07Aug2017_V11_MC_L3Absolute_AK4PFchs.txt','Summer16_07Aug2017_V11_MC_L1FastJet_AK4PFPuppi.txt','Summer16_07Aug2017_V11_MC_L2Relative_AK4PFPuppi.txt','Summer16_07Aug2017_V11_MC_L3Absolute_AK4PFPuppi.txt']
 config.JobType.psetName    = 'analysis_mc.py'
 config.JobType.allowUndistributedCMSSW = True
@@ -18,7 +20,7 @@ config.Data.splitting = 'FileBased'
 config.Data.unitsPerJob = 2
 config.Data.totalUnits = -1
 config.Data.publication = False
-config.Data.outputDatasetTag = 'ZA'
+config.Data.outputDatasetTag = 'full_run2_2016_version7_ZA'
 
 config.section_("Site")
 config.Site.storageSite = 'T3_CH_CERNBOX'
