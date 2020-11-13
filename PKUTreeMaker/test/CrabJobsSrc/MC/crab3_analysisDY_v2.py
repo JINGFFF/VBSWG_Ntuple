@@ -1,7 +1,7 @@
 from WMCore.Configuration import Configuration
 config = Configuration()
 config.section_("General")
-config.General.requestName   = 'full_run2_2016_version7_DY_2'
+config.General.requestName   = 'full_run2_2016_loose_version7_DY_2'
 config.General.transferLogs = True
 
 config.section_("JobType")
@@ -20,7 +20,7 @@ config.Data.splitting = 'FileBased'
 config.Data.unitsPerJob = 2
 config.Data.totalUnits = -1
 config.Data.publication = False
-config.Data.outputDatasetTag = 'full_run2_2016_version7_DY_2'
+config.Data.outputDatasetTag = 'full_run2_2016_loose_version7_DY_2'
 
 config.section_("Site")
 config.Site.storageSite = 'T3_CH_CERNBOX'
