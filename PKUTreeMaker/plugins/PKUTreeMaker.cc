@@ -574,6 +574,37 @@ PKUTreeMaker::PKUTreeMaker(const edm::ParameterSet& iConfig)  //:
     outTree2_->Branch("HLT_Mu2", &HLT_Mu2, "HLT_Mu2/I");
     outTree2_->Branch("HLT_Mu3", &HLT_Mu3, "HLT_Mu3/I");
 
+    outTree2_->Branch("npT", &npT, "npT/D");
+    outTree2_->Branch("lep", &lep, "lep/I");
+    outTree2_->Branch("ngoodmus", &ngoodmus, "ngoodmus/I");
+    outTree2_->Branch("ngoodeles", &ngoodeles, "ngoodeles/I");
+    outTree2_->Branch("nlooseeles", &nlooseeles, "nlooseeles/I");
+    outTree2_->Branch("nloosemus", &nloosemus, "nloosemus/I");
+    outTree2_->Branch("Mjj", &Mjj, "Mjj/D");
+    outTree2_->Branch("Mjj_new", &Mjj_new, "Mjj_new/D");
+    outTree2_->Branch("j1metPhi", &j1metPhi, "j1metPhi/D");
+    outTree2_->Branch("j1metPhi_new", &j1metPhi_new, "j1metPhi_new/D");
+    outTree2_->Branch("METraw_et", &METraw_et, "METraw_et/D");
+    outTree2_->Branch("METraw_phi", &METraw_phi, "METraw_phi/D");
+    outTree2_->Branch("METraw_sumEt", &METraw_sumEt, "METraw_sumEt/D");
+    outTree2_->Branch("genMET", &genMET, "genMET/D");
+    outTree2_->Branch("MET_et", &MET_et, "MET_et/D");
+    outTree2_->Branch("MET_phi", &MET_phi, "MET_phi/D");
+
+    outTree2_->Branch("MET_phi_new", &MET_phi_new, "MET_phi_new/D");
+    outTree2_->Branch("lumiWeight", &lumiWeight, "lumiWeight/D");
+    outTree2_->Branch("pileupWeight", &pileupWeight, "pileupWeight/D");
+    outTree2_->Branch("ptVlep", &ptVlep, "ptVlep/D");
+    outTree2_->Branch("ptVlepJEC", &ptVlepJEC, "ptVlepJEC/D");
+    outTree2_->Branch("yVlepJEC", &yVlepJEC, "yVlepJEC/D");
+    outTree2_->Branch("phiVlepJEC", &phiVlepJEC, "phiVlepJEC/D");
+    outTree2_->Branch("massVlepJEC", &massVlepJEC, "massVlepJEC/D");
+    outTree2_->Branch("mtVlepJECnew", &mtVlepJECnew, "mtVlepJECnew/D");
+    outTree2_->Branch("ptVlepJEC_new", &ptVlepJEC_new, "ptVlepJEC_new/D");
+    outTree2_->Branch("yVlepJEC_new", &yVlepJEC_new, "yVlepJEC_new/D");
+    outTree2_->Branch("phiVlepJEC_new", &phiVlepJEC_new, "phiVlepJEC_new/D");
+    outTree2_->Branch("massVlepJEC_new", &massVlepJEC_new, "massVlepJEC_new/D");
+
 
     /// Basic event quantities
     outTree_ = fs->make<TTree>("PKUCandidates", "PKU Candidates");
