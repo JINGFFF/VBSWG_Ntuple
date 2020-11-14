@@ -1,14 +1,14 @@
 # muon
-crab submit -c ./CrabJobsSrc/SingleMu/crab3_analysis_smuA.py
+#crab submit -c ./CrabJobsSrc/SingleMu/crab3_analysis_smuA.py
 crab submit -c ./CrabJobsSrc/SingleMu/crab3_analysis_smuB.py
 crab submit -c ./CrabJobsSrc/SingleMu/crab3_analysis_smuC.py
 crab submit -c ./CrabJobsSrc/SingleMu/crab3_analysis_smuD.py
 
 # electron
-crab submit -c ./CrabJobsSrc/SingleEle/crab3_analysis_seleA.py
-crab submit -c ./CrabJobsSrc/SingleEle/crab3_analysis_seleB.py
-crab submit -c ./CrabJobsSrc/SingleEle/crab3_analysis_seleC.py
-crab submit -c ./CrabJobsSrc/SingleEle/crab3_analysis_seleD.py
+#crab submit -c ./CrabJobsSrc/SingleEle/crab3_analysis_seleA.py
+#crab submit -c ./CrabJobsSrc/SingleEle/crab3_analysis_seleB.py
+#crab submit -c ./CrabJobsSrc/SingleEle/crab3_analysis_seleC.py
+#crab submit -c ./CrabJobsSrc/SingleEle/crab3_analysis_seleD.py
 
 # mc
 #crab submit -c ./CrabJobsSrc/mc/crab3_analysisDY.py

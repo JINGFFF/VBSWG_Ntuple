@@ -1,4 +1,4 @@
-crab status -d crab_full_run2_2018_DY_version1
+crab status -d crab_full_run2_2018_DY_version5
 crab status -d crab_full_run2_2018_ST_s_version1
 crab status -d crab_full_run2_2018_ST_tW_version1
 crab status -d crab_full_run2_2018_ST_t_version1
@@ -8,8 +8,8 @@ crab status -d crab_full_run2_2018_TTG_version1
 crab status -d crab_full_run2_2018_W0Jets_version1
 crab status -d crab_full_run2_2018_W1Jets_version1
 crab status -d crab_full_run2_2018_W2Jets_version1
-crab status -d crab_full_run2_2018_WGJJ_version1
-crab status -d crab_full_run2_2018_WGJets_version1
+crab status -d crab_full_run2_2018_WGJJ_version8
+crab status -d crab_full_run2_2018_WGJets_PDF_Weight_version6
 crab status -d crab_full_run2_2018_WW_version1
 crab status -d crab_full_run2_2018_WZ_version1
 crab status -d crab_full_run2_2018_ZG_version1
