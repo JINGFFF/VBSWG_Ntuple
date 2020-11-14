@@ -5,7 +5,7 @@ config.General.requestName   = 'full_run2_2018_loose_W2Jets_version1'
 config.General.transferLogs = True
 
 config.section_("JobType")
-config.JobType.maxMemoryMB = 3000
+config.JobType.maxMemoryMB = 4000
 config.JobType.pluginName  = 'Analysis'
 config.JobType.inputFiles = ['Autumn18_V19_MC_L1FastJet_AK4PFchs.txt','Autumn18_V19_MC_L1FastJet_AK4PFPuppi.txt','Autumn18_V19_MC_L2L3Residual_AK4PFchs.txt','Autumn18_V19_MC_L2L3Residual_AK4PFPuppi.txt','Autumn18_V19_MC_L2Relative_AK4PFchs.txt','Autumn18_V19_MC_L2Relative_AK4PFPuppi.txt','Autumn18_V19_MC_L3Absolute_AK4PFchs.txt','Autumn18_V19_MC_L3Absolute_AK4PFPuppi.txt']
 config.JobType.psetName    = 'analysis_mc.py'

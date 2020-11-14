@@ -17,7 +17,7 @@ config.section_("Data")
 config.Data.inputDataset = '/EGamma/Run2018D-PromptReco-v2/MINIAOD'
 config.Data.inputDBS = 'global'
 config.Data.splitting = 'LumiBased'
-config.Data.unitsPerJob = 40
+config.Data.unitsPerJob = 30
 config.Data.lumiMask = 'Cert_314472-325175_13TeV_PromptReco_Collisions18_JSON.txt'
 config.Data.publication = False
 config.Data.outputDatasetTag = 'full_run2_2018_loose_version2_seleD_v1'
