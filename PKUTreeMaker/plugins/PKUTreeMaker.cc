@@ -3439,7 +3439,8 @@ if(ak4jets->size()>=1){
 
     if(!((/*HLT_Mu3 == 1 &&*/abs(lep) == 13 &&ngoodmus == 1 &&ngoodeles == 0 && (nloosemus + nlooseeles) == 1 /*&& ptlep1>30.*/ &&fabs(etalep1)<2.4)||(/*HLT_Ele2 == 1 &&*/abs(lep) == 11 &&ngoodmus == 0 &&ngoodeles == 1 && (nloosemus + nlooseeles) == 1 /*&& ptlep1 > 30.*/ && fabs(etalep1)<2.5))){return;}
 
-     if(mtVlepJECnew_new < 20. &&MET_et <30. &&((jet1pt_orig > 20 && drj1l_orig > 0.3) || (jet2pt_orig > 20 && drj2l_orig > 0.3))){
+     //if(mtVlepJECnew_new < 20. &&MET_et <30. &&((jet1pt_orig > 20 && drj1l_orig > 0.3) || (jet2pt_orig > 20 && drj2l_orig > 0.3))){
+     if(((mtVlepJECnew_new < 20. &&MET_et_new <30.) || (mtVlepJECnew < 20. &&MET_et <30.)) &&((jet1pt_orig > 20 && drj1l_orig > 0.3) || (jet2pt_orig > 20 && drj2l_orig > 0.3))){
          outTree2_->Fill();
      }
 
