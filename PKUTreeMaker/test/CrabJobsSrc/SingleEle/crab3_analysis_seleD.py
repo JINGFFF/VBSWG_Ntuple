@@ -5,7 +5,7 @@ config.General.requestName   = 'full_run2_2018_version2_seleD_v1'
 config.General.transferLogs = True
 
 config.section_("JobType")
-config.JobType.maxMemoryMB = 4000
+config.JobType.maxMemoryMB = 5000
 config.JobType.pluginName  = 'Analysis'
 config.JobType.inputFiles =['Autumn18_RunD_V19_DATA_L1FastJet_AK4PFchs.txt','Autumn18_RunD_V19_DATA_L1FastJet_AK4PFPuppi.txt','Autumn18_RunD_V19_DATA_L2L3Residual_AK4PFchs.txt','Autumn18_RunD_V19_DATA_L2L3Residual_AK4PFPuppi.txt','Autumn18_RunD_V19_DATA_L2Relative_AK4PFchs.txt','Autumn18_RunD_V19_DATA_L2Relative_AK4PFPuppi.txt','Autumn18_RunD_V19_DATA_L3Absolute_AK4PFchs.txt','Autumn18_RunD_V19_DATA_L3Absolute_AK4PFPuppi.txt']
 

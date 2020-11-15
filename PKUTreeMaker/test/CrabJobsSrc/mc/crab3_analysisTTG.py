@@ -16,7 +16,7 @@ config.section_("Data")
 config.Data.inputDataset = '/TTGJets_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8/RunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15-v1/MINIAODSIM'
 config.Data.inputDBS = 'global'
 config.Data.splitting = 'FileBased'
-config.Data.unitsPerJob = 2
+config.Data.unitsPerJob = 1
 config.Data.totalUnits = -1
 config.Data.publication = False
 config.Data.outputDatasetTag = 'full_run2_2018_TTG_version1'

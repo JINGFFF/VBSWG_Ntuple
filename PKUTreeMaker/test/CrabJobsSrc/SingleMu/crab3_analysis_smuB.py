@@ -5,7 +5,7 @@ config.General.requestName   = 'full_run2_2018_version2_smuB_v1'
 config.General.transferLogs = True
 
 config.section_("JobType")
-config.JobType.maxMemoryMB = 4000
+config.JobType.maxMemoryMB = 5000
 config.JobType.pluginName  = 'Analysis'
 config.JobType.inputFiles =['Autumn18_RunB_V19_DATA_L1FastJet_AK4PFchs.txt','Autumn18_RunB_V19_DATA_L1FastJet_AK4PFPuppi.txt','Autumn18_RunB_V19_DATA_L2L3Residual_AK4PFchs.txt','Autumn18_RunB_V19_DATA_L2L3Residual_AK4PFPuppi.txt','Autumn18_RunB_V19_DATA_L2Relative_AK4PFchs.txt','Autumn18_RunB_V19_DATA_L2Relative_AK4PFPuppi.txt','Autumn18_RunB_V19_DATA_L3Absolute_AK4PFchs.txt','Autumn18_RunB_V19_DATA_L3Absolute_AK4PFPuppi.txt']
 
@@ -16,8 +16,8 @@ config.section_("Data")
 #config.Data.outputPrimaryDataset = 'VBS_WGAMMA_94X'
 config.Data.inputDataset = '/SingleMuon/Run2018B-17Sep2018-v1/MINIAOD'
 config.Data.inputDBS = 'global'
-config.Data.splitting = 'LumiBased'
-config.Data.unitsPerJob = 10
+config.Data.splitting = 'EventAwareLumiBased'
+config.Data.unitsPerJob = 40000
 config.Data.lumiMask = 'Cert_314472-325175_13TeV_PromptReco_Collisions18_JSON.txt'
 config.Data.publication = False
 config.Data.outputDatasetTag = 'full_run2_2018_version2_smuB_v1'
