@@ -6,7 +6,7 @@ config.General.transferLogs = True
 
 config.section_("JobType")
 config.JobType.pluginName  = 'Analysis'
-config.JobType.maxMemoryMB = 3000
+config.JobType.maxMemoryMB = 5000
 
 config.JobType.inputFiles = ['Summer16_07Aug2017_V11_MC_L1FastJet_AK4PFchs.txt','Summer16_07Aug2017_V11_MC_L2Relative_AK4PFchs.txt','Summer16_07Aug2017_V11_MC_L3Absolute_AK4PFchs.txt','Summer16_07Aug2017_V11_MC_L1FastJet_AK4PFPuppi.txt','Summer16_07Aug2017_V11_MC_L2Relative_AK4PFPuppi.txt','Summer16_07Aug2017_V11_MC_L3Absolute_AK4PFPuppi.txt']
 config.JobType.psetName    = 'analysis_mc.py'
