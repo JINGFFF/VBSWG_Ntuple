@@ -1316,3 +1316,61 @@ Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors
 See the ./crab.log file for more details.
 The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
 INFO 2020-08-29 14:23:56.469 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/fullRun2VBSWA/16/t/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-11-19 12:25:05.949 UTC: 	 CRAB Client version: v3.201110
+DEBUG 2020-11-19 12:25:05.949 UTC: 	 Running on: Linux lxplus705.cern.ch 3.10.0-1127.19.1.el7.x86_64 #1 SMP Tue Aug 25 17:23:54 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-11-19 12:25:05.949 UTC: 	 Executing command: 'submit'
+DEBUG 2020-11-19 12:25:05.950 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-11-19 12:25:05.951 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisTT_v1.py
+DEBUG 2020-11-19 12:25:05.951 UTC: 	 Loading CRAB configuration file.
+ERROR 2020-11-19 12:25:05.955 UTC: 	 Error while loading CRAB configuration:
+EOL while scanning string literal (crab3_analysisTT_v1.py, line 17)
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2020-11-19 12:25:05.955 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/lib/CRABClient/Commands/SubCommand.py", line 312, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/lib/CRABClient/Commands/SubCommand.py", line 90, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Error while loading CRAB configuration:
+EOL while scanning string literal (crab3_analysisTT_v1.py, line 17)
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2020-11-19 12:25:06.097 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/Run2VBSWG/16_loose/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
+DEBUG 2020-11-19 12:25:06.445 UTC: 	 CRAB Client version: v3.201110
+DEBUG 2020-11-19 12:25:06.445 UTC: 	 Running on: Linux lxplus705.cern.ch 3.10.0-1127.19.1.el7.x86_64 #1 SMP Tue Aug 25 17:23:54 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-11-19 12:25:06.445 UTC: 	 Executing command: 'submit'
+DEBUG 2020-11-19 12:25:06.445 UTC: 	 Found CRAB cache file /afs/cern.ch/user/j/jipeng/.crab3
+INFO 2020-11-19 12:25:06.446 UTC: 	 Will use CRAB configuration file ./CrabJobsSrc/MC/crab3_analysisTT_v2.py
+DEBUG 2020-11-19 12:25:06.446 UTC: 	 Loading CRAB configuration file.
+ERROR 2020-11-19 12:25:06.450 UTC: 	 Error while loading CRAB configuration:
+EOL while scanning string literal (crab3_analysisTT_v2.py, line 17)
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2020-11-19 12:25:06.450 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/lib/CRABClient/Commands/SubCommand.py", line 312, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/lib/CRABClient/Commands/SubCommand.py", line 90, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Error while loading CRAB configuration:
+EOL while scanning string literal (crab3_analysisTT_v2.py, line 17)
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2020-11-19 12:25:06.452 UTC: 	 Log file is /afs/cern.ch/work/j/jipeng/Run2VBSWG/16_loose/CMSSW_10_2_18/src/VAJets/PKUTreeMaker/test/crab.log
