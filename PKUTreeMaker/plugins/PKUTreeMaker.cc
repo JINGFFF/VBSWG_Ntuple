@@ -157,7 +157,7 @@ private:
     // ----------member data ---------------------------
     TTree* outTree_;
     TTree* outTree1_;
-    TTree* outTree2_;
+    //TTree* outTree2_;
 
     double hasphoton;
     double MW_;
@@ -509,90 +509,6 @@ PKUTreeMaker::PKUTreeMaker(const edm::ParameterSet& iConfig)  //:
 
     outTree1_ = fs->make<TTree>("tree1", "tree1");
     outTree1_->Branch("theWeight", &theWeight, "theWeight/D");
-
-    outTree2_ = fs->make<TTree>("tree2", "tree2");
-    outTree2_->Branch("theWeight", &theWeight, "theWeight/D");
-    outTree2_->Branch("hasphoton", &hasphoton, "hasphoton/D");
-
-    outTree2_->Branch("jet1hf_orig",&jet1hf_orig,"jet1hf_orig/I");
-    outTree2_->Branch("jet1pf_orig",&jet1pf_orig,"jet1pf_orig/I");
-    outTree2_->Branch("jet2hf_orig",&jet2hf_orig,"jet2hf_orig/I");
-    outTree2_->Branch("jet2pf_orig",&jet2pf_orig,"jet2pf_orig/I");
-
-    outTree2_->Branch("jet1pt_orig",&jet1pt_orig,"jet1pt_orig/D");
-    outTree2_->Branch("jet1phi_orig",&jet1phi_orig,"jet1phi_orig/D");
-    outTree2_->Branch("jet1eta_orig",&jet1eta_orig,"jet1eta_orig/D");
-    outTree2_->Branch("jet1e_orig",&jet1e_orig,"jet1e_orig/D");
-    outTree2_->Branch("jet1csv_orig",&jet1csv_orig,"jet1csv_orig/D");
-    outTree2_->Branch("jet1deepcsv_probb_orig",&jet1deepcsv_probb_orig,"jet1deepcsv_probb_orig/D");
-    outTree2_->Branch("jet1deepcsv_probbb_orig",&jet1deepcsv_probbb_orig,"jet1deepcsv_probbb_orig/D");
-    outTree2_->Branch("jet1deepcsv_probc_orig",&jet1deepcsv_probc_orig,"jet1deepcsv_probc_orig/D");
-    outTree2_->Branch("jet1deepcsv_probcc_orig",&jet1deepcsv_probcc_orig,"jet1deepcsv_probcc_orig/D");
-
-    outTree2_->Branch("jet1icsv_orig",&jet1icsv_orig,"jet1icsv_orig/D");
-    outTree2_->Branch("drj1a_orig",&drj1a_orig,"drj1a_orig/D");
-    outTree2_->Branch("drj1l_orig",&drj1l_orig,"drj1l_orig/D");
-
-    outTree2_->Branch("jet2pt_orig",&jet2pt_orig,"jet2pt_orig/D");
-    outTree2_->Branch("jet2phi_orig",&jet2phi_orig,"jet2phi_orig/D");
-    outTree2_->Branch("jet2eta_orig",&jet2eta_orig,"jet2eta_orig/D");
-    outTree2_->Branch("jet2e_orig",&jet2e_orig,"jet2e_orig/D");
-    outTree2_->Branch("jet2csv_orig",&jet2csv_orig,"jet2csv_orig/D");
-    outTree2_->Branch("jet2deepcsv_probb_orig",&jet2deepcsv_probb_orig,"jet2deepcsv_probb_orig/D");
-    outTree2_->Branch("jet2deepcsv_probbb_orig",&jet2deepcsv_probbb_orig,"jet2deepcsv_probbb_orig/D");
-    outTree2_->Branch("jet2deepcsv_probc_orig",&jet2deepcsv_probc_orig,"jet2deepcsv_probc_orig/D");
-    outTree2_->Branch("jet2deepcsv_probcc_orig",&jet2deepcsv_probcc_orig,"jet2deepcsv_probcc_orig/D");
-    outTree2_->Branch("mtVlepJECnew_new", &mtVlepJECnew_new, "mtVlepJECnew_new/D");
-
-    outTree2_->Branch("jet2icsv_orig",&jet2icsv_orig,"jet2icsv_orig/D");
-    outTree2_->Branch("drj2a_orig",&drj2a_orig,"drj2a_orig/D");
-    outTree2_->Branch("drj2l_orig",&drj2l_orig,"drj2l_orig/D");
-
-    outTree2_->Branch("rawPt",&rawPt,"rawPt/F");
-    outTree2_->Branch("nevent",&nevent,"nevent/I");
-    outTree2_->Branch("run",&run,"run/I");
-    outTree2_->Branch("ls",&ls,"ls/I");
-    outTree2_->Branch("ptlep1", &ptlep1, "ptlep1/D");
-    outTree2_->Branch("etalep1", &etalep1, "etalep1/D");
-    outTree2_->Branch("philep1", &philep1, "philep1/D");
-    outTree2_->Branch("energylep1", &energylep1, "energylep1/D");
-    outTree2_->Branch("MET_et_new", &MET_et_new, "MET_et_new/D");
-    outTree2_->Branch("HLT_Ele1", &HLT_Ele1, "HLT_Ele1/I");
-    outTree2_->Branch("HLT_Ele2", &HLT_Ele2, "HLT_Ele2/I");
-    outTree2_->Branch("HLT_Mu1", &HLT_Mu1, "HLT_Mu1/I");
-    outTree2_->Branch("HLT_Mu2", &HLT_Mu2, "HLT_Mu2/I");
-    outTree2_->Branch("HLT_Mu3", &HLT_Mu3, "HLT_Mu3/I");
-
-    outTree2_->Branch("npT", &npT, "npT/D");
-    outTree2_->Branch("lep", &lep, "lep/I");
-    outTree2_->Branch("ngoodmus", &ngoodmus, "ngoodmus/I");
-    outTree2_->Branch("ngoodeles", &ngoodeles, "ngoodeles/I");
-    outTree2_->Branch("nlooseeles", &nlooseeles, "nlooseeles/I");
-    outTree2_->Branch("nloosemus", &nloosemus, "nloosemus/I");
-    outTree2_->Branch("Mjj", &Mjj, "Mjj/D");
-    outTree2_->Branch("Mjj_new", &Mjj_new, "Mjj_new/D");
-    outTree2_->Branch("j1metPhi", &j1metPhi, "j1metPhi/D");
-    outTree2_->Branch("j1metPhi_new", &j1metPhi_new, "j1metPhi_new/D");
-    outTree2_->Branch("METraw_et", &METraw_et, "METraw_et/D");
-    outTree2_->Branch("METraw_phi", &METraw_phi, "METraw_phi/D");
-    outTree2_->Branch("METraw_sumEt", &METraw_sumEt, "METraw_sumEt/D");
-    outTree2_->Branch("genMET", &genMET, "genMET/D");
-    outTree2_->Branch("MET_et", &MET_et, "MET_et/D");
-    outTree2_->Branch("MET_phi", &MET_phi, "MET_phi/D");
-
-    outTree2_->Branch("MET_phi_new", &MET_phi_new, "MET_phi_new/D");
-    outTree2_->Branch("lumiWeight", &lumiWeight, "lumiWeight/D");
-    outTree2_->Branch("pileupWeight", &pileupWeight, "pileupWeight/D");
-    outTree2_->Branch("ptVlep", &ptVlep, "ptVlep/D");
-    outTree2_->Branch("ptVlepJEC", &ptVlepJEC, "ptVlepJEC/D");
-    outTree2_->Branch("yVlepJEC", &yVlepJEC, "yVlepJEC/D");
-    outTree2_->Branch("phiVlepJEC", &phiVlepJEC, "phiVlepJEC/D");
-    outTree2_->Branch("massVlepJEC", &massVlepJEC, "massVlepJEC/D");
-    outTree2_->Branch("mtVlepJECnew", &mtVlepJECnew, "mtVlepJECnew/D");
-    outTree2_->Branch("ptVlepJEC_new", &ptVlepJEC_new, "ptVlepJEC_new/D");
-    outTree2_->Branch("yVlepJEC_new", &yVlepJEC_new, "yVlepJEC_new/D");
-    outTree2_->Branch("phiVlepJEC_new", &phiVlepJEC_new, "phiVlepJEC_new/D");
-    outTree2_->Branch("massVlepJEC_new", &massVlepJEC_new, "massVlepJEC_new/D");
 
     outTree_ = fs->make<TTree>("PKUCandidates", "PKU Candidates");
     /// Basic event quantities
@@ -3441,11 +3357,6 @@ if(ak4jets->size()>=1){
 /////////////////////////////////////////////////////////
 
     if(!((/*HLT_Mu3 == 1 &&*/abs(lep) == 13 &&ngoodmus == 1 &&ngoodeles == 0 && (nloosemus + nlooseeles) == 1 /*&& ptlep1>30.*/ &&fabs(etalep1)<2.4)||(/*HLT_Ele2 == 1 &&*/abs(lep) == 11 &&ngoodmus == 0 &&ngoodeles == 1 && (nloosemus + nlooseeles) == 1 /*&& ptlep1 > 30.*/ && fabs(etalep1)<2.5))){return;}
-
-     if(((mtVlepJECnew_new < 20. &&MET_et_new <30.) || (mtVlepJECnew < 20. &&MET_et <30.)) &&((jet1pt_orig > 20 && drj1l_orig > 0.3) || (jet2pt_orig > 20 && drj2l_orig > 0.3))){
-         outTree2_->Fill();
-     }
-
 
     Bool_t Jet_cut = jet1pt>40. &&fabs(jet1eta)<4.7 &&jet2pt>30. &&fabs(jet2eta)<4.7;
     Bool_t Jet_cut_f = jet1pt_f>40. &&fabs(jet1eta_f)<4.7 &&jet2pt_f>30. &&fabs(jet2eta_f)<4.7;
