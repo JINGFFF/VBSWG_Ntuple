@@ -2422,6 +2422,8 @@ void PKUTreeMaker::analyze(const edm::Event& iEvent, const edm::EventSetup& iSet
 
 		}
     }
+	delete jecAK4_;
+    jecAK4_ = 0;
     // two leading jets with JER
 
 
@@ -3471,8 +3473,8 @@ if(ak4jets->size()>=1){
     } 
 
     //outTree_->Fill();
-    delete jecAK4_;
-    jecAK4_ = 0;
+    //delete jecAK4_;
+    //jecAK4_ = 0;
 
 }
 
