@@ -2421,7 +2421,9 @@ void PKUTreeMaker::analyze(const edm::Event& iEvent, const edm::EventSetup& iSet
 
 		}
     }
-    // two leading jets with JER
+    delete jecAK4_;
+    jecAK4_ = 0;
+	// two leading jets with JER
 
 
     std::vector<TLorentzVector*> jets_new;
@@ -3471,8 +3473,8 @@ if(ak4jets->size()>=1){
     } 
 
     //outTree_->Fill();
-    delete jecAK4_;
-    jecAK4_ = 0;
+    //delete jecAK4_;
+    //jecAK4_ = 0;
 
 }
 
