@@ -18,4 +18,4 @@ cp PUJetIDweights/weights/pileupJetId_94X_Eta* $CMSSW_BASE/src/RecoJets/JetProdu
 
 git cms-merge-topic singh-ramanpreet:PUID_102_15_v2
 
-git clone -b 17_loose https://github.com/JINGFFF/VBSWG_Ntuple.git VAJets
+git clone -b 17_loose_for_analysis https://github.com/JINGFFF/VBSWG_Ntuple.git VAJets
