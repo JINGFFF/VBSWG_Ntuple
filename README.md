@@ -10,4 +10,4 @@ git cms-merge-topic cms-egamma:EgammaPostRecoTools
 
 git cms-addpkg RecoMET/METFilters
 
-git clone -b 16_tight https://github.com/JINGFFF/VBSWG_Ntuple.git VAJets
+git clone -b 16_tight_for_analysis https://github.com/JINGFFF/VBSWG_Ntuple.git VAJets
