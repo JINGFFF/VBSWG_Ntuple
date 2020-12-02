@@ -2435,6 +2435,8 @@ std::cout<<"hasphoton : "<<hasphoton<<std::endl;
 
 		}
     }
+    delete jecAK4_;
+    jecAK4_ = 0;
     // two leading jets with JER
 
 
@@ -3494,8 +3496,8 @@ if(ak4jets->size()>=1){
        //(mtVlepJECnew_new < 20. &&MET_et <30. &&((jet1pt_orig > 20 && drj1l_orig > 0.3) || (jet2pt_orig > 20 && drj2l_orig > 0.3))){
         //outTree2_->Fill();
     //}
-    delete jecAK4_;
-    jecAK4_ = 0;
+    //delete jecAK4_;
+    //jecAK4_ = 0;
 
 }
 
