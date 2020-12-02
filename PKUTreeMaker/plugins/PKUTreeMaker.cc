@@ -158,7 +158,7 @@ private:
     // ----------member data ---------------------------
     TTree* outTree_;
     TTree* outTree1_;
-    TTree* outTree2_;
+    //TTree* outTree2_;
 
     double hasphoton;
     double MW_;
@@ -521,129 +521,12 @@ PKUTreeMaker::PKUTreeMaker(const edm::ParameterSet& iConfig)  //:
     outTree1_ = fs->make<TTree>("tree1", "tree1");
     outTree1_->Branch("theWeight", &theWeight, "theWeight/D");
 
-    outTree2_ = fs->make<TTree>("tree2", "tree2");
-    outTree2_->Branch("theWeight", &theWeight, "theWeight/D");
-    outTree2_->Branch("hasphoton", &hasphoton, "hasphoton/D");
-
-    outTree2_->Branch("jet1hf_orig",&jet1hf_orig,"jet1hf_orig/I");
-    outTree2_->Branch("jet1pf_orig",&jet1pf_orig,"jet1pf_orig/I");
-    outTree2_->Branch("jet2hf_orig",&jet2hf_orig,"jet2hf_orig/I");
-    outTree2_->Branch("jet2pf_orig",&jet2pf_orig,"jet2pf_orig/I");
-
-    outTree2_->Branch("jet1pt_orig",&jet1pt_orig,"jet1pt_orig/D");
-    outTree2_->Branch("jet1phi_orig",&jet1phi_orig,"jet1phi_orig/D");
-    outTree2_->Branch("jet1eta_orig",&jet1eta_orig,"jet1eta_orig/D");
-    outTree2_->Branch("jet1e_orig",&jet1e_orig,"jet1e_orig/D");
-    outTree2_->Branch("jet1csv_orig",&jet1csv_orig,"jet1csv_orig/D");
-    outTree2_->Branch("jet1deepcsv_probb_orig",&jet1deepcsv_probb_orig,"jet1deepcsv_probb_orig/D");
-    outTree2_->Branch("jet1deepcsv_probbb_orig",&jet1deepcsv_probbb_orig,"jet1deepcsv_probbb_orig/D");
-    outTree2_->Branch("jet1deepcsv_probc_orig",&jet1deepcsv_probc_orig,"jet1deepcsv_probc_orig/D");
-    outTree2_->Branch("jet1deepcsv_probcc_orig",&jet1deepcsv_probcc_orig,"jet1deepcsv_probcc_orig/D");
-
-    outTree2_->Branch("jet1icsv_orig",&jet1icsv_orig,"jet1icsv_orig/D");
-    outTree2_->Branch("drj1a_orig",&drj1a_orig,"drj1a_orig/D");
-    outTree2_->Branch("drj1l_orig",&drj1l_orig,"drj1l_orig/D");
-
-    outTree2_->Branch("jet2pt_orig",&jet2pt_orig,"jet2pt_orig/D");
-    outTree2_->Branch("jet2phi_orig",&jet2phi_orig,"jet2phi_orig/D");
-    outTree2_->Branch("jet2eta_orig",&jet2eta_orig,"jet2eta_orig/D");
-    outTree2_->Branch("jet2e_orig",&jet2e_orig,"jet2e_orig/D");
-    outTree2_->Branch("jet2csv_orig",&jet2csv_orig,"jet2csv_orig/D");
-    outTree2_->Branch("jet2deepcsv_probb_orig",&jet2deepcsv_probb_orig,"jet2deepcsv_probb_orig/D");
-    outTree2_->Branch("jet2deepcsv_probbb_orig",&jet2deepcsv_probbb_orig,"jet2deepcsv_probbb_orig/D");
-    outTree2_->Branch("jet2deepcsv_probc_orig",&jet2deepcsv_probc_orig,"jet2deepcsv_probc_orig/D");
-    outTree2_->Branch("jet2deepcsv_probcc_orig",&jet2deepcsv_probcc_orig,"jet2deepcsv_probcc_orig/D");
-    outTree2_->Branch("mtVlepJECnew_new", &mtVlepJECnew_new, "mtVlepJECnew_new/D");
-
-    outTree2_->Branch("jet2icsv_orig",&jet2icsv_orig,"jet2icsv_orig/D");
-    outTree2_->Branch("drj2a_orig",&drj2a_orig,"drj2a_orig/D");
-    outTree2_->Branch("drj2l_orig",&drj2l_orig,"drj2l_orig/D");
-
-    outTree2_->Branch("rawPt",&rawPt,"rawPt/F");
-    outTree2_->Branch("nevent",&nevent,"nevent/I");
-    outTree2_->Branch("run",&run,"run/I");
-    outTree2_->Branch("ls",&ls,"ls/I");
-    outTree2_->Branch("ptlep1", &ptlep1, "ptlep1/D");
-    outTree2_->Branch("etalep1", &etalep1, "etalep1/D");
-    outTree2_->Branch("philep1", &philep1, "philep1/D");
-    outTree2_->Branch("energylep1", &energylep1, "energylep1/D");
-    outTree2_->Branch("MET_et_new", &MET_et_new, "MET_et_new/D");
-    outTree2_->Branch("HLT_Ele1", &HLT_Ele1, "HLT_Ele1/I");
-    outTree2_->Branch("HLT_Ele2", &HLT_Ele2, "HLT_Ele2/I");
-    outTree2_->Branch("HLT_Mu1", &HLT_Mu1, "HLT_Mu1/I");
-    outTree2_->Branch("HLT_Mu2", &HLT_Mu2, "HLT_Mu2/I");
-    outTree2_->Branch("HLT_Mu3", &HLT_Mu3, "HLT_Mu3/I");
-
-    outTree2_->Branch("npT", &npT, "npT/D");
-    outTree2_->Branch("lep", &lep, "lep/I");
-    outTree2_->Branch("ngoodmus", &ngoodmus, "ngoodmus/I");
-    outTree2_->Branch("ngoodeles", &ngoodeles, "ngoodeles/I");
-    outTree2_->Branch("nlooseeles", &nlooseeles, "nlooseeles/I");
-    outTree2_->Branch("nloosemus", &nloosemus, "nloosemus/I");
-    outTree2_->Branch("Mjj", &Mjj, "Mjj/D");
-    outTree2_->Branch("Mjj_new", &Mjj_new, "Mjj_new/D");
-    outTree2_->Branch("j1metPhi", &j1metPhi, "j1metPhi/D");
-    outTree2_->Branch("j1metPhi_new", &j1metPhi_new, "j1metPhi_new/D");
-    outTree2_->Branch("METraw_et", &METraw_et, "METraw_et/D");
-    outTree2_->Branch("METraw_phi", &METraw_phi, "METraw_phi/D");
-    outTree2_->Branch("METraw_sumEt", &METraw_sumEt, "METraw_sumEt/D");
-    outTree2_->Branch("genMET", &genMET, "genMET/D");
-    outTree2_->Branch("MET_et", &MET_et, "MET_et/D");
-    outTree2_->Branch("MET_phi", &MET_phi, "MET_phi/D");
-
-    outTree2_->Branch("MET_phi_new", &MET_phi_new, "MET_phi_new/D");
-    outTree2_->Branch("lumiWeight", &lumiWeight, "lumiWeight/D");
-    outTree2_->Branch("pileupWeight", &pileupWeight, "pileupWeight/D");
-    outTree2_->Branch("ptVlep", &ptVlep, "ptVlep/D");
-    outTree2_->Branch("ptVlepJEC", &ptVlepJEC, "ptVlepJEC/D");
-    outTree2_->Branch("yVlepJEC", &yVlepJEC, "yVlepJEC/D");
-    outTree2_->Branch("phiVlepJEC", &phiVlepJEC, "phiVlepJEC/D");
-    outTree2_->Branch("massVlepJEC", &massVlepJEC, "massVlepJEC/D");
-    outTree2_->Branch("mtVlepJECnew", &mtVlepJECnew, "mtVlepJECnew/D");
-    outTree2_->Branch("ptVlepJEC_new", &ptVlepJEC_new, "ptVlepJEC_new/D");
-    outTree2_->Branch("yVlepJEC_new", &yVlepJEC_new, "yVlepJEC_new/D");
-    outTree2_->Branch("phiVlepJEC_new", &phiVlepJEC_new, "phiVlepJEC_new/D");
-    outTree2_->Branch("massVlepJEC_new", &massVlepJEC_new, "massVlepJEC_new/D");
-
-
     /// Basic event quantities
     outTree_ = fs->make<TTree>("PKUCandidates", "PKU Candidates");
     outTree_->Branch("hasphoton", &hasphoton, "hasphoton/D");
     outTree_->Branch("ngoodmus", &ngoodmus, "ngoodmus/I");
     outTree_->Branch("ngoodeles", &ngoodeles, "ngoodeles/I");
     outTree_->Branch("pweight",pweight,"pweight[703]/D");
-    outTree_->Branch("jet1hf_orig",&jet1hf_orig,"jet1hf_orig/I");
-    outTree_->Branch("jet1pf_orig",&jet1pf_orig,"jet1pf_orig/I");
-    outTree_->Branch("jet2hf_orig",&jet2hf_orig,"jet2hf_orig/I");
-    outTree_->Branch("jet2pf_orig",&jet2pf_orig,"jet2pf_orig/I");
-
-    outTree_->Branch("jet1pt_orig",&jet1pt_orig,"jet1pt_orig/D");
-    outTree_->Branch("jet1phi_orig",&jet1phi_orig,"jet1phi_orig/D");
-    outTree_->Branch("jet1eta_orig",&jet1eta_orig,"jet1eta_orig/D");
-    outTree_->Branch("jet1e_orig",&jet1e_orig,"jet1e_orig/D");
-    outTree_->Branch("jet1csv_orig",&jet1csv_orig,"jet1csv_orig/D");
-    outTree_->Branch("jet1deepcsv_probb_orig",&jet1deepcsv_probb_orig,"jet1deepcsv_probb_orig/D");
-    outTree_->Branch("jet1deepcsv_probbb_orig",&jet1deepcsv_probbb_orig,"jet1deepcsv_probbb_orig/D");
-    outTree_->Branch("jet1deepcsv_probc_orig",&jet1deepcsv_probc_orig,"jet1deepcsv_probc_orig/D");
-    outTree_->Branch("jet1deepcsv_probcc_orig",&jet1deepcsv_probcc_orig,"jet1deepcsv_probcc_orig/D");
-
-    outTree_->Branch("jet1icsv_orig",&jet1icsv_orig,"jet1icsv_orig/D");
-    outTree_->Branch("drj1a_orig",&drj1a_orig,"drj1a_orig/D");
-    outTree_->Branch("drj1l_orig",&drj1l_orig,"drj1l_orig/D");
-
-    outTree_->Branch("jet2pt_orig",&jet2pt_orig,"jet2pt_orig/D");
-    outTree_->Branch("jet2phi_orig",&jet2phi_orig,"jet2phi_orig/D");
-    outTree_->Branch("jet2eta_orig",&jet2eta_orig,"jet2eta_orig/D");
-    outTree_->Branch("jet2e_orig",&jet2e_orig,"jet2e_orig/D");
-    outTree_->Branch("jet2csv_orig",&jet2csv_orig,"jet2csv_orig/D");
-    outTree_->Branch("jet2deepcsv_probb_orig",&jet2deepcsv_probb_orig,"jet2deepcsv_probb_orig/D");
-    outTree_->Branch("jet2deepcsv_probbb_orig",&jet2deepcsv_probbb_orig,"jet2deepcsv_probbb_orig/D");
-    outTree_->Branch("jet2deepcsv_probc_orig",&jet2deepcsv_probc_orig,"jet2deepcsv_probc_orig/D");
-    outTree_->Branch("jet2deepcsv_probcc_orig",&jet2deepcsv_probcc_orig,"jet2deepcsv_probcc_orig/D");
-
-    outTree_->Branch("jet2icsv_orig",&jet2icsv_orig,"jet2icsv_orig/D");
-    outTree_->Branch("drj2a_orig",&drj2a_orig,"drj2a_orig/D");
-    outTree_->Branch("drj2l_orig",&drj2l_orig,"drj2l_orig/D");
 
     outTree_->Branch("rawPt",&rawPt,"rawPt/F");
     outTree_->Branch("nevent",&nevent,"nevent/I");
@@ -686,10 +569,6 @@ PKUTreeMaker::PKUTreeMaker(const edm::ParameterSet& iConfig)  //:
     outTree_->Branch("phiVlepJEC_JER_down", &phiVlepJEC_JER_down, "phiVlepJEC_JER_down/D");
     outTree_->Branch("massVlepJEC_JER_down", &massVlepJEC_JER_down, "massVlepJEC_JER_down/D");
     outTree_->Branch("mtVlepJECnew_JER_down", &mtVlepJECnew_JER_down, "mtVlepJECnew_JER_down/D");
-    outTree_->Branch("Mla", &Mla, "Mla/D");
-    outTree_->Branch("Mla_f", &Mla_f, "Mla_f/D");
-    outTree_->Branch("Mva", &Mva, "Mva/D");
-    outTree_->Branch("Mva_f", &Mva_f, "Mva_f/D");
     outTree_->Branch("nlooseeles", &nlooseeles, "nlooseeles/I");
     outTree_->Branch("nloosemus", &nloosemus, "nloosemus/I");
     
@@ -757,8 +636,6 @@ PKUTreeMaker::PKUTreeMaker(const edm::ParameterSet& iConfig)  //:
 
     outTree_->Branch("iphoton", &iphoton, "iphoton/I");
     outTree_->Branch("iphoton_f", &iphoton_f, "iphoton_f/I");
-    outTree_->Branch("drla", &drla, "drla/D");
-    outTree_->Branch("drla_f", &drla_f, "drla_f/D");
     //photon gen match
     //    outTree_->Branch("dR"    , &dR_, "dR/D");
     //    outTree_->Branch("ISRPho"        , &ISRPho       ,"ISRPho/O"       );
@@ -766,482 +643,11 @@ PKUTreeMaker::PKUTreeMaker(const edm::ParameterSet& iConfig)  //:
     outTree_->Branch("isprompt", &isprompt_, "isprompt/I");
     outTree_->Branch("ispromptLep", &ispromptLep_, "ispromptLep/I");
     //jets
-    outTree_->Branch("ak4jet_hf", ak4jet_hf, "ak4jet_hf[6]/I");
-    outTree_->Branch("ak4jet_pf", ak4jet_pf, "ak4jet_pf[6]/I");
-    outTree_->Branch("jet1hf", &jet1hf, "jet1hf/I");
-    outTree_->Branch("jet1pf", &jet1pf, "jet1pf/I");
-    outTree_->Branch("jet2hf", &jet2hf, "jet2hf/I");
-    outTree_->Branch("jet2pf", &jet2pf, "jet2pf/I");
-    outTree_->Branch("jet1hf_f", &jet1hf_f, "jet1hf_f/I");
-    outTree_->Branch("jet1pf_f", &jet1pf_f, "jet1pf_f/I");
-    outTree_->Branch("jet2hf_f", &jet2hf_f, "jet2hf_f/I");
-    outTree_->Branch("jet2pf_f", &jet2pf_f, "jet2pf_f/I");
-
-    outTree_->Branch("jet1hf_new", &jet1hf_new, "jet1hf_new/I");
-    outTree_->Branch("jet1pf_new", &jet1pf_new, "jet1pf_new/I");
-    outTree_->Branch("jet2hf_new", &jet2hf_new, "jet2hf_new/I");
-    outTree_->Branch("jet2pf_new", &jet2pf_new, "jet2pf_new/I");
-    outTree_->Branch("jet1hf_new_f", &jet1hf_new_f, "jet1hf_new_f/I");
-    outTree_->Branch("jet1pf_new_f", &jet1pf_new_f, "jet1pf_new_f/I");
-    outTree_->Branch("jet2hf_new_f", &jet2hf_new_f, "jet2hf_new_f/I");
-    outTree_->Branch("jet2pf_new_f", &jet2pf_new_f, "jet2pf_new_f/I");
-
-    outTree_->Branch("jet1hf_JEC_up", &jet1hf_JEC_up, "jet1hf_JEC_up/I");
-    outTree_->Branch("jet1pf_JEC_up", &jet1pf_JEC_up, "jet1pf_JEC_up/I");
-    outTree_->Branch("jet2hf_JEC_up", &jet2hf_JEC_up, "jet2hf_JEC_up/I");
-    outTree_->Branch("jet2pf_JEC_up", &jet2pf_JEC_up, "jet2pf_JEC_up/I");
-    outTree_->Branch("jet1hf_JEC_up_f", &jet1hf_JEC_up_f, "jet1hf_JEC_up_f/I");
-    outTree_->Branch("jet1pf_JEC_up_f", &jet1pf_JEC_up_f, "jet1pf_JEC_up_f/I");
-    outTree_->Branch("jet2hf_JEC_up_f", &jet2hf_JEC_up_f, "jet2hf_JEC_up_f/I");
-    outTree_->Branch("jet2pf_JEC_up_f", &jet2pf_JEC_up_f, "jet2pf_JEC_up_f/I");
-
-    outTree_->Branch("jet1hf_JEC_down", &jet1hf_JEC_down, "jet1hf_JEC_down/I");
-    outTree_->Branch("jet1pf_JEC_down", &jet1pf_JEC_down, "jet1pf_JEC_down/I");
-    outTree_->Branch("jet2hf_JEC_down", &jet2hf_JEC_down, "jet2hf_JEC_down/I");
-    outTree_->Branch("jet2pf_JEC_down", &jet2pf_JEC_down, "jet2pf_JEC_down/I");
-    outTree_->Branch("jet1hf_JEC_down_f", &jet1hf_JEC_down_f, "jet1hf_JEC_down_f/I");
-    outTree_->Branch("jet1pf_JEC_down_f", &jet1pf_JEC_down_f, "jet1pf_JEC_down_f/I");
-    outTree_->Branch("jet2hf_JEC_down_f", &jet2hf_JEC_down_f, "jet2hf_JEC_down_f/I");
-    outTree_->Branch("jet2pf_JEC_down_f", &jet2pf_JEC_down_f, "jet2pf_JEC_down_f/I");
-
-    outTree_->Branch("jet1hf_JER_up", &jet1hf_JER_up, "jet1hf_JER_up/I");
-    outTree_->Branch("jet1pf_JER_up", &jet1pf_JER_up, "jet1pf_JER_up/I");
-    outTree_->Branch("jet2hf_JER_up", &jet2hf_JER_up, "jet2hf_JER_up/I");
-    outTree_->Branch("jet2pf_JER_up", &jet2pf_JER_up, "jet2pf_JER_up/I");
-    outTree_->Branch("jet1hf_JER_up_f", &jet1hf_JER_up_f, "jet1hf_JER_up_f/I");
-    outTree_->Branch("jet1pf_JER_up_f", &jet1pf_JER_up_f, "jet1pf_JER_up_f/I");
-    outTree_->Branch("jet2hf_JER_up_f", &jet2hf_JER_up_f, "jet2hf_JER_up_f/I");
-    outTree_->Branch("jet2pf_JER_up_f", &jet2pf_JER_up_f, "jet2pf_JER_up_f/I");
-
-    outTree_->Branch("jet1hf_JER_down", &jet1hf_JER_down, "jet1hf_JER_down/I");
-    outTree_->Branch("jet1pf_JER_down", &jet1pf_JER_down, "jet1pf_JER_down/I");
-    outTree_->Branch("jet2hf_JER_down", &jet2hf_JER_down, "jet2hf_JER_down/I");
-    outTree_->Branch("jet2pf_JER_down", &jet2pf_JER_down, "jet2pf_JER_down/I");
-    outTree_->Branch("jet1hf_JER_down_f", &jet1hf_JER_down_f, "jet1hf_JER_down_f/I");
-    outTree_->Branch("jet1pf_JER_down_f", &jet1pf_JER_down_f, "jet1pf_JER_down_f/I");
-    outTree_->Branch("jet2hf_JER_down_f", &jet2hf_JER_down_f, "jet2hf_JER_down_f/I");
-    outTree_->Branch("jet2pf_JER_down_f", &jet2pf_JER_down_f, "jet2pf_JER_down_f/I");
-
-    outTree_->Branch("ak4jet_pt", ak4jet_pt, "ak4jet_pt[6]/D");
-    outTree_->Branch("ak4jet_eta", ak4jet_eta, "ak4jet_eta[6]/D");
-    outTree_->Branch("ak4jet_phi", ak4jet_phi, "ak4jet_phi[6]/D");
-    outTree_->Branch("ak4jet_e", ak4jet_e, "ak4jet_e[6]/D");
-    outTree_->Branch("ak4jet_csv", ak4jet_csv, "ak4jet_csv[6]/D");
-    outTree_->Branch("ak4jet_deepcsv_probb", ak4jet_deepcsv_probb, "ak4jet_deepcsv_probb[6]/D");
-    outTree_->Branch("ak4jet_deepcsv_probbb", ak4jet_deepcsv_probbb, "ak4jet_deepcsv_probbb[6]/D");
-    outTree_->Branch("ak4jet_deepcsv_probc", ak4jet_deepcsv_probc, "ak4jet_deepcsv_probc[6]/D");
-    outTree_->Branch("ak4jet_deepcsv_probcc", ak4jet_deepcsv_probcc, "ak4jet_deepcsv_probcc[6]/D");
-
-    outTree_->Branch("ak4jet_icsv", ak4jet_icsv, "ak4jet_icsv[6]/D");
-
-    outTree_->Branch("ak4jet_pt_old", ak4jet_pt_old, "ak4jet_pt_old[6]/D");
-    outTree_->Branch("ak4jet_pt_new", ak4jet_pt_new, "ak4jet_pt_new[6]/D");
-    outTree_->Branch("ak4jet_pt_JEC_up", ak4jet_pt_JEC_up, "ak4jet_pt_JEC_up[6]/D");
-    outTree_->Branch("ak4jet_pt_JEC_down", ak4jet_pt_JEC_down, "ak4jet_pt_JEC_down[6]/D");
-    outTree_->Branch("ak4jet_pt_JER_up", ak4jet_pt_JER_up, "ak4jet_pt_JER_up[6]/D");
-    outTree_->Branch("ak4jet_pt_JER_down", ak4jet_pt_JER_down, "ak4jet_pt_JER_down[6]/D");
-    //outTree_->Branch("ak4jet_eta", ak4jet_eta, "ak4jet_eta[6]/D");
-    //outTree_->Branch("ak4jet_phi", ak4jet_phi, "ak4jet_phi[6]/D");
-    outTree_->Branch("ak4jet_e_old", ak4jet_e_old, "ak4jet_e_old[6]/D");
-    outTree_->Branch("ak4jet_e_new", ak4jet_e_new, "ak4jet_e_new[6]/D");
-    outTree_->Branch("ak4jet_e_JEC_up", ak4jet_e_JEC_up, "ak4jet_e_JEC_up[6]/D");
-    outTree_->Branch("ak4jet_e_JEC_down", ak4jet_e_JEC_down, "ak4jet_e_JEC_down[6]/D");
-    outTree_->Branch("ak4jet_e_JER_up", ak4jet_e_JER_up, "ak4jet_e_JER_up[6]/D");
-    outTree_->Branch("ak4jet_e_JER_down", ak4jet_e_JER_down, "ak4jet_e_JER_down[6]/D");
-    //outTree_->Branch("ak4jet_csv", ak4jet_csv, "ak4jet_csv[6]/D");
-    //outTree_->Branch("ak4jet_icsv", ak4jet_icsv, "ak4jet_icsv[6]/D");
-    outTree_->Branch("jet1pt", &jet1pt, "jet1pt/D");
-    outTree_->Branch("jet1pt_new", &jet1pt_new, "jet1pt_new/D");
-    outTree_->Branch("jet1pt_JEC_up", &jet1pt_JEC_up, "jet1pt_JEC_up/D");
-    outTree_->Branch("jet1pt_JER_up", &jet1pt_JER_up, "jet1pt_JER_up/D");
-    outTree_->Branch("jet1pt_JEC_down", &jet1pt_JEC_down, "jet1pt_JEC_down/D");
-    outTree_->Branch("jet1pt_JER_down", &jet1pt_JER_down, "jet1pt_JER_down/D");
-    outTree_->Branch("jet1pt_f", &jet1pt_f, "jet1pt_f/D");
-    outTree_->Branch("jet1pt_new_f", &jet1pt_new_f, "jet1pt_new_f/D");
-    outTree_->Branch("jet1pt_JEC_up_f", &jet1pt_JEC_up_f, "jet1pt_JEC_up_f/D");
-    outTree_->Branch("jet1pt_JER_up_f", &jet1pt_JER_up_f, "jet1pt_JER_up_f/D");
-    outTree_->Branch("jet1pt_JEC_down_f", &jet1pt_JEC_down_f, "jet1pt_JEC_down_f/D");
-    outTree_->Branch("jet1pt_JER_down_f", &jet1pt_JER_down_f, "jet1pt_JER_down_f/D");
-    outTree_->Branch("jet1eta", &jet1eta, "jet1eta/D");
-    outTree_->Branch("jet1eta_new", &jet1eta_new, "jet1eta_new/D");
-    outTree_->Branch("jet1eta_JEC_up", &jet1eta_JEC_up, "jet1eta_JEC_up/D");
-    outTree_->Branch("jet1eta_JEC_down", &jet1eta_JEC_down, "jet1eta_JEC_down/D");
-    outTree_->Branch("jet1eta_JER_up", &jet1eta_JER_up, "jet1eta_JER_up/D");
-    outTree_->Branch("jet1eta_JER_down", &jet1eta_JER_down, "jet1eta_JER_down/D");
-    outTree_->Branch("jet1eta_f", &jet1eta_f, "jet1eta_f/D");
-    outTree_->Branch("jet1eta_new_f", &jet1eta_new_f, "jet1eta_new_f/D");
-    outTree_->Branch("jet1eta_JEC_up_f", &jet1eta_JEC_up_f, "jet1eta_JEC_up_f/D");
-    outTree_->Branch("jet1eta_JEC_down_f", &jet1eta_JEC_down_f, "jet1eta_JEC_down_f/D");
-    outTree_->Branch("jet1eta_JER_up_f", &jet1eta_JER_up_f, "jet1eta_JER_up_f/D");
-    outTree_->Branch("jet1eta_JER_down_f", &jet1eta_JER_down_f, "jet1eta_JER_down_f/D");
-    outTree_->Branch("jet1phi", &jet1phi, "jet1phi/D");
-    outTree_->Branch("jet1phi_new", &jet1phi_new, "jet1phi_new/D");
-    outTree_->Branch("jet1phi_JEC_up", &jet1phi_JEC_up, "jet1phi_JEC_up/D");
-    outTree_->Branch("jet1phi_JEC_down", &jet1phi_JEC_down, "jet1phi_JEC_down/D");
-    outTree_->Branch("jet1phi_JER_up", &jet1phi_JER_up, "jet1phi_JER_up/D");
-    outTree_->Branch("jet1phi_JER_down", &jet1phi_JER_down, "jet1phi_JER_down/D");
-    outTree_->Branch("jet1phi_f", &jet1phi_f, "jet1phi_f/D");
-    outTree_->Branch("jet1phi_new_f", &jet1phi_new_f, "jet1phi_new_f/D");
-    outTree_->Branch("jet1phi_JEC_up_f", &jet1phi_JEC_up_f, "jet1phi_JEC_up_f/D");
-    outTree_->Branch("jet1phi_JEC_down_f", &jet1phi_JEC_down_f, "jet1phi_JEC_down_f/D");
-    outTree_->Branch("jet1phi_JER_up_f", &jet1phi_JER_up_f, "jet1phi_JER_up_f/D");
-    outTree_->Branch("jet1phi_JER_down_f", &jet1phi_JER_down_f, "jet1phi_JER_down_f/D");
-    outTree_->Branch("jet1e", &jet1e, "jet1e/D");
-    outTree_->Branch("jet1e_new", &jet1e_new, "jet1e_new/D");
-    outTree_->Branch("jet1e_JEC_up", &jet1e_JEC_up, "jet1e_JEC_up/D");
-    outTree_->Branch("jet1e_JER_up", &jet1e_JER_up, "jet1e_JER_up/D");
-    outTree_->Branch("jet1e_JEC_down", &jet1e_JEC_down, "jet1e_JEC_down/D");
-    outTree_->Branch("jet1e_JER_down", &jet1e_JER_down, "jet1e_JER_down/D");
-    outTree_->Branch("jet1e_f", &jet1e_f, "jet1e_f/D");
-    outTree_->Branch("jet1e_new_f", &jet1e_new_f, "jet1e_new_f/D");
-    outTree_->Branch("jet1e_JEC_up_f", &jet1e_JEC_up_f, "jet1e_JEC_up_f/D");
-    outTree_->Branch("jet1e_JER_up_f", &jet1e_JER_up_f, "jet1e_JER_up_f/D");
-    outTree_->Branch("jet1e_JEC_down_f", &jet1e_JEC_down_f, "jet1e_JEC_down_f/D");
-    outTree_->Branch("jet1e_JER_down_f", &jet1e_JER_down_f, "jet1e_JER_down_f/D");
-    outTree_->Branch("jet1csv", &jet1csv, "jet1csv/D");
-    outTree_->Branch("jet1csv_new", &jet1csv_new, "jet1csv_new/D");
-    outTree_->Branch("jet1csv_JEC_up", &jet1csv_JEC_up, "jet1csv_JEC_up/D");
-    outTree_->Branch("jet1csv_JER_up", &jet1csv_JER_up, "jet1csv_JER_up/D");
-    outTree_->Branch("jet1csv_JEC_down", &jet1csv_JEC_down, "jet1csv_JEC_down/D");
-    outTree_->Branch("jet1csv_JER_down", &jet1csv_JER_down, "jet1csv_JER_down/D");
-    outTree_->Branch("jet1csv_f", &jet1csv_f, "jet1csv_f/D");
-    outTree_->Branch("jet1csv_new_f", &jet1csv_new_f, "jet1csv_new_f/D");
-    outTree_->Branch("jet1csv_JEC_up_f", &jet1csv_JEC_up_f, "jet1csv_JEC_up_f/D");
-    outTree_->Branch("jet1csv_JER_up_f", &jet1csv_JER_up_f, "jet1csv_JER_up_f/D");
-    outTree_->Branch("jet1csv_JEC_down_f", &jet1csv_JEC_down_f, "jet1csv_JEC_down_f/D");
-    outTree_->Branch("jet1csv_JER_down_f", &jet1csv_JER_down_f, "jet1csv_JER_down_f/D");
-
-    outTree_->Branch("jet1deepcsv_probb", &jet1deepcsv_probb, "jet1deepcsv_probb/D");
-    outTree_->Branch("jet1deepcsv_probbb", &jet1deepcsv_probbb, "jet1deepcsv_probbb/D");
-    outTree_->Branch("jet1deepcsv_probc", &jet1deepcsv_probc, "jet1deepcsv_probc/D");
-    outTree_->Branch("jet1deepcsv_probcc", &jet1deepcsv_probcc, "jet1deepcsv_probcc/D");
-
-    outTree_->Branch("jet1deepcsv_probb_new", &jet1deepcsv_probb_new, "jet1deepcsv_probb_new/D");
-    outTree_->Branch("jet1deepcsv_probbb_new", &jet1deepcsv_probbb_new, "jet1deepcsv_probbb_new/D");
-    outTree_->Branch("jet1deepcsv_probc_new", &jet1deepcsv_probc_new, "jet1deepcsv_probc_new/D");
-    outTree_->Branch("jet1deepcsv_probcc_new", &jet1deepcsv_probcc_new, "jet1deepcsv_probcc_new/D");
-
-    outTree_->Branch("jet1deepcsv_probb_JEC_up", &jet1deepcsv_probb_JEC_up, "jet1deepcsv_probb_JEC_up/D");
-    outTree_->Branch("jet1deepcsv_probbb_JEC_up", &jet1deepcsv_probbb_JEC_up, "jet1deepcsv_probbb_JEC_up/D");
-    outTree_->Branch("jet1deepcsv_probc_JEC_up", &jet1deepcsv_probc_JEC_up, "jet1deepcsv_probc_JEC_up/D");
-    outTree_->Branch("jet1deepcsv_probcc_JEC_up", &jet1deepcsv_probcc_JEC_up, "jet1deepcsv_probcc_JEC_up/D");
-
-    outTree_->Branch("jet1deepcsv_probb_JEC_down", &jet1deepcsv_probb_JEC_down, "jet1deepcsv_probb_JEC_down/D");
-    outTree_->Branch("jet1deepcsv_probbb_JEC_down", &jet1deepcsv_probbb_JEC_down, "jet1deepcsv_probbb_JEC_down/D");
-    outTree_->Branch("jet1deepcsv_probc_JEC_down", &jet1deepcsv_probc_JEC_down, "jet1deepcsv_probc_JEC_down/D");
-    outTree_->Branch("jet1deepcsv_probcc_JEC_down", &jet1deepcsv_probcc_JEC_down, "jet1deepcsv_probcc_JEC_down/D");
-                                     
-    outTree_->Branch("jet1deepcsv_probb_JER_up", &jet1deepcsv_probb_JER_up, "jet1deepcsv_probb_JER_up/D");
-    outTree_->Branch("jet1deepcsv_probbb_JER_up", &jet1deepcsv_probbb_JER_up, "jet1deepcsv_probbb_JER_up/D");
-    outTree_->Branch("jet1deepcsv_probc_JER_up", &jet1deepcsv_probc_JER_up, "jet1deepcsv_probc_JER_up/D");
-    outTree_->Branch("jet1deepcsv_probcc_JER_up", &jet1deepcsv_probcc_JER_up, "jet1deepcsv_probcc_JER_up/D");
-
-    outTree_->Branch("jet1deepcsv_probb_JER_down", &jet1deepcsv_probb_JER_down, "jet1deepcsv_probb_JER_down/D");
-    outTree_->Branch("jet1deepcsv_probbb_JER_down", &jet1deepcsv_probbb_JER_down, "jet1deepcsv_probbb_JER_down/D");
-    outTree_->Branch("jet1deepcsv_probc_JER_down", &jet1deepcsv_probc_JER_down, "jet1deepcsv_probc_JER_down/D");
-    outTree_->Branch("jet1deepcsv_probcc_JER_down", &jet1deepcsv_probcc_JER_down, "jet1deepcsv_probcc_JER_down/D");
-
-
-    outTree_->Branch("jet1deepcsv_probb_f", &jet1deepcsv_probb_f, "jet1deepcsv_probb_f/D");
-    outTree_->Branch("jet1deepcsv_probbb_f", &jet1deepcsv_probbb_f, "jet1deepcsv_probbb_f/D");
-    outTree_->Branch("jet1deepcsv_probc_f", &jet1deepcsv_probc_f, "jet1deepcsv_probc_f/D");
-    outTree_->Branch("jet1deepcsv_probcc_f", &jet1deepcsv_probcc_f, "jet1deepcsv_probcc_f/D");
-
-    outTree_->Branch("jet1deepcsv_probb_new_f", &jet1deepcsv_probb_new_f, "jet1deepcsv_probb_new_f/D");
-    outTree_->Branch("jet1deepcsv_probbb_new_f", &jet1deepcsv_probbb_new_f, "jet1deepcsv_probbb_new_f/D");
-    outTree_->Branch("jet1deepcsv_probc_new_f", &jet1deepcsv_probc_new_f, "jet1deepcsv_probc_new_f/D");
-    outTree_->Branch("jet1deepcsv_probcc_new_f", &jet1deepcsv_probcc_new_f, "jet1deepcsv_probcc_new_f/D");
-
-    outTree_->Branch("jet1deepcsv_probb_JEC_up_f", &jet1deepcsv_probb_JEC_up_f, "jet1deepcsv_probb_JEC_up_f/D");
-    outTree_->Branch("jet1deepcsv_probbb_JEC_up_f", &jet1deepcsv_probbb_JEC_up_f, "jet1deepcsv_probbb_JEC_up_f/D");
-    outTree_->Branch("jet1deepcsv_probc_JEC_up_f", &jet1deepcsv_probc_JEC_up_f, "jet1deepcsv_probc_JEC_up_f/D");
-    outTree_->Branch("jet1deepcsv_probcc_JEC_up_f", &jet1deepcsv_probcc_JEC_up_f, "jet1deepcsv_probcc_JEC_up_f/D");
-
-    outTree_->Branch("jet1deepcsv_probb_JEC_down_f", &jet1deepcsv_probb_JEC_down_f, "jet1deepcsv_probb_JEC_down_f/D");
-    outTree_->Branch("jet1deepcsv_probbb_JEC_down_f", &jet1deepcsv_probbb_JEC_down_f, "jet1deepcsv_probbb_JEC_down_f/D");
-    outTree_->Branch("jet1deepcsv_probc_JEC_down_f", &jet1deepcsv_probc_JEC_down_f, "jet1deepcsv_probc_JEC_down_f/D");
-    outTree_->Branch("jet1deepcsv_probcc_JEC_down_f", &jet1deepcsv_probcc_JEC_down_f, "jet1deepcsv_probcc_JEC_down_f/D");
-
-    outTree_->Branch("jet1deepcsv_probb_JER_up_f", &jet1deepcsv_probb_JER_up_f, "jet1deepcsv_probb_JER_up_f/D");
-    outTree_->Branch("jet1deepcsv_probbb_JER_up_f", &jet1deepcsv_probbb_JER_up_f, "jet1deepcsv_probbb_JER_up_f/D");
-    outTree_->Branch("jet1deepcsv_probc_JER_up_f", &jet1deepcsv_probc_JER_up_f, "jet1deepcsv_probc_JER_up_f/D");
-    outTree_->Branch("jet1deepcsv_probcc_JER_up_f", &jet1deepcsv_probcc_JER_up_f, "jet1deepcsv_probcc_JER_up_f/D");
-
-    outTree_->Branch("jet1deepcsv_probb_JER_down_f", &jet1deepcsv_probb_JER_down_f, "jet1deepcsv_probb_JER_down_f/D");
-    outTree_->Branch("jet1deepcsv_probbb_JER_down_f", &jet1deepcsv_probbb_JER_down_f, "jet1deepcsv_probbb_JER_down_f/D");
-    outTree_->Branch("jet1deepcsv_probc_JER_down_f", &jet1deepcsv_probc_JER_down_f, "jet1deepcsv_probc_JER_down_f/D");
-    outTree_->Branch("jet1deepcsv_probcc_JER_down_f", &jet1deepcsv_probcc_JER_down_f, "jet1deepcsv_probcc_JER_down_f/D");
-
-
-    outTree_->Branch("jet1icsv", &jet1icsv, "jet1icsv/D");
-    outTree_->Branch("jet1icsv_new", &jet1icsv_new, "jet1icsv_new/D");
-    outTree_->Branch("jet1icsv_JEC_up", &jet1icsv_JEC_up, "jet1icsv_JEC_up/D");
-    outTree_->Branch("jet1icsv_JER_up", &jet1icsv_JER_up, "jet1icsv_JER_up/D");
-    outTree_->Branch("jet1icsv_JEC_down", &jet1icsv_JEC_down, "jet1icsv_JEC_down/D");
-    outTree_->Branch("jet1icsv_JER_down", &jet1icsv_JER_down, "jet1icsv_JER_down/D");
-    outTree_->Branch("jet1icsv_f", &jet1icsv_f, "jet1icsv_f/D");
-    outTree_->Branch("jet1icsv_new_f", &jet1icsv_new_f, "jet1icsv_new_f/D");
-    outTree_->Branch("jet1icsv_JEC_up_f", &jet1icsv_JEC_up_f, "jet1icsv_JEC_up_f/D");
-    outTree_->Branch("jet1icsv_JER_up_f", &jet1icsv_JER_up_f, "jet1icsv_JER_up_f/D");
-    outTree_->Branch("jet1icsv_JEC_down_f", &jet1icsv_JEC_down_f, "jet1icsv_JEC_down_f/D");
-    outTree_->Branch("jet1icsv_JER_down_f", &jet1icsv_JER_down_f, "jet1icsv_JER_down_f/D");
-    outTree_->Branch("jet2pt", &jet2pt, "jet2pt/D");
-    outTree_->Branch("jet2pt_new", &jet2pt_new, "jet2pt_new/D");
-    outTree_->Branch("jet2pt_JEC_up", &jet2pt_JEC_up, "jet2pt_JEC_up/D");
-    outTree_->Branch("jet2pt_JER_up", &jet2pt_JER_up, "jet2pt_JER_up/D");
-    outTree_->Branch("jet2pt_JEC_down", &jet2pt_JEC_down, "jet2pt_JEC_down/D");
-    outTree_->Branch("jet2pt_JER_down", &jet2pt_JER_down, "jet2pt_JER_down/D");
-    outTree_->Branch("jet2pt_f", &jet2pt_f, "jet2pt_f/D");
-    outTree_->Branch("jet2pt_new_f", &jet2pt_new_f, "jet2pt_new_f/D");
-    outTree_->Branch("jet2pt_JEC_up_f", &jet2pt_JEC_up_f, "jet2pt_JEC_up_f/D");
-    outTree_->Branch("jet2pt_JER_up_f", &jet2pt_JER_up_f, "jet2pt_JER_up_f/D");
-    outTree_->Branch("jet2pt_JEC_down_f", &jet2pt_JEC_down_f, "jet2pt_JEC_down_f/D");
-    outTree_->Branch("jet2pt_JER_down_f", &jet2pt_JER_down_f, "jet2pt_JER_down_f/D");
-    outTree_->Branch("jet2eta", &jet2eta, "jet2eta/D");
-    outTree_->Branch("jet2eta_new", &jet2eta_new, "jet2eta_new/D");
-    outTree_->Branch("jet2eta_JEC_up", &jet2eta_JEC_up, "jet2eta_JEC_up/D");
-    outTree_->Branch("jet2eta_JEC_down", &jet2eta_JEC_down, "jet2eta_JEC_down/D");
-    outTree_->Branch("jet2eta_JER_up", &jet2eta_JER_up, "jet2eta_JER_up/D");
-    outTree_->Branch("jet2eta_JER_down", &jet2eta_JER_down, "jet2eta_JER_down/D");
-    outTree_->Branch("jet2phi", &jet2phi, "jet2phi/D");
-    outTree_->Branch("jet2phi_new", &jet2phi_new, "jet2phi_new/D");
-    outTree_->Branch("jet2phi_JEC_up", &jet2phi_JEC_up, "jet2phi_JEC_up/D");
-    outTree_->Branch("jet2phi_JEC_down", &jet2phi_JEC_down, "jet2phi_JEC_down/D");
-    outTree_->Branch("jet2phi_JER_up", &jet2phi_JER_up, "jet2phi_JER_up/D");
-    outTree_->Branch("jet2phi_JER_down", &jet2phi_JER_down, "jet2phi_JER_down/D");
-    outTree_->Branch("jet2phi_f", &jet2phi_f, "jet2phi_f/D");
-    outTree_->Branch("jet2phi_new_f", &jet2phi_new_f, "jet2phi_new_f/D");
-    outTree_->Branch("jet2phi_JEC_up_f", &jet2phi_JEC_up_f, "jet2phi_JEC_up_f/D");
-    outTree_->Branch("jet2phi_JEC_down_f", &jet2phi_JEC_down_f, "jet2phi_JEC_down_f/D");
-    outTree_->Branch("jet2phi_JER_up_f", &jet2phi_JER_up_f, "jet2phi_JER_up_f/D");
-    outTree_->Branch("jet2phi_JER_down_f", &jet2phi_JER_down_f, "jet2phi_JER_down_f/D");
-	outTree_->Branch("jet2eta_f", &jet2eta_f, "jet2eta_f/D");
-    outTree_->Branch("jet2eta_new_f", &jet2eta_new_f, "jet2eta_new_f/D");
-    outTree_->Branch("jet2eta_JEC_up_f", &jet2eta_JEC_up_f, "jet2eta_JEC_up_f/D");
-    outTree_->Branch("jet2eta_JEC_down_f", &jet2eta_JEC_down_f, "jet2eta_JEC_down_f/D");
-    outTree_->Branch("jet2eta_JER_up_f", &jet2eta_JER_up_f, "jet2eta_JER_up_f/D");
-    outTree_->Branch("jet2eta_JER_down_f", &jet2eta_JER_down_f, "jet2eta_JER_down_f/D");
-    outTree_->Branch("jet2e", &jet2e, "jet2e/D");
-    outTree_->Branch("jet2e_new", &jet2e_new, "jet2e_new/D");
-    outTree_->Branch("jet2e_JEC_up", &jet2e_JEC_up, "jet2e_JEC_up/D");
-    outTree_->Branch("jet2e_JER_up", &jet2e_JER_up, "jet2e_JER_up/D");
-    outTree_->Branch("jet2e_JEC_down", &jet2e_JEC_down, "jet2e_JEC_down/D");
-    outTree_->Branch("jet2e_JER_down", &jet2e_JER_down, "jet2e_JER_down/D");
-    outTree_->Branch("jet2e_f", &jet2e_f, "jet2e_f/D");
-    outTree_->Branch("jet2e_new_f", &jet2e_new_f, "jet2e_new_f/D");
-    outTree_->Branch("jet2e_JEC_up_f", &jet2e_JEC_up_f, "jet2e_JEC_up_f/D");
-    outTree_->Branch("jet2e_JER_up_f", &jet2e_JER_up_f, "jet2e_JER_up_f/D");
-    outTree_->Branch("jet2e_JEC_down_f", &jet2e_JEC_down_f, "jet2e_JEC_down_f/D");
-    outTree_->Branch("jet2e_JER_down_f", &jet2e_JER_down_f, "jet2e_JER_down_f/D");
-    outTree_->Branch("jet2csv", &jet2csv, "jet2csv/D");
-    outTree_->Branch("jet2csv_new", &jet2csv_new, "jet2csv_new/D");
-    outTree_->Branch("jet2csv_JEC_up", &jet2csv_JEC_up, "jet2csv_JEC_up/D");
-    outTree_->Branch("jet2csv_JER_up", &jet2csv_JER_up, "jet2csv_JER_up/D");
-    outTree_->Branch("jet2csv_JEC_down", &jet2csv_JEC_down, "jet2csv_JEC_down/D");
-    outTree_->Branch("jet2csv_JER_down", &jet2csv_JER_down, "jet2csv_JER_down/D");
-    outTree_->Branch("jet2csv_f", &jet2csv_f, "jet2csv_f/D");
-    outTree_->Branch("jet2csv_new_f", &jet2csv_new_f, "jet2csv_new_f/D");
-    outTree_->Branch("jet2csv_JEC_up_f", &jet2csv_JEC_up_f, "jet2csv_JEC_up_f/D");
-    outTree_->Branch("jet2csv_JER_up_f", &jet2csv_JER_up_f, "jet2csv_JER_up_f/D");
-    outTree_->Branch("jet2csv_JEC_down_f", &jet2csv_JEC_down_f, "jet2csv_JEC_down_f/D");
-    outTree_->Branch("jet2csv_JER_down_f", &jet2csv_JER_down_f, "jet2csv_JER_down_f/D");
-
-    outTree_->Branch("jet2deepcsv_probb", &jet2deepcsv_probb, "jet2deepcsv_probb/D");
-    outTree_->Branch("jet2deepcsv_probbb", &jet2deepcsv_probbb, "jet2deepcsv_probbb/D");
-    outTree_->Branch("jet2deepcsv_probc", &jet2deepcsv_probc, "jet2deepcsv_probc/D");
-    outTree_->Branch("jet2deepcsv_probcc", &jet2deepcsv_probcc, "jet2deepcsv_probcc/D");
-
-    outTree_->Branch("jet2deepcsv_probb_new", &jet2deepcsv_probb_new, "jet2deepcsv_probb_new/D");
-    outTree_->Branch("jet2deepcsv_probbb_new", &jet2deepcsv_probbb_new, "jet2deepcsv_probbb_new/D");
-    outTree_->Branch("jet2deepcsv_probc_new", &jet2deepcsv_probc_new, "jet2deepcsv_probc_new/D");
-    outTree_->Branch("jet2deepcsv_probcc_new", &jet2deepcsv_probcc_new, "jet2deepcsv_probcc_new/D");
-
-    outTree_->Branch("jet2deepcsv_probb_JEC_up", &jet2deepcsv_probb_JEC_up, "jet2deepcsv_probb_JEC_up/D");
-    outTree_->Branch("jet2deepcsv_probbb_JEC_up", &jet2deepcsv_probbb_JEC_up, "jet2deepcsv_probbb_JEC_up/D");
-    outTree_->Branch("jet2deepcsv_probc_JEC_up", &jet2deepcsv_probc_JEC_up, "jet2deepcsv_probc_JEC_up/D");
-    outTree_->Branch("jet2deepcsv_probcc_JEC_up", &jet2deepcsv_probcc_JEC_up, "jet2deepcsv_probcc_JEC_up/D");
-
-    outTree_->Branch("jet2deepcsv_probb_JEC_down", &jet2deepcsv_probb_JEC_down, "jet2deepcsv_probb_JEC_down/D");
-    outTree_->Branch("jet2deepcsv_probbb_JEC_down", &jet2deepcsv_probbb_JEC_down, "jet2deepcsv_probbb_JEC_down/D");
-    outTree_->Branch("jet2deepcsv_probc_JEC_down", &jet2deepcsv_probc_JEC_down, "jet2deepcsv_probc_JEC_down/D");
-    outTree_->Branch("jet2deepcsv_probcc_JEC_down", &jet2deepcsv_probcc_JEC_down, "jet2deepcsv_probcc_JEC_down/D");
-
-    outTree_->Branch("jet2deepcsv_probb_JER_up", &jet2deepcsv_probb_JER_up, "jet2deepcsv_probb_JER_up/D");
-    outTree_->Branch("jet2deepcsv_probbb_JER_up", &jet2deepcsv_probbb_JER_up, "jet2deepcsv_probbb_JER_up/D");
-    outTree_->Branch("jet2deepcsv_probc_JER_up", &jet2deepcsv_probc_JER_up, "jet2deepcsv_probc_JER_up/D");
-    outTree_->Branch("jet2deepcsv_probcc_JER_up", &jet2deepcsv_probcc_JER_up, "jet2deepcsv_probcc_JER_up/D");
-
-    outTree_->Branch("jet2deepcsv_probb_JER_down", &jet2deepcsv_probb_JER_down, "jet2deepcsv_probb_JER_down/D");
-    outTree_->Branch("jet2deepcsv_probbb_JER_down", &jet2deepcsv_probbb_JER_down, "jet2deepcsv_probbb_JER_down/D");
-    outTree_->Branch("jet2deepcsv_probc_JER_down", &jet2deepcsv_probc_JER_down, "jet2deepcsv_probc_JER_down/D");
-    outTree_->Branch("jet2deepcsv_probcc_JER_down", &jet2deepcsv_probcc_JER_down, "jet2deepcsv_probcc_JER_down/D");
-
-
-    outTree_->Branch("jet2deepcsv_probb_f", &jet2deepcsv_probb_f, "jet2deepcsv_probb_f/D");
-    outTree_->Branch("jet2deepcsv_probbb_f", &jet2deepcsv_probbb_f, "jet2deepcsv_probbb_f/D");
-    outTree_->Branch("jet2deepcsv_probc_f", &jet2deepcsv_probc_f, "jet2deepcsv_probc_f/D");
-    outTree_->Branch("jet2deepcsv_probcc_f", &jet2deepcsv_probcc_f, "jet2deepcsv_probcc_f/D");
-
-    outTree_->Branch("jet2deepcsv_probb_new_f", &jet2deepcsv_probb_new_f, "jet2deepcsv_probb_new_f/D");
-    outTree_->Branch("jet2deepcsv_probbb_new_f", &jet2deepcsv_probbb_new_f, "jet2deepcsv_probbb_new_f/D");
-    outTree_->Branch("jet2deepcsv_probc_new_f", &jet2deepcsv_probc_new_f, "jet2deepcsv_probc_new_f/D");
-    outTree_->Branch("jet2deepcsv_probcc_new_f", &jet2deepcsv_probcc_new_f, "jet2deepcsv_probcc_new_f/D");
-
-    outTree_->Branch("jet2deepcsv_probb_JEC_up_f", &jet2deepcsv_probb_JEC_up_f, "jet2deepcsv_probb_JEC_up_f/D");
-    outTree_->Branch("jet2deepcsv_probbb_JEC_up_f", &jet2deepcsv_probbb_JEC_up_f, "jet2deepcsv_probbb_JEC_up_f/D");
-    outTree_->Branch("jet2deepcsv_probc_JEC_up_f", &jet2deepcsv_probc_JEC_up_f, "jet2deepcsv_probc_JEC_up_f/D");
-    outTree_->Branch("jet2deepcsv_probcc_JEC_up_f", &jet2deepcsv_probcc_JEC_up_f, "jet2deepcsv_probcc_JEC_up_f/D");
-
-    outTree_->Branch("jet2deepcsv_probb_JEC_down_f", &jet2deepcsv_probb_JEC_down_f, "jet2deepcsv_probb_JEC_down_f/D");
-    outTree_->Branch("jet2deepcsv_probbb_JEC_down_f", &jet2deepcsv_probbb_JEC_down_f, "jet2deepcsv_probbb_JEC_down_f/D");
-    outTree_->Branch("jet2deepcsv_probc_JEC_down_f", &jet2deepcsv_probc_JEC_down_f, "jet2deepcsv_probc_JEC_down_f/D");
-    outTree_->Branch("jet2deepcsv_probcc_JEC_down_f", &jet2deepcsv_probcc_JEC_down_f, "jet2deepcsv_probcc_JEC_down_f/D");
-
-    outTree_->Branch("jet2deepcsv_probb_JER_up_f", &jet2deepcsv_probb_JER_up_f, "jet2deepcsv_probb_JER_up_f/D");
-    outTree_->Branch("jet2deepcsv_probbb_JER_up_f", &jet2deepcsv_probbb_JER_up_f, "jet2deepcsv_probbb_JER_up_f/D");
-    outTree_->Branch("jet2deepcsv_probc_JER_up_f", &jet2deepcsv_probc_JER_up_f, "jet2deepcsv_probc_JER_up_f/D");
-    outTree_->Branch("jet2deepcsv_probcc_JER_up_f", &jet2deepcsv_probcc_JER_up_f, "jet2deepcsv_probcc_JER_up_f/D");
-
-    outTree_->Branch("jet2deepcsv_probb_JER_down_f", &jet2deepcsv_probb_JER_down_f, "jet2deepcsv_probb_JER_down_f/D");
-    outTree_->Branch("jet2deepcsv_probbb_JER_down_f", &jet2deepcsv_probbb_JER_down_f, "jet2deepcsv_probbb_JER_down_f/D");
-    outTree_->Branch("jet2deepcsv_probc_JER_down_f", &jet2deepcsv_probc_JER_down_f, "jet2deepcsv_probc_JER_down_f/D");
-    outTree_->Branch("jet2deepcsv_probcc_JER_down_f", &jet2deepcsv_probcc_JER_down_f, "jet2deepcsv_probcc_JER_down_f/D");
-
-
-
-    outTree_->Branch("jet2icsv", &jet2icsv, "jet2icsv/D");
-    outTree_->Branch("jet2icsv_new", &jet2icsv_new, "jet2icsv_new/D");
-    outTree_->Branch("jet2icsv_JEC_up", &jet2icsv_JEC_up, "jet2icsv_JEC_up/D");
-    outTree_->Branch("jet2icsv_JER_up", &jet2icsv_JER_up, "jet2icsv_JER_up/D");
-    outTree_->Branch("jet2icsv_JEC_down", &jet2icsv_JEC_down, "jet2icsv_JEC_down/D");
-    outTree_->Branch("jet2icsv_JER_down", &jet2icsv_JER_down, "jet2icsv_JER_down/D");
-    outTree_->Branch("jet2icsv_f", &jet2icsv_f, "jet2icsv_f/D");
-    outTree_->Branch("jet2icsv_new_f", &jet2icsv_new_f, "jet2icsv_new_f/D");
-    outTree_->Branch("jet2icsv_JEC_up_f", &jet2icsv_JEC_up_f, "jet2icsv_JEC_up_f/D");
-    outTree_->Branch("jet2icsv_JER_up_f", &jet2icsv_JER_up_f, "jet2icsv_JER_up_f/D");
-    outTree_->Branch("jet2icsv_JEC_down_f", &jet2icsv_JEC_down_f, "jet2icsv_JEC_down_f/D");
-    outTree_->Branch("jet2icsv_JER_down_f", &jet2icsv_JER_down_f, "jet2icsv_JER_down_f/D");
-    outTree_->Branch("drj1a", &drj1a, "drj1a/D");
-    outTree_->Branch("drj1a_new", &drj1a_new, "drj1a_new/D");
-    outTree_->Branch("drj1a_JEC_up", &drj1a_JEC_up, "drj1a_JEC_up/D");
-    outTree_->Branch("drj1a_JEC_down", &drj1a_JEC_down, "drj1a_JEC_down/D");
-    outTree_->Branch("drj1a_JER_up", &drj1a_JER_up, "drj1a_JER_up/D");
-    outTree_->Branch("drj1a_JER_down", &drj1a_JER_down, "drj1a_JER_down/D");
-    outTree_->Branch("drj1a_f", &drj1a_f, "drj1a_f/D");
-    outTree_->Branch("drj1a_new_f", &drj1a_new_f, "drj1a_new_f/D");
-    outTree_->Branch("drj1a_JEC_up_f", &drj1a_JEC_up_f, "drj1a_JEC_up_f/D");
-    outTree_->Branch("drj1a_JEC_down_f", &drj1a_JEC_down_f, "drj1a_JEC_down_f/D");
-    outTree_->Branch("drj1a_JER_up_f", &drj1a_JER_up_f, "drj1a_JER_up_f/D");
-    outTree_->Branch("drj1a_JER_down_f", &drj1a_JER_down_f, "drj1a_JER_down_f/D");
-    outTree_->Branch("drj2a", &drj2a, "drj2a/D");
-    outTree_->Branch("drj2a_new", &drj2a_new, "drj2a_new/D");
-    outTree_->Branch("drj2a_JEC_up", &drj2a_JEC_up, "drj2a_JEC_up/D");
-    outTree_->Branch("drj2a_JEC_down", &drj2a_JEC_down, "drj2a_JEC_down/D");
-    outTree_->Branch("drj2a_JER_up", &drj2a_JER_up, "drj2a_JER_up/D");
-    outTree_->Branch("drj2a_JER_down", &drj2a_JER_down, "drj2a_JER_down/D");
-    outTree_->Branch("drj2a_f", &drj2a_f, "drj2a_f/D");
-    outTree_->Branch("drj2a_new_f", &drj2a_new_f, "drj2a_new_f/D");
-    outTree_->Branch("drj2a_JEC_up_f", &drj2a_JEC_up_f, "drj2a_JEC_up_f/D");
-    outTree_->Branch("drj2a_JEC_down_f", &drj2a_JEC_down_f, "drj2a_JEC_down_f/D");
-    outTree_->Branch("drj2a_JER_up_f", &drj2a_JER_up_f, "drj2a_JER_up_f/D");
-    outTree_->Branch("drj2a_JER_down_f", &drj2a_JER_down_f, "drj2a_JER_down_f/D");
-    outTree_->Branch("drj1l", &drj1l, "drj1l/D");
-    outTree_->Branch("drj1l_new", &drj1l_new, "drj1l_new/D");
-    outTree_->Branch("drj1l_JEC_up", &drj1l_JEC_up, "drj1l_JEC_up/D");
-    outTree_->Branch("drj1l_JEC_down", &drj1l_JEC_down, "drj1l_JEC_down/D");
-    outTree_->Branch("drj1l_JER_up", &drj1l_JER_up, "drj1l_JER_up/D");
-    outTree_->Branch("drj1l_JER_down", &drj1l_JER_down, "drj1l_JER_down/D");
-    outTree_->Branch("drj1l_f", &drj1l_f, "drj1l_f/D");
-    outTree_->Branch("drj1l_new_f", &drj1l_new_f, "drj1l_new_f/D");
-    outTree_->Branch("drj1l_JEC_up_f", &drj1l_JEC_up_f, "drj1l_JEC_up_f/D");
-    outTree_->Branch("drj1l_JEC_down_f", &drj1l_JEC_down_f, "drj1l_JEC_down_f/D");
-    outTree_->Branch("drj1l_JER_up_f", &drj1l_JER_up_f, "drj1l_JER_up_f/D");
-    outTree_->Branch("drj1l_JER_down_f", &drj1l_JER_down_f, "drj1l_JER_down_f/D");
-    outTree_->Branch("drj2l", &drj2l, "drj2l/D");
-    outTree_->Branch("drj2l_new", &drj2l_new, "drj2l_new/D");
-    outTree_->Branch("drj2l_JEC_up", &drj2l_JEC_up, "drj2l_JEC_up/D");
-    outTree_->Branch("drj2l_JEC_down", &drj2l_JEC_down, "drj2l_JEC_down/D");
-    outTree_->Branch("drj2l_JER_up", &drj2l_JER_up, "drj2l_JER_up/D");
-    outTree_->Branch("drj2l_JER_down", &drj2l_JER_down, "drj2l_JER_down/D");
-    outTree_->Branch("drj2l_f", &drj2l_f, "drj2l_f/D");
-    outTree_->Branch("drj2l_new_f", &drj2l_new_f, "drj2l_new_f/D");
-    outTree_->Branch("drj2l_JEC_up_f", &drj2l_JEC_up_f, "drj2l_JEC_up_f/D");
-    outTree_->Branch("drj2l_JEC_down_f", &drj2l_JEC_down_f, "drj2l_JEC_down_f/D");
-    outTree_->Branch("drj2l_JER_up_f", &drj2l_JER_up_f, "drj2l_JER_up_f/D");
-    outTree_->Branch("drj2l_JER_down_f", &drj2l_JER_down_f, "drj2l_JER_down_f/D");
-
-    outTree_->Branch("Mjj", &Mjj, "Mjj/D");
-    outTree_->Branch("Mjj_new", &Mjj_new, "Mjj_new/D");
-    outTree_->Branch("Mjj_JEC_up", &Mjj_JEC_up, "Mjj_JEC_up/D");
-    outTree_->Branch("Mjj_JEC_down", &Mjj_JEC_down, "Mjj_JEC_down/D");
-    outTree_->Branch("Mjj_JER_up", &Mjj_JER_up, "Mjj_JER_up/D");
-    outTree_->Branch("Mjj_JER_down", &Mjj_JER_down, "Mjj_JER_down/D");
-    outTree_->Branch("Mjj_f", &Mjj_f, "Mjj_f/D");
-    outTree_->Branch("Mjj_new_f", &Mjj_new_f, "Mjj_new_f/D");
-    outTree_->Branch("Mjj_JEC_up_f", &Mjj_JEC_up_f, "Mjj_JEC_up_f/D");
-    outTree_->Branch("Mjj_JEC_down_f", &Mjj_JEC_down_f, "Mjj_JEC_down_f/D");
-    outTree_->Branch("Mjj_JER_up_f", &Mjj_JER_up_f, "Mjj_JER_up_f/D");
-    outTree_->Branch("Mjj_JER_down_f", &Mjj_JER_down_f, "Mjj_JER_down_f/D");
-    outTree_->Branch("deltaeta", &deltaeta, "deltaeta/D");
-    outTree_->Branch("deltaeta_new", &deltaeta_new, "deltaeta_new/D");
-    outTree_->Branch("deltaeta_JEC_up", &deltaeta_JEC_up, "deltaeta_JEC_up/D");
-    outTree_->Branch("deltaeta_JEC_down", &deltaeta_JEC_down, "deltaeta_JEC_down/D");
-    outTree_->Branch("deltaeta_JER_up", &deltaeta_JER_up, "deltaeta_JER_up/D");
-    outTree_->Branch("deltaeta_JER_down", &deltaeta_JER_down, "deltaeta_JER_down/D");
-    outTree_->Branch("deltaeta_f", &deltaeta_f, "deltaeta_f/D");
-    outTree_->Branch("deltaeta_new_f", &deltaeta_new_f, "deltaeta_new_f/D");
-    outTree_->Branch("deltaeta_JEC_up_f", &deltaeta_JEC_up_f, "deltaeta_JEC_up_f/D");
-    outTree_->Branch("deltaeta_JEC_down_f", &deltaeta_JEC_down_f, "deltaeta_JEC_down_f/D");
-    outTree_->Branch("deltaeta_JER_up_f", &deltaeta_JER_up_f, "deltaeta_JER_up_f/D");
-    outTree_->Branch("deltaeta_JER_down_f", &deltaeta_JER_down_f, "deltaeta_JER_down_f/D");
-    outTree_->Branch("zepp", &zepp, "zepp/D");
-    outTree_->Branch("zepp_new", &zepp_new, "zepp_new/D");
-    outTree_->Branch("zepp_JEC_up", &zepp_JEC_up, "zepp_JEC_up/D");
-    outTree_->Branch("zepp_JEC_down", &zepp_JEC_down, "zepp_JEC_down/D");
-    outTree_->Branch("zepp_JER_up", &zepp_JER_up, "zepp_JER_up/D");
-    outTree_->Branch("zepp_JER_down", &zepp_JER_down, "zepp_JER_down/D");
-    outTree_->Branch("zepp_f", &zepp_f, "zepp_f/D");
-    outTree_->Branch("zepp_new_f", &zepp_new_f, "zepp_new_f/D");
-    outTree_->Branch("zepp_JEC_up_f", &zepp_JEC_up_f, "zepp_JEC_up_f/D");
-    outTree_->Branch("zepp_JEC_down_f", &zepp_JEC_down_f, "zepp_JEC_down_f/D");
-    outTree_->Branch("zepp_JER_up_f", &zepp_JER_up_f, "zepp_JER_up_f/D");
-    outTree_->Branch("zepp_JER_down_f", &zepp_JER_down_f, "zepp_JER_down_f/D");
     // Generic kinematic quantities
     outTree_->Branch("ptlep1", &ptlep1, "ptlep1/D");
     outTree_->Branch("etalep1", &etalep1, "etalep1/D");
     outTree_->Branch("philep1", &philep1, "philep1/D");
     outTree_->Branch("energylep1", &energylep1, "energylep1/D");
-    outTree_->Branch("j1metPhi", &j1metPhi, "j1metPhi/D");
-    outTree_->Branch("j1metPhi_new", &j1metPhi_new, "j1metPhi_new/D");
-    outTree_->Branch("j1metPhi_JEC_up", &j1metPhi_JEC_up, "j1metPhi_JEC_up/D");
-    outTree_->Branch("j1metPhi_JEC_down", &j1metPhi_JEC_down, "j1metPhi_JEC_down/D");
-    outTree_->Branch("j1metPhi_JER_up", &j1metPhi_JER_up, "j1metPhi_JER_up/D");
-    outTree_->Branch("j1metPhi_JER_down", &j1metPhi_JER_down, "j1metPhi_JER_down/D");
-    outTree_->Branch("j1metPhi_f", &j1metPhi_f, "j1metPhi_f/D");
-    outTree_->Branch("j1metPhi_new_f", &j1metPhi_new_f, "j1metPhi_new_f/D");
-    outTree_->Branch("j1metPhi_JEC_up_f", &j1metPhi_JEC_up_f, "j1metPhi_JEC_up_f/D");
-    outTree_->Branch("j1metPhi_JEC_down_f", &j1metPhi_JEC_down_f, "j1metPhi_JEC_down_f/D");
-    outTree_->Branch("j1metPhi_JER_up_f", &j1metPhi_JER_up_f, "j1metPhi_JER_up_f/D");
-    outTree_->Branch("j1metPhi_JER_down_f", &j1metPhi_JER_down_f, "j1metPhi_JER_down_f/D");
-    outTree_->Branch("j2metPhi", &j2metPhi, "j2metPhi/D");
-    outTree_->Branch("j2metPhi_new", &j2metPhi_new, "j2metPhi_new/D");
-    outTree_->Branch("j2metPhi_JEC_up", &j2metPhi_JEC_up, "j2metPhi_JEC_up/D");
-    outTree_->Branch("j2metPhi_JEC_down", &j2metPhi_JEC_down, "j2metPhi_JEC_down/D");
-    outTree_->Branch("j2metPhi_JER_up", &j2metPhi_JER_up, "j2metPhi_JER_up/D");
-    outTree_->Branch("j2metPhi_JER_down", &j2metPhi_JER_down, "j2metPhi_JER_down/D");
-    outTree_->Branch("j2metPhi_f", &j2metPhi_f, "j2metPhi_f/D");
-    outTree_->Branch("j2metPhi_new_f", &j2metPhi_new_f, "j2metPhi_new_f/D");
-    outTree_->Branch("j2metPhi_JEC_up_f", &j2metPhi_JEC_up_f, "j2metPhi_JEC_up_f/D");
-    outTree_->Branch("j2metPhi_JEC_down_f", &j2metPhi_JEC_down_f, "j2metPhi_JEC_down_f/D");
-    outTree_->Branch("j2metPhi_JER_up_f", &j2metPhi_JER_up_f, "j2metPhi_JER_up_f/D");
-    outTree_->Branch("j2metPhi_JER_down_f", &j2metPhi_JER_down_f, "j2metPhi_JER_down_f/D");
-    outTree_->Branch("Dphiwajj", &Dphiwajj, "Dphiwajj/D");
-    outTree_->Branch("Dphiwajj_f", &Dphiwajj_f, "Dphiwajj_f/D");
-    outTree_->Branch("Dphiwajj_new", &Dphiwajj_new, "Dphiwajj_new/D");
-    outTree_->Branch("Dphiwajj_JEC_up", &Dphiwajj_JEC_up, "Dphiwajj_JEC_up/D");
-    outTree_->Branch("Dphiwajj_JEC_down", &Dphiwajj_JEC_down, "Dphiwajj_JEC_down/D");
-    outTree_->Branch("Dphiwajj_JER_up", &Dphiwajj_JER_up, "Dphiwajj_JER_up/D");
-    outTree_->Branch("Dphiwajj_JER_down", &Dphiwajj_JER_down, "Dphiwajj_JER_down/D");
     // MET
     outTree_->Branch("METraw_et", &METraw_et, "METraw_et/D");
     outTree_->Branch("METraw_phi", &METraw_phi, "METraw_phi/D");
@@ -2435,7 +1841,9 @@ std::cout<<"hasphoton : "<<hasphoton<<std::endl;
 
 		}
     }
-    // two leading jets with JER
+    delete jecAK4_;
+    jecAK4_ = 0;
+	// two leading jets with JER
 
 
     std::vector<TLorentzVector*> jets_new;
@@ -3459,10 +2867,6 @@ if(ak4jets->size()>=1){
 
     if(!((/*HLT_Mu3 == 1 &&*/abs(lep) == 13 &&ngoodmus == 1 &&ngoodeles == 0 && (nloosemus + nlooseeles) == 1 /*&& ptlep1>30.*/ &&fabs(etalep1)<2.4)||(/*HLT_Ele2 == 1 &&*/abs(lep) == 11 &&ngoodmus == 0 &&ngoodeles == 1 && (nloosemus + nlooseeles) == 1 /*&& ptlep1 > 30.*/ && fabs(etalep1)<2.5))){return;}
 
-     //if(mtVlepJECnew_new < 20. &&MET_et <30. &&((jet1pt_orig > 20 && drj1l_orig > 0.3) || (jet2pt_orig > 20 && drj2l_orig > 0.3))){
-     if(((mtVlepJECnew_new < 20. &&MET_et_new <30.) || (mtVlepJECnew < 20. &&MET_et <30.)) &&((jet1pt_orig > 20 && drj1l_orig > 0.3) || (jet2pt_orig > 20 && drj2l_orig > 0.3))){  
-        outTree2_->Fill();
-     }
      //if(!(jet1pt_new>40. &&fabs(jet1eta_new)<4.7 &&jet2pt_new>30. &&fabs(jet2eta_new)<4.7)){return;}
 
     Bool_t Jet_cut = jet1pt>40. &&fabs(jet1eta)<4.7 &&jet2pt>30. &&fabs(jet2eta)<4.7;
@@ -3485,7 +2889,7 @@ if(ak4jets->size()>=1){
 
     if(hasphoton == 1.){
 
-        if(Jet_cut || Jet_cut_f || Jet_cut_new || Jet_cut_new_f || Jet_cut_JEC_up || Jet_cut_JEC_up_f || Jet_cut_JEC_down || Jet_cut_JEC_down_f || Jet_cut_JER_up || Jet_cut_JER_up_f || Jet_cut_JER_down || Jet_cut_JER_down_f){
+        if(MET_et>30. || MET_et_new>30.){
             outTree_->Fill();
         }
     } 
@@ -3494,8 +2898,8 @@ if(ak4jets->size()>=1){
        //(mtVlepJECnew_new < 20. &&MET_et <30. &&((jet1pt_orig > 20 && drj1l_orig > 0.3) || (jet2pt_orig > 20 && drj2l_orig > 0.3))){
         //outTree2_->Fill();
     //}
-    delete jecAK4_;
-    jecAK4_ = 0;
+    //delete jecAK4_;
+    //jecAK4_ = 0;
 
 }
 
