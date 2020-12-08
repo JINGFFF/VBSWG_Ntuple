@@ -1,7 +1,7 @@
 from WMCore.Configuration import Configuration
 config = Configuration()
 config.section_("General")
-config.General.requestName   = 'full_run2_2016_version5_smuE_v1'
+config.General.requestName   = 'full_run2_2016_for_analysis_version5_smuE_v1'
 config.General.transferLogs = True
 
 config.section_("JobType")
@@ -17,10 +17,10 @@ config.section_("Data")
 config.Data.inputDataset = '/SingleMuon/Run2016E-17Jul2018-v1/MINIAOD'
 config.Data.inputDBS = 'global'
 config.Data.splitting = 'LumiBased'
-config.Data.unitsPerJob = 10
+config.Data.unitsPerJob = 40
 config.Data.lumiMask = 'Cert_271036-284044_13TeV_23Sep2016ReReco_Collisions16_JSON.txt'
 config.Data.publication = False
-config.Data.outputDatasetTag = 'full_run2_2016_version5_smuE_v1'
+config.Data.outputDatasetTag = 'full_run2_2016_for_analysis_version5_smuE_v1'
 
 config.section_("Site")
 config.Site.storageSite = 'T3_CH_CERNBOX'

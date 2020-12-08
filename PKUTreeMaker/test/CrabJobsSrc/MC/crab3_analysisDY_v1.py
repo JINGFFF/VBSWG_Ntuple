@@ -1,7 +1,7 @@
 from WMCore.Configuration import Configuration
 config = Configuration()
 config.section_("General")
-config.General.requestName   = 'full_run2_2016_version7_DY_1'
+config.General.requestName   = 'full_run2_2016_for_analysis_version7_DY_1'
 config.General.transferLogs = True
 
 config.section_("JobType")
@@ -16,11 +16,11 @@ config.section_("Data")
 ##config.Data.outputPrimaryDataset = 'VBS_WGAMMA_94X'
 config.Data.inputDataset = '/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3_ext2-v2/MINIAODSIM'
 config.Data.inputDBS = 'global'
-config.Data.splitting = 'LumiBased'
-config.Data.unitsPerJob = 10
+config.Data.splitting = 'FileBased'
+config.Data.unitsPerJob = 2
 config.Data.totalUnits = -1
 config.Data.publication = False
-config.Data.outputDatasetTag = 'full_run2_2016_version7_DY_1'
+config.Data.outputDatasetTag = 'full_run2_2016_for_analysis_version7_DY_1'
 
 config.section_("Site")
 config.Site.storageSite = 'T3_CH_CERNBOX'

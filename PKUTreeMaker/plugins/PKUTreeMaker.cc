@@ -1651,13 +1651,13 @@ void PKUTreeMaker::analyze(const edm::Event& iEvent, const edm::EventSetup& iSet
             nump = nump + 1;
         if (theWeight < 0)
             numm = numm + 1;
-       
+      /* 
         edm::Handle<LHEEventProduct> wgtsource;
         iEvent.getByToken(LheToken_, wgtsource);
         for ( int i=0; i<703; ++i) {
             pweight[i]= wgtsource->weights()[i].wgt/wgtsource->originalXWGTUP();
         }
-
+*/
 
         edm::Handle<std::vector<PileupSummaryInfo>> PupInfo;
         iEvent.getByToken(PUToken_, PupInfo);
