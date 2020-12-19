@@ -202,16 +202,16 @@ private:
     //-------------- Met uncertainty-----------------//
     double useless;
     // AK4 Jets
-    int    ak4jet_hf[6], ak4jet_pf[6];
-    double ak4jet_pt[6], ak4jet_eta[6], ak4jet_phi[6], ak4jet_e[6];
-    double ak4jet_pt_old[6], ak4jet_e_old[6];
-    double ak4jet_pt_new[6], ak4jet_e_new[6];
-    double ak4jet_pt_JEC_up[6], ak4jet_pt_JEC_down[6], ak4jet_e_JEC_up[6], ak4jet_e_JEC_down[6];
-    double ak4jet_pt_JER_up[6], ak4jet_pt_JER_down[6], ak4jet_e_JER_up[6], ak4jet_e_JER_down[6];
-    double ak4jet_pt_jer[6];
-    double ak4jet_csv[6], ak4jet_icsv[6];
-	double ak4jet_deepcsv_probb[6], ak4jet_deepcsv_probbb[6], ak4jet_deepcsv_probc[6], ak4jet_deepcsv_probcc[6]; // add by Jing
-
+    int    ak4jet_hf[9], ak4jet_pf[9];
+    double ak4jet_pt[9], ak4jet_eta[9], ak4jet_phi[9], ak4jet_e[9];
+    double ak4jet_pt_old[9], ak4jet_e_old[9];
+    double ak4jet_pt_new[9], ak4jet_e_new[9];
+    double ak4jet_pt_JEC_up[9], ak4jet_pt_JEC_down[9], ak4jet_e_JEC_up[9], ak4jet_e_JEC_down[9];
+    double ak4jet_pt_JER_up[9], ak4jet_pt_JER_down[9], ak4jet_e_JER_up[9], ak4jet_e_JER_down[9];
+    double ak4jet_pt_jer[9];
+    double ak4jet_csv[9], ak4jet_icsv[9];
+    double ak4jet_deepcsv_probb[9], ak4jet_deepcsv_probbb[9], ak4jet_deepcsv_probc[9], ak4jet_deepcsv_probcc[9]; // add by Jing
+    double ak4jet_puIdLoose[9], ak4jet_puIdMedium[9],ak4jet_puIdTight[9];
     double drjetlep[6], drjetphoton[6];
     double genjet_pt[6], genjet_eta[6], genjet_phi[6], genjet_e[6];
 
@@ -644,6 +644,11 @@ PKUTreeMaker::PKUTreeMaker(const edm::ParameterSet& iConfig)  //:
     outTree_->Branch("genelectron_eta", genelectron_eta,"genelectron_eta[6]/D");
     outTree_->Branch("genelectron_phi", genelectron_phi,"genelectron_phi[6]/D");
 
+    outTree_->Branch("genjet_pt",genjet_pt,"genjet_pt[6]/D");
+    outTree_->Branch("genjet_eta",genjet_eta,"genjet_eta[6]/D");
+    outTree_->Branch("genjet_phi",genjet_phi,"genjet_phi[6]/D");
+    outTree_->Branch("genjet_e",genjet_e,"genjet_e[6]/D");
+
     /// Photon
     outTree_->Branch("photon_pt", photon_pt, "photon_pt[6]/D");
     outTree_->Branch("photon_eta", photon_eta, "photon_eta[6]/D");
@@ -707,8 +712,8 @@ PKUTreeMaker::PKUTreeMaker(const edm::ParameterSet& iConfig)  //:
     outTree_->Branch("isprompt", &isprompt_, "isprompt/I");
     outTree_->Branch("ispromptLep", &ispromptLep_, "ispromptLep/I");
     //jets
-    outTree_->Branch("ak4jet_hf", ak4jet_hf, "ak4jet_hf[6]/I");
-    outTree_->Branch("ak4jet_pf", ak4jet_pf, "ak4jet_pf[6]/I");
+    outTree_->Branch("ak4jet_hf", ak4jet_hf, "ak4jet_hf[9]/I");
+    outTree_->Branch("ak4jet_pf", ak4jet_pf, "ak4jet_pf[9]/I");
     outTree_->Branch("jet1hf", &jet1hf, "jet1hf/I");
     outTree_->Branch("jet1pf", &jet1pf, "jet1pf/I");
     outTree_->Branch("jet2hf", &jet2hf, "jet2hf/I");
@@ -763,32 +768,35 @@ PKUTreeMaker::PKUTreeMaker(const edm::ParameterSet& iConfig)  //:
     outTree_->Branch("jet2hf_JER_down_f", &jet2hf_JER_down_f, "jet2hf_JER_down_f/I");
     outTree_->Branch("jet2pf_JER_down_f", &jet2pf_JER_down_f, "jet2pf_JER_down_f/I");
 
-    outTree_->Branch("ak4jet_pt", ak4jet_pt, "ak4jet_pt[6]/D");
-    outTree_->Branch("ak4jet_eta", ak4jet_eta, "ak4jet_eta[6]/D");
-    outTree_->Branch("ak4jet_phi", ak4jet_phi, "ak4jet_phi[6]/D");
-    outTree_->Branch("ak4jet_e", ak4jet_e, "ak4jet_e[6]/D");
-    outTree_->Branch("ak4jet_csv", ak4jet_csv, "ak4jet_csv[6]/D");
-    outTree_->Branch("ak4jet_deepcsv_probb", ak4jet_deepcsv_probb, "ak4jet_deepcsv_probb[6]/D");
-    outTree_->Branch("ak4jet_deepcsv_probbb", ak4jet_deepcsv_probbb, "ak4jet_deepcsv_probbb[6]/D");
-    outTree_->Branch("ak4jet_deepcsv_probc", ak4jet_deepcsv_probc, "ak4jet_deepcsv_probc[6]/D");
-    outTree_->Branch("ak4jet_deepcsv_probcc", ak4jet_deepcsv_probcc, "ak4jet_deepcsv_probcc[6]/D");
+    outTree_->Branch("ak4jet_pt", ak4jet_pt, "ak4jet_pt[9]/D");
+    outTree_->Branch("ak4jet_eta", ak4jet_eta, "ak4jet_eta[9]/D");
+    outTree_->Branch("ak4jet_phi", ak4jet_phi, "ak4jet_phi[9]/D");
+    outTree_->Branch("ak4jet_e", ak4jet_e, "ak4jet_e[9]/D");
+    outTree_->Branch("ak4jet_csv", ak4jet_csv, "ak4jet_csv[9]/D");
+    outTree_->Branch("ak4jet_deepcsv_probb", ak4jet_deepcsv_probb, "ak4jet_deepcsv_probb[9]/D");
+    outTree_->Branch("ak4jet_deepcsv_probbb", ak4jet_deepcsv_probbb, "ak4jet_deepcsv_probbb[9]/D");
+    outTree_->Branch("ak4jet_deepcsv_probc", ak4jet_deepcsv_probc, "ak4jet_deepcsv_probc[9]/D");
+    outTree_->Branch("ak4jet_deepcsv_probcc", ak4jet_deepcsv_probcc, "ak4jet_deepcsv_probcc[9]/D");
 
-    outTree_->Branch("ak4jet_icsv", ak4jet_icsv, "ak4jet_icsv[6]/D");
+    outTree_->Branch("ak4jet_icsv", ak4jet_icsv, "ak4jet_icsv[9]/D");
+    outTree_->Branch("ak4jet_puIdLoose"      ,ak4jet_puIdLoose       ,"ak4jet_puIdLoose[6]/D");
+    outTree_->Branch("ak4jet_puIdMedium"      ,ak4jet_puIdMedium       ,"ak4jet_puIdMedium[6]/D");
+    outTree_->Branch("ak4jet_puIdTight"      ,ak4jet_puIdTight       ,"ak4jet_puIdTight[6]/D");
 
-    outTree_->Branch("ak4jet_pt_old", ak4jet_pt_old, "ak4jet_pt_old[6]/D");
-    outTree_->Branch("ak4jet_pt_new", ak4jet_pt_new, "ak4jet_pt_new[6]/D");
-    outTree_->Branch("ak4jet_pt_JEC_up", ak4jet_pt_JEC_up, "ak4jet_pt_JEC_up[6]/D");
-    outTree_->Branch("ak4jet_pt_JEC_down", ak4jet_pt_JEC_down, "ak4jet_pt_JEC_down[6]/D");
-    outTree_->Branch("ak4jet_pt_JER_up", ak4jet_pt_JER_up, "ak4jet_pt_JER_up[6]/D");
-    outTree_->Branch("ak4jet_pt_JER_down", ak4jet_pt_JER_down, "ak4jet_pt_JER_down[6]/D");
+    outTree_->Branch("ak4jet_pt_old", ak4jet_pt_old, "ak4jet_pt_old[9]/D");
+    outTree_->Branch("ak4jet_pt_new", ak4jet_pt_new, "ak4jet_pt_new[9]/D");
+    outTree_->Branch("ak4jet_pt_JEC_up", ak4jet_pt_JEC_up, "ak4jet_pt_JEC_up[9]/D");
+    outTree_->Branch("ak4jet_pt_JEC_down", ak4jet_pt_JEC_down, "ak4jet_pt_JEC_down[9]/D");
+    outTree_->Branch("ak4jet_pt_JER_up", ak4jet_pt_JER_up, "ak4jet_pt_JER_up[9]/D");
+    outTree_->Branch("ak4jet_pt_JER_down", ak4jet_pt_JER_down, "ak4jet_pt_JER_down[9]/D");
     //outTree_->Branch("ak4jet_eta", ak4jet_eta, "ak4jet_eta[6]/D");
     //outTree_->Branch("ak4jet_phi", ak4jet_phi, "ak4jet_phi[6]/D");
-    outTree_->Branch("ak4jet_e_old", ak4jet_e_old, "ak4jet_e_old[6]/D");
-    outTree_->Branch("ak4jet_e_new", ak4jet_e_new, "ak4jet_e_new[6]/D");
-    outTree_->Branch("ak4jet_e_JEC_up", ak4jet_e_JEC_up, "ak4jet_e_JEC_up[6]/D");
-    outTree_->Branch("ak4jet_e_JEC_down", ak4jet_e_JEC_down, "ak4jet_e_JEC_down[6]/D");
-    outTree_->Branch("ak4jet_e_JER_up", ak4jet_e_JER_up, "ak4jet_e_JER_up[6]/D");
-    outTree_->Branch("ak4jet_e_JER_down", ak4jet_e_JER_down, "ak4jet_e_JER_down[6]/D");
+    outTree_->Branch("ak4jet_e_old", ak4jet_e_old, "ak4jet_e_old[9]/D");
+    outTree_->Branch("ak4jet_e_new", ak4jet_e_new, "ak4jet_e_new[9]/D");
+    outTree_->Branch("ak4jet_e_JEC_up", ak4jet_e_JEC_up, "ak4jet_e_JEC_up[9]/D");
+    outTree_->Branch("ak4jet_e_JEC_down", ak4jet_e_JEC_down, "ak4jet_e_JEC_down[9]/D");
+    outTree_->Branch("ak4jet_e_JER_up", ak4jet_e_JER_up, "ak4jet_e_JER_up[9]/D");
+    outTree_->Branch("ak4jet_e_JER_down", ak4jet_e_JER_down, "ak4jet_e_JER_down[9]/D");
     //outTree_->Branch("ak4jet_csv", ak4jet_csv, "ak4jet_csv[6]/D");
     //outTree_->Branch("ak4jet_icsv", ak4jet_icsv, "ak4jet_icsv[6]/D");
     outTree_->Branch("jet1pt", &jet1pt, "jet1pt/D");
@@ -2450,7 +2458,7 @@ std::cout<<"hasphoton : "<<hasphoton<<std::endl;
             jets.push_back(dummy);
             ++nujets;
         }
-        if (ik < 6) {
+        if (ik < 9) {
             ak4jet_hf[ik] = (*ak4jets)[ik].hadronFlavour();
             ak4jet_pf[ik] = (*ak4jets)[ik].partonFlavour();
             ak4jet_pt[ik]   = corr * uncorrJet.pt();
@@ -2465,6 +2473,10 @@ std::cout<<"hasphoton : "<<hasphoton<<std::endl;
             ak4jet_deepcsv_probc[ik]  = (*ak4jets)[ik].bDiscriminator("pfDeepCSVJetTags:probc");
             ak4jet_deepcsv_probcc[ik]  = (*ak4jets)[ik].bDiscriminator("pfDeepCSVJetTags:probcc");
 
+	    int idflag = (*pileupJetIdFlag)[ak4jets->refAt(ik)];
+	    ak4jet_puIdLoose[ik]  =  (PileupJetIdentifier::passJetId(idflag, PileupJetIdentifier::kLoose));
+	    ak4jet_puIdMedium[ik] =  (PileupJetIdentifier::passJetId(idflag, PileupJetIdentifier::kMedium));
+	    ak4jet_puIdTight[ik]  =  (PileupJetIdentifier::passJetId(idflag, PileupJetIdentifier::kTight));
 
 		}
     }
@@ -2481,7 +2493,7 @@ std::cout<<"hasphoton : "<<hasphoton<<std::endl;
             dummy->SetPtEtaPhiE((*ak4jets)[ik].userFloat("SmearedPt"), uncorrJet.eta(), uncorrJet.phi(), (*ak4jets)[ik].userFloat("SmearedE"));
             jets_new.push_back(dummy);
         }
-        if (ik < 6) {
+        if (ik < 9) {
             ak4jet_pt_new[ik] = (*ak4jets)[ik].userFloat("SmearedPt");
             ak4jet_e_new[ik]  = (*ak4jets)[ik].userFloat("SmearedE");
         }
@@ -2498,7 +2510,7 @@ std::cout<<"hasphoton : "<<hasphoton<<std::endl;
             dummy->SetPtEtaPhiE((*ak4jets)[ik].userFloat("SmearedPt_JEC_up"), uncorrJet.eta(), uncorrJet.phi(), (*ak4jets)[ik].userFloat("SmearedE_JEC_up"));
             jets_JEC_up.push_back(dummy);
         }
-        if (ik < 6) {
+        if (ik < 9) {
             ak4jet_pt_JEC_up[ik] = (*ak4jets)[ik].userFloat("SmearedPt_JEC_up");
             ak4jet_e_JEC_up[ik]  = (*ak4jets)[ik].userFloat("SmearedE_JEC_up");
         }
@@ -2516,7 +2528,7 @@ std::cout<<"hasphoton : "<<hasphoton<<std::endl;
             dummy->SetPtEtaPhiE((*ak4jets)[ik].userFloat("SmearedPt_JEC_down"), uncorrJet.eta(), uncorrJet.phi(), (*ak4jets)[ik].userFloat("SmearedE_JEC_down"));
             jets_JEC_down.push_back(dummy);
         }
-        if (ik < 6) {
+        if (ik < 9) {
             ak4jet_pt_JEC_down[ik] = (*ak4jets)[ik].userFloat("SmearedPt_JEC_down");
             ak4jet_e_JEC_down[ik]  = (*ak4jets)[ik].userFloat("SmearedE_JEC_down");
         }
@@ -2534,7 +2546,7 @@ std::cout<<"hasphoton : "<<hasphoton<<std::endl;
             dummy->SetPtEtaPhiE((*ak4jets)[ik].userFloat("SmearedPt_JER_up"), uncorrJet.eta(), uncorrJet.phi(), (*ak4jets)[ik].userFloat("SmearedE_JER_up"));
             jets_JER_up.push_back(dummy);
         }
-        if (ik < 6) {
+        if (ik < 9) {
             ak4jet_pt_JER_up[ik] = (*ak4jets)[ik].userFloat("SmearedPt_JER_up");
             ak4jet_e_JER_up[ik]  = (*ak4jets)[ik].userFloat("SmearedE_JER_up");
         }
@@ -2551,7 +2563,7 @@ std::cout<<"hasphoton : "<<hasphoton<<std::endl;
             dummy->SetPtEtaPhiE((*ak4jets)[ik].userFloat("SmearedPt_JER_down"), uncorrJet.eta(), uncorrJet.phi(), (*ak4jets)[ik].userFloat("SmearedE_JER_down"));
             jets_JER_down.push_back(dummy);
         }
-        if (ik < 6) {
+        if (ik < 9) {
             ak4jet_pt_JER_down[ik] = (*ak4jets)[ik].userFloat("SmearedPt_JER_down");
             ak4jet_e_JER_down[ik]  = (*ak4jets)[ik].userFloat("SmearedE_JER_down");
         }
@@ -3565,7 +3577,17 @@ if(ak4jets->size()>=1){
 
         jet2deepcsv_probb_JER_down_f  = (*ak4jets)[jetindexphoton12_JER_down_f[1]].bDiscriminator("pfDeepCSVJetTags:probb");
         jet2deepcsv_probbb_JER_down_f  = (*ak4jets)[jetindexphoton12_JER_down_f[1]].bDiscriminator("pfDeepCSVJetTags:probbb");
-        jet2deepcsv_probc_JER_down_f  = (*ak4jets)[jetindexphoton12_JER_down_f[1]].bDiscriminator("pfDeepCSVJetTags:probc");
+        jet2dk4jet_pt[i]            = -1e1;
+        ak4jet_eta[i]           = -1e1;
+        ak4jet_phi[i]           = -1e1;
+        ak4jet_e[i]             = -1e1;
+        ak4jet_csv[i]           = -1e1;
+        ak4jet_deepcsv_probb[i]       = -1e1;
+        ak4jet_deepcsv_probbb[i]       = -1e1;
+        ak4jet_deepcsv_probc[i]       = -1e1;
+        ak4jet_deepcsv_probcc[i]       = -1e1;
+
+                ak4jet_icsv[i]          = -1e1;eepcsv_probc_JER_down_f  = (*ak4jets)[jetindexphoton12_JER_down_f[1]].bDiscriminator("pfDeepCSVJetTags:probc");
         jet2deepcsv_probcc_JER_down_f  = (*ak4jets)[jetindexphoton12_JER_down_f[1]].bDiscriminator("pfDeepCSVJetTags:probcc");
 
 		
@@ -3773,9 +3795,47 @@ void PKUTreeMaker::setDummyValues() {
     for(int j=0; j<703; j++){
 	pweight[j]=-1.0;
     }
+
+    for(int k = 0; k < 9; k++){
+        ak4jet_hf[k]            = -1e1;
+        ak4jet_pf[k]            = -1e1;
+
+        ak4jet_pt[k]            = -1e1;
+        ak4jet_eta[k]           = -1e1;
+        ak4jet_phi[k]           = -1e1;
+        ak4jet_e[k]             = -1e1;
+        ak4jet_csv[k]           = -1e1;
+        ak4jet_deepcsv_probb[k]       = -1e1;
+        ak4jet_deepcsv_probbb[k]       = -1e1;
+        ak4jet_deepcsv_probc[k]       = -1e1;
+        ak4jet_deepcsv_probcc[k]       = -1e1;
+        ak4jet_icsv[k]          = -1e1;
+	ak4jet_puIdLoose[k]=-1e1;
+	ak4jet_puIdMedium[k]=-1e1;
+	ak4jet_puIdTight[k]=-1e1;
+
+        ak4jet_pt_old[k]            = -1e1;
+        ak4jet_e_old[k]             = -1e1;
+
+        ak4jet_pt_new[k]            = -1e1;
+        ak4jet_e_new[k]             = -1e1;
+
+        ak4jet_pt_JEC_up[k]            = -1e1;
+        ak4jet_e_JEC_up[k]             = -1e1;
+
+        ak4jet_pt_JEC_down[k]            = -1e1;
+        ak4jet_e_JEC_down[k]             = -1e1;
+
+        ak4jet_pt_JER_up[k]            = -1e1;
+        ak4jet_e_JER_up[k]             = -1e1;
+
+        ak4jet_pt_JER_down[k]            = -1e1;
+        ak4jet_e_JER_down[k]             = -1e1;
+
+
+    }
+
     for (int i = 0; i < 6; i++) {
-        ak4jet_hf[i]       	= -1e1;
-        ak4jet_pf[i]       	= -1e1;
         genphoton_pt[i]    	= -1e1;
         genphoton_eta[i]   	= -1e1;
         genphoton_phi[i]   	= -1e1;
@@ -3807,17 +3867,6 @@ void PKUTreeMaker::setDummyValues() {
         photon_drla[i]     	= -1e1;
         photon_mla[i]      	= -1e1;
         photon_mva[i]      	= -1e1;
-        ak4jet_pt[i]       	= -1e1;
-        ak4jet_eta[i] 		= -1e1;
-        ak4jet_phi[i] 		= -1e1;
-        ak4jet_e[i]    		= -1e1;
-        ak4jet_csv[i]  		= -1e1;
-        ak4jet_deepcsv_probb[i]       = -1e1;
-        ak4jet_deepcsv_probbb[i]       = -1e1;
-        ak4jet_deepcsv_probc[i]       = -1e1;
-        ak4jet_deepcsv_probcc[i]       = -1e1;
-
-		ak4jet_icsv[i] 		= -1e1;
     }
 
     photonet             = -1e1;
@@ -3888,6 +3937,7 @@ void PKUTreeMaker::setDummyValues() {
     drj2a_orig			=-1e1;
     drj1l_orig			=-1e1;
     drj2l_orig			=-1e1;
+
 
     jet1pt              = -1e1;
     jet1pt_f            = -1e1;
