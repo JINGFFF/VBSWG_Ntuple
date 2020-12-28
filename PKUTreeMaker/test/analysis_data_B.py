@@ -176,6 +176,7 @@ process.patJetsReapplyJEC = process.updatedPatJets.clone(
 #define the tightID jets
 
 #define the cleanJets
+from RecoJets.JetProducers.PileupJetID_cfi import _chsalgos_94x
 process.cleanJets = cms.Sequence(process.NJetsSequence)
 #--- define the pileup id -------------------------------
 process.load("RecoJets.JetProducers.PileupJetID_cfi")
@@ -183,7 +184,7 @@ process.pileupJetId.jets = cms.InputTag("cleanAK4Jets")
 process.pileupJetId.inputIsCorrected = True
 process.pileupJetId.applyJec = False
 process.pileupJetId.vertexes = cms.InputTag("offlineSlimmedPrimaryVertices")
-
+process.pileupJetId.algos = cms.VPSet(_chsalgos_94x)
 
 process.jetSequence = cms.Sequence(
                                  process.patJetCorrFactorsReapplyJEC*process.patJetsReapplyJEC

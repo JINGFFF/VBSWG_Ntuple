@@ -3577,17 +3577,7 @@ if(ak4jets->size()>=1){
 
         jet2deepcsv_probb_JER_down_f  = (*ak4jets)[jetindexphoton12_JER_down_f[1]].bDiscriminator("pfDeepCSVJetTags:probb");
         jet2deepcsv_probbb_JER_down_f  = (*ak4jets)[jetindexphoton12_JER_down_f[1]].bDiscriminator("pfDeepCSVJetTags:probbb");
-        jet2dk4jet_pt[i]            = -1e1;
-        ak4jet_eta[i]           = -1e1;
-        ak4jet_phi[i]           = -1e1;
-        ak4jet_e[i]             = -1e1;
-        ak4jet_csv[i]           = -1e1;
-        ak4jet_deepcsv_probb[i]       = -1e1;
-        ak4jet_deepcsv_probbb[i]       = -1e1;
-        ak4jet_deepcsv_probc[i]       = -1e1;
-        ak4jet_deepcsv_probcc[i]       = -1e1;
-
-                ak4jet_icsv[i]          = -1e1;eepcsv_probc_JER_down_f  = (*ak4jets)[jetindexphoton12_JER_down_f[1]].bDiscriminator("pfDeepCSVJetTags:probc");
+        jet2deepcsv_probc_JER_down_f  = (*ak4jets)[jetindexphoton12_JER_down_f[1]].bDiscriminator("pfDeepCSVJetTags:probc");
         jet2deepcsv_probcc_JER_down_f  = (*ak4jets)[jetindexphoton12_JER_down_f[1]].bDiscriminator("pfDeepCSVJetTags:probcc");
 
 		

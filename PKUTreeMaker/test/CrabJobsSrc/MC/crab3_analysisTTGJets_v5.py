@@ -1,7 +1,7 @@
 from WMCore.Configuration import Configuration
 config = Configuration()
 config.section_("General")
-config.General.requestName   = 'full_run2_2017_for_analysis_version5_TTGJ_v5'
+config.General.requestName   = 'full_run2_2017_for_analysis_PUJetID_version5_TTGJ_v5'
 config.General.transferLogs = True
 
 config.section_("JobType")
@@ -19,7 +19,7 @@ config.Data.splitting = 'FileBased'
 config.Data.unitsPerJob = 2
 config.Data.totalUnits = -1
 config.Data.publication = False
-config.Data.outputDatasetTag = 'full_run2_2017_for_analysis_version5_TTGJ_v5'
+config.Data.outputDatasetTag = 'full_run2_2017_for_analysis_PUJetID_version5_TTGJ_v5'
 
 config.section_("Site")
 config.Site. ignoreGlobalBlacklist  = True
