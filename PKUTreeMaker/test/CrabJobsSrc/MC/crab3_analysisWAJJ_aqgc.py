@@ -22,4 +22,5 @@ config.Data.publication = False
 config.Data.outputDatasetTag = 'full_run2_2016_for_analysis_version6_WAJJ_aqgc'
 
 config.section_("Site")
+config.Site. ignoreGlobalBlacklist  = True
 config.Site.storageSite = 'T3_CH_CERNBOX'

@@ -159,7 +159,7 @@ private:
     TTree* outTree_;
     TTree* outTree1_;
     //TTree* outTree2_;
-
+int iiii = 0;
     double hasphoton;
     double MW_;
     int    nevent, run, ls;
@@ -520,6 +520,7 @@ PKUTreeMaker::PKUTreeMaker(const edm::ParameterSet& iConfig)  //:
     //outTree_ = fs->make<TTree>("PKUCandidates", "PKU Candidates");
     outTree1_ = fs->make<TTree>("tree1", "tree1");
     outTree1_->Branch("theWeight", &theWeight, "theWeight/D");
+    outTree1_->Branch("lep", &lep, "lep/I");
 
     /// Basic event quantities
     outTree_ = fs->make<TTree>("PKUCandidates", "PKU Candidates");
@@ -617,6 +618,11 @@ PKUTreeMaker::PKUTreeMaker(const edm::ParameterSet& iConfig)  //:
     outTree_->Branch("genelectron_pt", genelectron_pt,"genelectron_pt[6]/D");
     outTree_->Branch("genelectron_eta", genelectron_eta,"genelectron_eta[6]/D");
     outTree_->Branch("genelectron_phi", genelectron_phi,"genelectron_phi[6]/D");
+
+    outTree_->Branch("genjet_pt",genjet_pt,"genjet_pt[6]/D");
+    outTree_->Branch("genjet_eta",genjet_eta,"genjet_eta[6]/D");
+    outTree_->Branch("genjet_phi",genjet_phi,"genjet_phi[6]/D");
+    outTree_->Branch("genjet_e",genjet_e,"genjet_e[6]/D");
 
     /// Photon
     outTree_->Branch("photon_pt", photon_pt, "photon_pt[6]/D");
@@ -1651,13 +1657,13 @@ void PKUTreeMaker::analyze(const edm::Event& iEvent, const edm::EventSetup& iSet
             nump = nump + 1;
         if (theWeight < 0)
             numm = numm + 1;
-      /* 
+      
         edm::Handle<LHEEventProduct> wgtsource;
         iEvent.getByToken(LheToken_, wgtsource);
         for ( int i=0; i<703; ++i) {
             pweight[i]= wgtsource->weights()[i].wgt/wgtsource->originalXWGTUP();
         }
-*/
+
 
         edm::Handle<std::vector<PileupSummaryInfo>> PupInfo;
         iEvent.getByToken(PUToken_, PupInfo);
@@ -1779,6 +1785,7 @@ std::cout<<"hasphoton : "<<hasphoton<<std::endl;
 		iEvent.getByToken(genJet_,genJets);
 		reco::GenJetCollection::const_iterator i_jet;
 		for( i_jet=genJets->begin(); i_jet != genJets->end();i_jet++){
+                        if(ijj>5)continue;
 			genjet_e[ijj] = i_jet->energy();
 			genjet_pt[ijj]= i_jet->pt();
 			genjet_eta[ijj]= i_jet->eta();
@@ -1787,6 +1794,8 @@ std::cout<<"hasphoton : "<<hasphoton<<std::endl;
 		}
 	}
 
+//std::cout<<" genjet_pt list:  "<<genjet_pt[0]<<" "<<genjet_pt[1]<<" "<<genjet_pt[2]<<" "<<genjet_pt[3]<<" "<<genjet_pt[4]<<" "<<genjet_pt[5]<<std::endl;
+//std::cout<<" genjet_eta list: "<<genjet_eta[0]<<" "<<genjet_eta[1]<<" "<<genjet_eta[2]<<" "<<genjet_eta[3]<<" "<<genjet_eta[4]<<" "<<genjet_eta[5]<<std::endl;
 
 
    edm::Handle<edm::View<pat::Muon>> goodmus;
@@ -3373,7 +3382,7 @@ if(ak4jets->size()>=1){
     }
 /////////////////////////////////////////////////////////
 
-
+    outTree_->Fill();
     if(!((/*HLT_Mu3 == 1 &&*/abs(lep) == 13 &&ngoodmus == 1 &&ngoodeles == 0 && (nloosemus + nlooseeles) == 1 /*&& ptlep1>30.*/ &&fabs(etalep1)<2.4)||(/*HLT_Ele2 == 1 &&*/abs(lep) == 11 &&ngoodmus == 0 &&ngoodeles == 1 && (nloosemus + nlooseeles) == 1 /*&& ptlep1 > 30.*/ && fabs(etalep1)<2.5))){return;}
 
 
@@ -3398,7 +3407,12 @@ if(ak4jets->size()>=1){
     if(hasphoton == 1.){
 
         if(Jet_cut || Jet_cut_f || Jet_cut_new || Jet_cut_new_f || Jet_cut_JEC_up || Jet_cut_JEC_up_f || Jet_cut_JEC_down || Jet_cut_JEC_down_f || Jet_cut_JER_up || Jet_cut_JER_up_f || Jet_cut_JER_down || Jet_cut_JER_down_f){
-            outTree_->Fill();
+//std::cout<<iiii<<endl;
+//iiii++;
+//std::cout<<" genjet_pt list:  "<<genjet_pt[0]<<" "<<genjet_pt[1]<<" "<<genjet_pt[2]<<" "<<genjet_pt[3]<<" "<<genjet_pt[4]<<" "<<genjet_pt[5]<<std::endl;
+//std::cout<<" genjet_eta list: "<<genjet_eta[0]<<" "<<genjet_eta[1]<<" "<<genjet_eta[2]<<" "<<genjet_eta[3]<<" "<<genjet_eta[4]<<" "<<genjet_eta[5]<<std::endl;
+            std::cout<<"1"<<std::endl;  
+            //outTree_->Fill();
         }
     } 
 
@@ -3550,6 +3564,11 @@ void PKUTreeMaker::setDummyValues() {
     for (int i = 0; i < 6; i++) {
         ak4jet_hf[i]       	= -1e1;
         ak4jet_pf[i]       	= -1e1;
+        genjet_pt[i]            = -1e1;
+        genjet_eta[i]            = -1e1;
+        genjet_phi[i]            = -1e1;
+        genjet_e[i]            = -1e1;
+
         genphoton_pt[i]    	= -1e1;
         genphoton_eta[i]   	= -1e1;
         genphoton_phi[i]   	= -1e1;
